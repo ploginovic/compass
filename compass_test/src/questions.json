@@ -1,0 +1,28 @@
+[
+    {
+        "question": "Favourite medical speciality?",
+        "answers": [
+            { "text": "General Practice", "isCorrect": true },
+            { "text": "Surgery", "isCorrect": false },
+            { "text": "Anything but GP", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Most demanding medical speciality?",
+        "answers": [
+            { "text": "Emergency Medicine", "isCorrect": false },
+            { "text": "Surgery", "isCorrect": true },
+            { "text": "Dermatology", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "Most rewarding medical speciality?",
+        "answers": [
+            { "text": "Pediatrics", "isCorrect": false },
+            { "text": "General Practice", "isCorrect": true },
+            { "text": "Neurology", "isCorrect": false }
+        ]
+    }
+]
+
+  

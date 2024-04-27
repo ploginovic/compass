@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import React, { useState } from 'react';
+import questions from './questions.json';
+import Question from './Question';
+
+function Quiz() {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+
+  const handleAnswerOptionClick = (isCorrect) => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      alert( score);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      {questions.length > 0 && questions[currentQuestion] ? (
+        <Question
+          data={questions[currentQuestion]}
+          handleAnswerOptionClick={handleAnswerOptionClick}
+        />
+      ) : (
+        <div>Loading questions or no questions available.</div>
+      )}
     </div>
   );
+  
 }
 
-export default App;
+export default Quiz;
