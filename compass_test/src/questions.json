@@ -1,28 +1,45 @@
 [
     {
-        "question": "Favourite medical speciality?",
+        "question": "Your question here?",
+        "dimension": "E", 
         "answers": [
-            { "text": "General Practice", "isCorrect": true },
-            { "text": "Surgery", "isCorrect": false },
-            { "text": "Anything but GP", "isCorrect": false }
+        {
+            "text": "Option A text",
+            "option": "A" 
+        },
+        {
+            "text": "Option B text",
+            "option": "B" 
+        }
         ]
     },
     {
-        "question": "Most demanding medical speciality?",
+        "question": "Your question here?",
+        "dimension": "E", 
         "answers": [
-            { "text": "Emergency Medicine", "isCorrect": false },
-            { "text": "Surgery", "isCorrect": true },
-            { "text": "Dermatology", "isCorrect": false }
+        {
+            "text": "Option A text",
+            "option": "A" 
+        },
+        {
+            "text": "Option B text",
+            "option": "B" 
+        }
         ]
     },
     {
-        "question": "Most rewarding medical speciality?",
+        "question": "Your question here?",
+        "dimension": "E", 
         "answers": [
-            { "text": "Pediatrics", "isCorrect": false },
-            { "text": "General Practice", "isCorrect": true },
-            { "text": "Neurology", "isCorrect": false }
+        {
+            "text": "Option A text",
+            "option": "A" 
+        },
+        {
+            "text": "Option B text",
+            "option": "B" 
+        }
         ]
     }
 ]
-
   

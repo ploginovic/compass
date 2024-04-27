@@ -15,7 +15,8 @@ function Question({ data, handleAnswerOptionClick, selectedAnswer, setSelectedAn
               checked={selectedAnswer === answer.text}
               onChange={() => {
                 setSelectedAnswer(answer.text);
-                handleAnswerOptionClick(answer.isCorrect);
+                // The function now needs to pass the dimension and the option ('A' or 'B')
+                handleAnswerOptionClick(data.dimension, answer.option);
               }}
             />
             {answer.text}
@@ -27,3 +28,4 @@ function Question({ data, handleAnswerOptionClick, selectedAnswer, setSelectedAn
 }
 
 export default Question;
+
