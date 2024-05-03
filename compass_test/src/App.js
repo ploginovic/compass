@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import questions from './questions.json';
 import Question from './Question';
+import Header from './Header'; // Import the Header component
 import './css/QuestionStyles.css';
+// import './css/App.css'; // Import the App.css at the top of your file
+
 
 function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -45,8 +48,10 @@ function Quiz() {
     }
   };
 
+
   return (
     <div className="app">
+      <Header /> {/* Include the Header component */}
       {questions.length > 0 && (
         <Question
           data={questions[currentQuestion]}

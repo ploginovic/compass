@@ -1,0 +1,17 @@
+.header {
+    width: 87%;
+    background-color: #b0d2f5;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.header h1 {
+    margin: 0;
+    color: #201158;
+}
+
+.header p {
+    margin: 5px 0 0;
+    color: #666;
+}
