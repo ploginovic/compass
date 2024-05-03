@@ -1,34 +1,48 @@
 [
     {
-        "question": "Do you want to be a GP?",
+        "question": "At a party do you?",
         "dimension": "E", 
         "answers": [
         {
-            "text": "Yes",
+            "text": "Talk to or interact with many people including strangers",
             "option": "A" 
         },
         {
-            "text": "Not yet",
+            "text": "Talk to or interact with a few people known to you",
             "option": "B" 
         }
         ]
     },
     {
-        "question": "WB now?",
+        "question": "Are you more?",
         "dimension": "E", 
         "answers": [
         {
-            "text": "Still no",
+            "text": "Realistic (you don't tend to guess or speculate what if...)",
             "option": "A" 
         },
         {
-            "text": "Hmm maybe",
+            "text": "A person who thinks about what might be or guesses rather than a realist",
             "option": "B" 
         }
         ]
     },
     {
-        "question": "You are a GP",
+        "question": "It is worse to?",
+        "dimension": "E", 
+        "answers": [
+        {
+            "text": "Have your 'head in the clouds' / dreamer",
+            "option": "A" 
+        },
+        {
+            "text": "Be stuck in a rut doing the same thing all the time (routine)",
+            "option": "B" 
+        }
+        ]
+    },
+    {
+        "question": "Doesnt matter, youre still a GP",
         "dimension": "E", 
         "answers": [
         {
@@ -36,7 +50,7 @@
             "option": "A" 
         },
         {
-            "text": "OK fine",
+            "text": ":D",
             "option": "B" 
         }
         ]
