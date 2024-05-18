@@ -15,7 +15,7 @@ label {
 
 /* Style for selected labels */
 input[type="radio"]:checked + label {
-  background-color: #1b575f;
+  background-color: #153f45;
   color: rgb(104, 201, 127);
 }
 
@@ -26,43 +26,30 @@ input[type="radio"]:checked + label {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: left;
+  text-align: center;
 }
 
 /* New quiz-container class for styling the quiz area */
+/* Add this to your existing QuestionStyles.css */
 .quiz-container {
-  width: 60%; /* Adjusted width */
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto; /* Centers the container horizontally */
   padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: left;
+  background-color: #a1ffcd22;
+  border-radius: 22px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-/* Button styles */
-button {
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #08090b;
-}
-
 /* Styles for the current and inactive questions */
 .question {
   margin-bottom: 20px;
 }
 
 .question.inactive {
-  filter: blur(4px);
+  filter: blur(3px);
   pointer-events: none; /* Disable interaction with inactive questions */
 }
 
@@ -70,3 +57,4 @@ button:hover {
   filter: none;
   pointer-events: auto; /* Enable interaction with the current question */
 }
+

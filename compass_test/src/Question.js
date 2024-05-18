@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './css/QuestionStyles.css'; // Adjust path based on where your CSS file is located
 
-function Question({ data, isCurrentQuestion, isLastQuestion, handleAnswerOptionClick, selectedAnswer, setSelectedAnswer }) {
+function Question({ data, isCurrentQuestion, handleAnswerOptionClick, selectedAnswer, setSelectedAnswer }) {
+  
+  useEffect(() => {
+    if (isCurrentQuestion) {
+      const element = document.getElementById(`question-${data.id}`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }, [isCurrentQuestion, data.id]);
+
   return (
-    <div className={`question ${isCurrentQuestion ? 'current' : 'inactive'}`}>
+    <div className={`question ${isCurrentQuestion ? 'current' : 'inactive'}`} id={`question-${data.id}`}>
       <h1>{data.question}</h1>
       <div>
         {data.answers.map((answer, index) => (
@@ -14,7 +24,10 @@ function Question({ data, isCurrentQuestion, isLastQuestion, handleAnswerOptionC
               name={`answer-${data.question}`}
               value={answer.text}
               checked={selectedAnswer === answer.text}
-              onChange={() => setSelectedAnswer(answer.text)}
+              onChange={() => {
+                setSelectedAnswer(answer.text);
+                handleAnswerOptionClick(data.dimension, answer.option, data.id);
+              }}
             />
             <label htmlFor={`option-${index}-${data.question}`}>
               {answer.text}
@@ -22,24 +35,8 @@ function Question({ data, isCurrentQuestion, isLastQuestion, handleAnswerOptionC
           </div>
         ))}
       </div>
-      {isCurrentQuestion && (
-        <button
-          onClick={() => {
-            const selectedOption = data.answers.find(answer => answer.text === selectedAnswer)?.option;
-            if (selectedOption) {
-              handleAnswerOptionClick(data.dimension, selectedOption);
-            }
-          }}
-          disabled={!selectedAnswer}
-        >
-          {isLastQuestion ? 'Calculate Score' : 'Next'}
-        </button>
-      )}
     </div>
   );
 }
 
 export default Question;
-
-
-

@@ -1,18 +1,26 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import menuItems from './menuConfig';
+import Logo from './assets/logo.svg'; // Ensure the path is correct
 
 const Header = () => {
   return (
-    <header>
-      <h1 className="header-title">My Website</h1> {/* Add this line */}
-      <nav>
+    <header className="header">
+      <NavLink to="/Quiz" exact className="header-logo">
+        <img src={Logo} alt="CompassMed Logo" />
+      </NavLink>
+      <nav className="nav-menu">
         {menuItems.map(item => (
-          <div key={item.title}>
-            <button>{item.title}</button>
+          <div key={item.title} className="menu-item">
+            <NavLink to={item.link} exact activeClassName="active">
+              {item.title}
+            </NavLink>
             {item.submenu && (
-              <div>
+              <div className="submenu">
                 {item.submenu.map(sub => (
-                  <a key={sub.title} href={sub.link}>{sub.title}</a>
+                  <NavLink key={sub.title} to={sub.link} exact activeClassName="active">
+                    {sub.title}
+                  </NavLink>
                 ))}
               </div>
             )}
