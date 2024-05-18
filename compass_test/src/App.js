@@ -3,9 +3,6 @@ import Header from './Header';
 import './Header.css';          // Style for Header
 import './css/QuestionStyles.css'; // Style for Question and Quiz
 import Question from './Question';
-<<<<<<< HEAD
-import Header from './Header';
-import './css/QuestionStyles.css';
 import { updateScores, calculateMBTI } from './scoring';
 
 function Quiz() {
@@ -63,26 +60,3 @@ function Quiz() {
 }
 
 export default Quiz;
-=======
-import Quiz from './QuizLogic';  // Custom hook from QuizLogic
-
-function App() {
-    const { currentQuestion, selectedAnswer, handleAnswerOptionClick, setSelectedAnswer } = Quiz();
-
-    return (
-        <div className="app">
-            <Header />
-            {/* Conditional rendering can be placed here if needed */}
-            <Question
-                data={questions[currentQuestion]}
-                handleAnswerOptionClick={handleAnswerOptionClick}
-                selectedAnswer={selectedAnswer}
-                setSelectedAnswer={setSelectedAnswer}
-            />
-            {/* You can add other components here that were part of the original App */}
-        </div>
-    );
-}
-
-export default App;
->>>>>>> 604ac5a977145b2992e1be27c8e3db095373797e

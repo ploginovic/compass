@@ -66,8 +66,7 @@ body, html {
   nav div div a:last-child {
     border-bottom: none;
   }
-  Ensures dropdown is on top of other content */
-  }
+  
   
   nav div:hover div {
     display: block; /* Shows the dropdown on hover */
