@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
-import './Header.css';          // Style for Header
+import './css/HeaderStyles.css';          // Style for Header
 import './css/QuestionStyles.css'; // Style for Question and Quiz
 import Question from './Question';
+import questions from './questions.json'
 import { updateScores, calculateMBTI } from './scoring';
 
 function Quiz() {
