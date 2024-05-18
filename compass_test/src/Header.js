@@ -1,13 +1,26 @@
 import React from 'react';
-import './css/HeaderStyles.css'; // Assuming you might want specific styles for the header
+import menuItems from './menuConfig';
 
 const Header = () => {
-    return (
-        <header className="header">
-            <h1>Welcome to the Quiz</h1>
-            <p>Test your knowledge and find out your personality type!</p>
-        </header>
-    );
+  return (
+    <header>
+      <h1 className="header-title">My Website</h1> {/* Add this line */}
+      <nav>
+        {menuItems.map(item => (
+          <div key={item.title}>
+            <button>{item.title}</button>
+            {item.submenu && (
+              <div>
+                {item.submenu.map(sub => (
+                  <a key={sub.title} href={sub.link}>{sub.title}</a>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </nav>
+    </header>
+  );
 };
 
 export default Header;
