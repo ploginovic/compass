@@ -54,6 +54,20 @@
             "option": "B" 
         }
         ]
+    },
+    {
+        "question": "Click here to find out the result",
+        "dimension": "E", 
+        "answers": [
+        {
+            "text": "Yay",
+            "option": "A" 
+        },
+        {
+            "text": ":D",
+            "option": "B" 
+        }
+        ]
     }
 ]
   

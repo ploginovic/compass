@@ -10,8 +10,10 @@ label {
   margin-right: 5px;
   cursor: pointer;
   display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Style for selected labels */
 input[type="radio"]:checked + label {
   background-color: #1b575f;
   color: rgb(104, 201, 127);
@@ -29,7 +31,7 @@ input[type="radio"]:checked + label {
 
 /* New quiz-container class for styling the quiz area */
 .quiz-container {
-  width: 50%; /* Take up half of the page width */
+  width: 60%; /* Adjusted width */
   margin-top: 20px;
   padding: 20px;
   background-color: #f4f4f4;
@@ -38,6 +40,7 @@ input[type="radio"]:checked + label {
   text-align: left;
 }
 
+/* Button styles */
 button {
   padding: 10px 20px;
   margin: 10px;
@@ -45,9 +48,25 @@ button {
   color: white;
   border: none;
   border-radius: 5px;
-  cursor:  pointer;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #08090b;
+}
+
+/* Styles for the current and inactive questions */
+.question {
+  margin-bottom: 20px;
+}
+
+.question.inactive {
+  filter: blur(4px);
+  pointer-events: none; /* Disable interaction with inactive questions */
+}
+
+.question.current {
+  filter: none;
+  pointer-events: auto; /* Enable interaction with the current question */
 }
