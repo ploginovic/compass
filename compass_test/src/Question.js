@@ -87,8 +87,8 @@ function Question({ data, isCurrentQuestion, handleAnswerOptionClick, selectedAn
               value={answer.text}
               checked={selectedAnswer === answer.text}
               onChange={() => {
-                
-                handleAnswerOptionClick(data.dimension, answer.option, data.id);
+                setSelectedAnswer(answer.text);
+                handleAnswerOptionClick(data.dimension, answer.text, data.id);
               }}
             />
             <label htmlFor={`option-${index}-${data.question}`}>
