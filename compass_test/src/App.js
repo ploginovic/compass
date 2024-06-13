@@ -1,4 +1,34 @@
-
+/**
+ * App component sets up the main structure and routing for the application.
+ * It uses React Router to manage different routes and displays corresponding components for each route.
+ * 
+ * The following components and styles are imported and used:
+ * - Footer: Footer component
+ * - Header: Header component
+ * - Home: Home page component
+ * - Quiz: Quiz page component
+ * - About: About page component
+ * - Articles: Articles page component
+ * - Guides: Guides page component
+ * - Research: Research page component
+ * - Theory: Theory page component
+ * - FooterStyles.css: CSS styles for the Footer component
+ * - HeaderStyles.css: CSS styles for the Header component
+ * - QuestionStyles.css: CSS styles for Question and Quiz components
+ * 
+ * Routes:
+ * - "/": Home component
+ * - "/about": About component
+ * - "/quiz": Quiz component
+ * - "/articles": Articles component
+ * - "/guides": Guides component
+ * - "/research": Research component
+ * - "/theory": Theory component
+ * 
+ * return (
+ *   <App />
+ * )
+ */
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './Footer';
