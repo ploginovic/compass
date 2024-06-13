@@ -6,7 +6,7 @@ import Logo from './assets/logo.svg'; // Ensure the path is correct
 const Header = () => {
   return (
     <header className="header">
-      <NavLink to="/Quiz" exact className="header-logo">
+      <NavLink to="/" exact className="header-logo">
         <img src={Logo} alt="CompassMed Logo" />
       </NavLink>
       <nav className="nav-menu">
@@ -27,6 +27,9 @@ const Header = () => {
           </div>
         ))}
       </nav>
+      <NavLink to="/quiz" exact className="quiz-button">
+        Take the Quiz
+      </NavLink>
     </header>
   );
 };

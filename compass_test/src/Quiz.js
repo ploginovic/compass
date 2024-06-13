@@ -10,9 +10,12 @@ function Quiz() {
   const {
     currentQuestion,
     selectedAnswers,
-    handleAnswerOptionClick,
-    handleSelectAnswer
+    answeredQuestions,
+    handleAnswerOptionClick
   } = useQuizLogic(); // Destructure values from the custom hook
+
+  console.log('Answered Questions:', answeredQuestions);
+
 
   return (
     <div className="app">
@@ -24,7 +27,8 @@ function Quiz() {
             isCurrentQuestion={currentQuestion === index}
             handleAnswerOptionClick={(dimension, option, id) => handleAnswerOptionClick(dimension, option, id)}
             selectedAnswer={selectedAnswers[index]}
-            setSelectedAnswer={(answer) => handleSelectAnswer(answer, index)}
+            setSelectedAnswer={(answer) => handleAnswerOptionClick(question.dimension, answer, index)} // Use handleAnswerOptionClick for selecting answer
+            answeredQuestions={answeredQuestions} // Pass answeredQuestions
           />
         ))}
       </div>

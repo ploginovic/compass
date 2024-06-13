@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import './css/QuestionStyles.css'; // Adjust path based on where your CSS file is located
 
-function Question({ data, isCurrentQuestion, handleAnswerOptionClick, selectedAnswer, setSelectedAnswer }) {
-  
+function Question({ data, isCurrentQuestion, handleAnswerOptionClick, selectedAnswer, setSelectedAnswer, answeredQuestions = [] }) {
+  console.log('Updated Answered Questions:', answeredQuestions);
+
   useEffect(() => {
     if (isCurrentQuestion) {
       const element = document.getElementById(`question-${data.id}`);
@@ -10,10 +11,19 @@ function Question({ data, isCurrentQuestion, handleAnswerOptionClick, selectedAn
         element.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
-  }, [isCurrentQuestion, data.id]);
+    console.log(`Question ${data.id} - Is Answered:`, answeredQuestions.includes(data.id));
+  }, [isCurrentQuestion, data.id, answeredQuestions]);
+
+  const isAnswered = answeredQuestions.includes(data.id);
+  const isInactive = !isCurrentQuestion && !isAnswered;
+
+  // Debugging logs
+  console.log(`Question ${data.id} - isCurrentQuestion:`, isCurrentQuestion);
+  console.log(`Question ${data.id} - isAnswered:`, isAnswered);
+  console.log(`Question ${data.id} - isInactive:`, isInactive);
 
   return (
-    <div className={`question ${isCurrentQuestion ? 'current' : 'inactive'}`} id={`question-${data.id}`}>
+    <div className={`question ${isAnswered ? 'answered' : ''} ${isCurrentQuestion ? 'current' : ''} ${isInactive ? 'inactive' : ''}`} id={`question-${data.id}`}>
       <h1>{data.question}</h1>
       <div>
         {data.answers.map((answer, index) => (
@@ -25,7 +35,7 @@ function Question({ data, isCurrentQuestion, handleAnswerOptionClick, selectedAn
               value={answer.text}
               checked={selectedAnswer === answer.text}
               onChange={() => {
-                setSelectedAnswer(answer.text);
+                
                 handleAnswerOptionClick(data.dimension, answer.option, data.id);
               }}
             />

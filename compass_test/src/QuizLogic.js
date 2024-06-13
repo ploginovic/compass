@@ -24,6 +24,10 @@ const useQuizLogic = () => {
     const savedSelectedAnswers = localStorage.getItem('selectedAnswers');
     return savedSelectedAnswers !== null ? JSON.parse(savedSelectedAnswers) : [];
   });
+  const [answeredQuestions, setAnsweredQuestions] = useState(() => {
+    const savedAnsweredQuestions = localStorage.getItem('answeredQuestions');
+    return savedAnsweredQuestions !== null ? JSON.parse(savedAnsweredQuestions) : [];
+  });
 
   useEffect(() => {
     localStorage.setItem('currentQuestion', JSON.stringify(currentQuestion));
@@ -35,7 +39,13 @@ const useQuizLogic = () => {
 
   useEffect(() => {
     localStorage.setItem('selectedAnswers', JSON.stringify(selectedAnswers));
+    console.log('Selected Answers:', selectedAnswers); // Log selected answers
   }, [selectedAnswers]);
+
+  useEffect(() => {
+    localStorage.setItem('answeredQuestions', JSON.stringify(answeredQuestions));
+    console.log('Answered Questions:', answeredQuestions); // Log answered questions
+  }, [answeredQuestions]);
 
   const resetQuiz = () => {
     setCurrentQuestion(0);
@@ -50,14 +60,31 @@ const useQuizLogic = () => {
       P: 0
     });
     setSelectedAnswers([]);
+    setAnsweredQuestions([]);
     localStorage.removeItem('currentQuestion');
     localStorage.removeItem('scores');
     localStorage.removeItem('selectedAnswers');
+    localStorage.removeItem('answeredQuestions');
   };
 
   const handleAnswerOptionClick = (dimension, option, index) => {
     setScores(prevScores => updateScores(prevScores, dimension, option));
+    setSelectedAnswers(prev => {
+      const newAnswers = [...prev];
+      newAnswers[index] = option; // or however you store the selected answer
+      return newAnswers;
+    });
+    setAnsweredQuestions(prev => {
+      const newAnswered = [...prev];
+      if (!newAnswered.includes(index)) {
+        newAnswered.push(index);
+      }
+      console.log('Updated Answered Questions:', newAnswered);
+      return newAnswered;
+    });
+
     const nextQuestion = index + 1;
+    console.log('Updated Answered Questions:', answeredQuestions);
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
@@ -68,23 +95,13 @@ const useQuizLogic = () => {
     }
   };
 
-  const handleSelectAnswer = (answer, index) => {
-    setSelectedAnswers(prev => {
-      const newAnswers = [...prev];
-      newAnswers[index] = answer;
-      return newAnswers;
-    });
-  };
-
   return {
     currentQuestion,
     scores,
     selectedAnswers,
-    handleAnswerOptionClick,
-    handleSelectAnswer
+    answeredQuestions,
+    handleAnswerOptionClick
   };
 }
 
 export default useQuizLogic;
-
-
