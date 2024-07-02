@@ -1,0 +1,162 @@
+{
+    "ISTJ": {
+      "type": "Introverted–Sensing–Thinking–Judging",
+      "specialties": [
+        "Dermatology",
+        "Obstetrics-gynecology",
+        "Family practice",
+        "Urology",
+        "Orthopedic surgery"
+      ]
+    },
+    "ISFJ": {
+      "type": "Introverted–Sensing–Feeling–Judging",
+      "specialties": [
+        "Anesthesiology",
+        "Ophthalmology",
+        "General practice",
+        "Family practice",
+        "Pediatrics"
+      ]
+    },
+    "ISTP": {
+      "type": "Introverted–Sensing–Thinking–Perceptive",
+      "specialties": [
+        "Otolaryngology",
+        "Anesthesiology",
+        "Radiology",
+        "Ophthalmology",
+        "General practice"
+      ]
+    },
+    "ISFP": {
+      "type": "Introverted–Sensing–Feeling–Perceptive",
+      "specialties": [
+        "Anesthesiology",
+        "Urology",
+        "Family practice",
+        "Thoracic surgery",
+        "General practice"
+      ]
+    },
+    "INFJ": {
+      "type": "Introverted–Intuitive–Feeling–Judging",
+      "specialties": [
+        "Psychiatry",
+        "Internal medicine",
+        "Thoracic surgery",
+        "General surgery",
+        "Pathology"
+      ]
+    },
+    "ESTJ": {
+      "type": "Extroverted–Sensing–Thinking–Judging",
+      "specialties": [
+        "Obstetrics-gynecology",
+        "General practice",
+        "General surgery",
+        "Orthopedic surgery",
+        "Pediatrics"
+      ]
+    },
+    "ESFJ": {
+      "type": "Extroverted–Sensing–Feeling–Judging",
+      "specialties": [
+        "Pediatrics",
+        "Orthopedic surgery",
+        "Otolaryngology",
+        "General practice",
+        "Internal medicine"
+      ]
+    },
+    "ENFP": {
+      "type": "Extroverted–Intuitive–Feeling–Perceptive",
+      "specialties": [
+        "Psychiatry",
+        "Dermatology",
+        "Otolaryngology",
+        "Psychiatry",
+        "Pediatrics"
+      ]
+    },
+    "INTJ": {
+      "type": "Introverted–Intuitive–Thinking–Judging",
+      "specialties": [
+        "Psychiatry",
+        "Pathology",
+        "Neurology",
+        "Internal medicine",
+        "Anesthesiology"
+      ]
+    },
+    "INFP": {
+      "type": "Introverted–Intuitive–Feeling–Perceptive",
+      "specialties": [
+        "Psychiatry",
+        "Cardiology",
+        "Neurology",
+        "Dermatology",
+        "Pathology"
+      ]
+    },
+    "INTP": {
+      "type": "Introverted–Intuitive–Thinking–Perceptive",
+      "specialties": [
+        "Neurology",
+        "Pathology",
+        "Psychiatry",
+        "Cardiology",
+        "Thoracic surgery"
+      ]
+    },
+    "ESTP": {
+      "type": "Extroverted–Sensing–Thinking–Perceptive",
+      "specialties": [
+        "Orthopedic surgery",
+        "Dermatology",
+        "Family practice",
+        "Radiology",
+        "General surgery"
+      ]
+    },
+    "ESFP": {
+      "type": "Extroverted–Sensing–Feeling–Perceptive",
+      "specialties": [
+        "Ophthalmology",
+        "Thoracic surgery",
+        "Obstetrics-gynecology",
+        "Orthopedic surgery",
+        "General surgery"
+      ]
+    },
+    "ENTP": {
+      "type": "Extroverted–Intuitive–Thinking–Perceptive",
+      "specialties": [
+        "Otolaryngology",
+        "Psychiatry",
+        "Radiology",
+        "Pediatrics",
+        "Pathology"
+      ]
+    },
+    "ENFJ": {
+      "type": "Extroverted–Intuitive–Feeling–Judging",
+      "specialties": [
+        "Thoracic surgery",
+        "Dermatology",
+        "Psychiatry",
+        "Ophthalmology",
+        "Radiology"
+      ]
+    },
+    "ENTJ": {
+      "type": "Extroverted–Intuitive–Thinking–Judging",
+      "specialties": [
+        "Neurology",
+        "Cardiology",
+        "Urology",
+        "Thoracic surgery",
+        "Internal medicine"
+      ]
+    }
+  }
