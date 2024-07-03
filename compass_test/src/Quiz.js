@@ -20,6 +20,10 @@
  * CSS:
  * - The component uses styles from `HeaderStyles.css` and `QuestionStyles.css`.
  * 
+ * Source for MBTI speciality connection is:
+ * Data adapted from: McCaulley, M.H. The Myers Longitudinal Medical Study (Monograph II).
+Gainesville, Fla: Center for Applications of Psychological Type; 1977.
+ * 
  * @component
  * @example
  * return (
