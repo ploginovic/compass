@@ -1,439 +1,559 @@
 {
     "specialties": [
-      {
-        "name": "Acute internal medicine",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Acute internal medicine curriculum 2022",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Internal medicine - stage one"
-          ],
-          "indicative_length_of_training": "Seven years",
-          "exams": "Specialty Certificate Examination (SCE) in Acute Medicine",
-          "approved_sub_specialties": [
-            "Stroke medicine"
-          ],
-          "approved_dual_CCT_pairings": [
-            "General (internal) medicine",
-            "Intensive care medicine (including General (internal) medicine)"
-          ]
-        }
-      },
-      {
-        "name": "Allergy",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Allergy curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Internal medicine - stage one",
-            "Paediatric level 1 training"
-          ],
-          "indicative_length_of_training": "Six years",
-          "exams": "Allergy and Clinical Immunology Certificate Examination (ACICE)",
-          "approved_sub_specialties": [
-            "Stroke medicine (after completion of IMY3)"
-          ],
-          "approved_dual_CCT_pairings": []
-        }
-      },
-      {
-        "name": "Anaesthetics",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Anaesthetics curriculum",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Acute care common stem (ACCS)",
-            "Core anaesthetics training"
-          ],
-          "indicative_length_of_training": "Seven years",
-          "exams": "Fellowship of the Royal College of Anaesthetists (FRCA)",
-          "approved_sub_specialties": [
-            "Pre-hospital emergency medicine"
-          ],
-          "approved_dual_CCT_pairings": [
-            "Intensive care medicine"
-          ]
-        }
-      },
-      {
-        "name": "Audio vestibular medicine",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Audio vestibular medicine curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Core surgery (ENT)",
-            "General practice",
-            "Internal medicine - stage one",
-            "Paediatric level 1 training"
-          ],
-          "indicative_length_of_training": "Six years",
-          "exams": "",
-          "approved_sub_specialties": [
-            "Stroke medicine (after completion of IMY3)"
-          ],
-          "approved_dual_CCT_pairings": []
-        }
-      },
-      {
-        "name": "Aviation and space medicine",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Aviation and space medicine curriculum 2022",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Core anaesthetics training",
-            "Internal medicine - stage one",
-            "General practice"
-          ],
-          "indicative_length_of_training": "Six years",
-          "exams": "Diploma in Aviation medicine (DAvMed)",
-          "approved_sub_specialties": [
-            "Stroke medicine (after completion of IMY3)"
-          ],
-          "approved_dual_CCT_pairings": []
-        }
-      },
-      {
-        "name": "Cardio-thoracic surgery",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Cardio-thoracic surgery curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Core surgical training"
-          ],
-          "indicative_length_of_training": "Eight years",
-          "exams": "Intercollegiate Specialty Board (ISB) examination in Cardio-thoracic surgery",
-          "approved_sub_specialties": [
-            "Congenital cardiac surgery"
-          ],
-          "approved_dual_CCT_pairings": []
-        }
-      },
-      {
-        "name": "Cardiology",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Cardiology curriculum 2022",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Internal medicine - stage one"
-          ],
-          "indicative_length_of_training": "Eight years",
-          "exams": "European Exam in General Cardiology (EEGC)",
-          "approved_sub_specialties": [
-            "Stroke medicine (after completion of IMY3)"
-          ],
-          "approved_dual_CCT_pairings": [
-            "General (internal) medicine"
-          ]
-        }
-      },
-      {
-        "name": "Chemical pathology",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Chemical pathology curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Acute care common stem (ACCS)",
-            "Broad-based training",
-            "Core anaesthetics training",
-            "Core paediatrics",
-            "Internal medicine - stage one (two years)"
-          ],
-          "indicative_length_of_training": "Seven years",
-          "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
-          "approved_sub_specialties": [],
-          "approved_dual_CCT_pairings": []
-        }
-      },
-      {
-        "name": "Child and adolescent psychiatry",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Child and adolescent psychiatry curriculum 2022",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Core psychiatry"
-          ],
-          "indicative_length_of_training": "Six years (uncoupled or run-through)",
-          "exams": "Membership of the Royal College of Psychiatrists (MRCPsych) examinations prior to entry into ST4: Paper A, Paper B, Clinical Assessment of Skills and Competencies (CASC)",
-          "approved_sub_specialties": [
-            "Forensic psychiatry",
-            "Medical psychotherapy",
-            "Psychiatry of learning disability"
-          ],
-          "approved_dual_CCT_pairings": []
-        }
-      },
-      {
-        "name": "Clinical genetics",
-        "additional_info": {
-          "current_curriculum": {
-            "title": "Clinical genetics curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Core anaesthetics training",
-            "Core psychiatry training",
-            "Core surgical training",
-            "General practice",
-            "Internal medicine - stage one",
-            "Obstetrics and gynaecology (see curriculum)",
-            "Ophthalmic specialist training (see curriculum)",
-            "Paediatric level 1 training"
-          ],
-          "indicative_length_of_training": "Six years",
-          "exams": "Certificate exam in Medical Genetics",
-          "approved_sub_specialties": [
-            "Stroke medicine (after completion of IMY3)"
-          ],
-          "approved_dual_CCT_pairings": []
-        }
-      },
-      {
+        {
+            "name": "Acute internal medicine",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Acute internal medicine curriculum 2022",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (Internal medicine)",
+                    "Internal medicine - stage one"
+                ],
+                "indicative_length_of_training": "Seven years",
+                "exams": "Specialty Certificate Examination (SCE) in Acute Medicine",
+                "approved_sub_specialties": [
+                    "Stroke medicine"
+                ],
+                "approved_dual_CCT_pairings": [
+                    "General (internal) medicine",
+                    "Intensive care medicine (including General (internal) medicine)"
+                ],
+                "competition_ratio": {
+                    "applications": 335,
+                    "posts": 82,
+                    "ratio": 4.09
+                }
+            }
+        },
+        {
+            "name": "Allergy",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Allergy curriculum 2021",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (Internal medicine)",
+                    "Internal medicine - stage one",
+                    "Paediatric level 1 training"
+                ],
+                "indicative_length_of_training": "Six years",
+                "exams": "Allergy and Clinical Immunology Certificate Examination (ACICE)",
+                "approved_sub_specialties": [
+                    "Stroke medicine (after completion of IMY3)"
+                ],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {
+                    "applications": 35,
+                    "posts": 2,
+                    "ratio": 17.50
+                }
+            }
+        },
+        {
+            "name": "Anaesthetics",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Anaesthetics curriculum",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (ACCS)",
+                    "Core anaesthetics training"
+                ],
+                "indicative_length_of_training": "Seven years",
+                "exams": "Fellowship of the Royal College of Anaesthetists (FRCA)",
+                "approved_sub_specialties": [
+                    "Pre-hospital emergency medicine"
+                ],
+                "approved_dual_CCT_pairings": [
+                    "Intensive care medicine"
+                ],
+                "competition_ratio": {
+                    "CT1": {
+                        "applications": 2604,
+                        "posts": 545,
+                        "ratio": 4.78
+                    },
+                    "ST4": {
+                        "applications": 640,
+                        "posts": 399,
+                        "ratio": 1.60
+                    }
+                }
+            }
+        },
+        {
+            "name": "Audio vestibular medicine",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Audio vestibular medicine curriculum 2021",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (Internal medicine)",
+                    "Core surgery (ENT)",
+                    "General practice",
+                    "Internal medicine - stage one",
+                    "Paediatric level 1 training"
+                ],
+                "indicative_length_of_training": "Six years",
+                "exams": "",
+                "approved_sub_specialties": [
+                    "Stroke medicine (after completion of IMY3)"
+                ],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {
+                    "applications": 6,
+                    "posts": 5,
+                    "ratio": 1.20
+                }
+            }
+        },
+        {
+            "name": "Aviation and space medicine",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Aviation and space medicine curriculum 2022",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (Internal medicine)",
+                    "Core anaesthetics training",
+                    "Internal medicine - stage one",
+                    "General practice"
+                ],
+                "indicative_length_of_training": "Six years",
+                "exams": "Diploma in Aviation medicine (DAvMed)",
+                "approved_sub_specialties": [
+                    "Stroke medicine (after completion of IMY3)"
+                ],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {}
+            }
+        },
+        {
+            "name": "Cardio-thoracic surgery",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Cardio-thoracic surgery curriculum 2021",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Core surgical training"
+                ],
+                "indicative_length_of_training": "Eight years",
+                "exams": "Intercollegiate Specialty Board (ISB) examination in Cardio-thoracic surgery",
+                "approved_sub_specialties": [
+                    "Congenital cardiac surgery"
+                ],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {
+                    "applications": 298,
+                    "posts": 11,
+                    "ratio": 27.09
+                }
+            }
+        },
+        {
+            "name": "Cardiology",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Cardiology curriculum 2022",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (Internal medicine)",
+                    "Internal medicine - stage one"
+                ],
+                "indicative_length_of_training": "Eight years",
+                "exams": "European Exam in General Cardiology (EEGC)",
+                "approved_sub_specialties": [
+                    "Stroke medicine (after completion of IMY3)"
+                ],
+                "approved_dual_CCT_pairings": [
+                    "General (internal) medicine"
+                ],
+                "competition_ratio": {
+                    "applications": 433,
+                    "posts": 140,
+                    "ratio": 3.09
+                }
+            }
+        },
+        {
+            "name": "Chemical pathology",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Chemical pathology curriculum 2021",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (ACCS)",
+                    "Broad-based training",
+                    "Core anaesthetics training",
+                    "Core paediatrics",
+                    "Internal medicine - stage one (two years)"
+                ],
+                "indicative_length_of_training": "Seven years",
+                "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+                "approved_sub_specialties": [],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {
+                    "applications": 12,
+                    "posts": 7,
+                    "ratio": 1.71
+                }
+            }
+        },
+        {
+            "name": "Child and adolescent psychiatry",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Child and adolescent psychiatry curriculum 2022",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Core psychiatry"
+                ],
+                "indicative_length_of_training": "Six years (uncoupled or run-through)",
+                "exams": "Membership of the Royal College of Psychiatrists (MRCPsych) examinations prior to entry into ST4: Paper A, Paper B, Clinical Assessment of Skills and Competencies (CASC)",
+                "approved_sub_specialties": [
+                    "Forensic psychiatry",
+                    "Medical psychotherapy",
+                    "Psychiatry of learning disability"
+                ],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {}
+            }
+        },
+        {
+            "name": "Clinical genetics",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Clinical genetics curriculum 2021",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (Internal medicine)",
+                    "Core anaesthetics training",
+                    "Core psychiatry training",
+                    "Core surgical training",
+                    "General practice",
+                    "Internal medicine - stage one",
+                    "Obstetrics and gynaecology (see curriculum)",
+                    "Ophthalmic specialist training (see curriculum)",
+                    "Paediatric level 1 training"
+                ],
+                "indicative_length_of_training": "Six years",
+                "exams": "Certificate exam in Medical Genetics",
+                "approved_sub_specialties": [
+                    "Stroke medicine (after completion of IMY3)"
+                ],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {
+                    "applications": 62,
+                    "posts": 23,
+                    "ratio": 2.70
+                }
+            }
+        },
+        {
         "name": "Clinical neurophysiology",
         "additional_info": {
-          "current_curriculum": {
-            "title": "Clinical neurophysiology curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Core surgical training",
-            "Internal medicine - stage one",
-            "Paediatric level 1 training"
-          ],
-          "indicative_length_of_training": "Six years",
-          "exams": "",
-          "approved_sub_specialties": [
-            "Stroke medicine (after completion of IMY3)"
-          ],
-          "approved_dual_CCT_pairings": []
+            "current_curriculum": {
+                "title": "Clinical neurophysiology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Acute care common stem (Internal medicine)",
+                "Core surgical training",
+                "Internal medicine - stage one",
+                "Paediatric level 1 training"
+            ],
+            "indicative_length_of_training": "Six years",
+            "exams": "",
+            "approved_sub_specialties": [
+                "Stroke medicine (after completion of IMY3)"
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 50,
+                "posts": 8,
+                "ratio": 6.25
+            }
         }
-      },
-      {
+    },
+    {
         "name": "Clinical oncology",
         "additional_info": {
-          "current_curriculum": {
-            "title": "Clinical oncology curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
-          },
-          "core_training_options": [
-            "Internal medicine - stage one (two years)"
-          ],
-          "indicative_length_of_training": "Seven years",
-          "exams": "Fellowship of the Royal College of Radiologists (FRCR)",
-          "approved_sub_specialties": [],
-          "approved_dual_CCT_pairings": []
+            "current_curriculum": {
+                "title": "Clinical oncology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Internal medicine - stage one (two years)"
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "Fellowship of the Royal College of Radiologists (FRCR)",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 171,
+                "posts": 136,
+                "ratio": 1.26
+            }
         }
-      },
-                {
+    },
+    {
         "name": "Clinical pharmacology and therapeutics",
         "additional_info": {
             "current_curriculum": {
-            "title": "Clinical pharmacology and therapeutics curriculum 2022",
-            "link": "URL_to_current_curriculum_pdf"
+                "title": "Clinical pharmacology and therapeutics curriculum 2022",
+                "link": "URL_to_current_curriculum_pdf"
             },
             "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Internal medicine - stage one"
+                "Acute care common stem (Internal medicine)",
+                "Internal medicine - stage one"
             ],
             "indicative_length_of_training": "Seven years",
             "exams": "",
             "approved_sub_specialties": [
-            "Stroke medicine (after completion of IMY3)"
+                "Stroke medicine (after completion of IMY3)"
             ],
             "approved_dual_CCT_pairings": [
-            "General (internal) medicine"
-            ]
+                "General (internal) medicine"
+            ],
+            "competition_ratio": {
+                "applications": 25,
+                "posts": 12,
+                "ratio": 2.08
+            }
         }
-        },
-        {
+    },
+    {
         "name": "Clinical radiology",
         "additional_info": {
             "current_curriculum": {
-            "title": "Clinical radiology curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
+                "title": "Clinical radiology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
             "core_training_options": [
-            "Entry direct from foundation training"
+                "Entry direct from foundation training"
             ],
             "indicative_length_of_training": "Five years",
             "exams": "Fellowship of the Royal College of Radiologists (FRCR)",
             "approved_sub_specialties": [
-            "Interventional radiology"
+                "Interventional radiology"
             ],
             "approved_dual_CCT_pairings": [
-            "Nuclear medicine"
-            ]
+                "Nuclear medicine"
+            ],
+            "competition_ratio": {
+                "applications": 3068,
+                "posts": 350,
+                "ratio": 8.77
+            }
         }
-        },
-        {
+    },
+    {
         "name": "Community sexual and reproductive health",
         "additional_info": {
             "current_curriculum": {
-            "title": "Community sexual and reproductive health curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
+                "title": "Community sexual and reproductive health curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
             "core_training_options": [
-            "Entry direct from foundation training"
+                "Entry direct from foundation training"
             ],
             "indicative_length_of_training": "Six years",
             "exams": "Membership to the Faculty of Sexual and Reproductive Health (MFSRH)",
             "approved_sub_specialties": [],
-            "approved_dual_CCT_pairings": []
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 272,
+                "posts": 8,
+                "ratio": 34.00
+            }
         }
-        },
-        {
+    },
+    {
         "name": "Dermatology",
         "additional_info": {
             "current_curriculum": {
-            "title": "Dermatology curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
+                "title": "Dermatology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
             "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Internal medicine - stage one"
+                "Acute care common stem (Internal medicine)",
+                "Internal medicine - stage one"
             ],
             "indicative_length_of_training": "Six years",
             "exams": "Specialty Certificate Examination (SCE) in Dermatology",
             "approved_sub_specialties": [],
             "approved_dual_CCT_pairings": [
-            "Stroke medicine (after completion of IMY3)"
-            ]
+                "Stroke medicine (after completion of IMY3)"
+            ],
+            "competition_ratio": {
+                "applications": 241,
+                "posts": 32,
+                "ratio": 7.53
+            }
         }
-        },
-        {
+    },
+    {
         "name": "Diagnostic neuropathology",
         "additional_info": {
             "current_curriculum": {
-            "title": "Diagnostic neuropathology curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
+                "title": "Diagnostic neuropathology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
             "core_training_options": [
-            "Integrated cellular pathology training (ICPT)"
+                "Integrated cellular pathology training (ICPT)"
             ],
             "indicative_length_of_training": "Five-and-a-half to six years",
             "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
             "approved_sub_specialties": [],
-            "approved_dual_CCT_pairings": []
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 2,
+                "posts": 11,
+                "ratio": 0.18
+            }
         }
-        },
-        {
+    },
+    {
         "name": "Emergency medicine",
         "additional_info": {
             "current_curriculum": {
-            "title": "Emergency medicine curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
+                "title": "Emergency medicine curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
             "core_training_options": [
-            "Acute care common stem (ACCS)"
+                "Acute care common stem (ACCS)"
             ],
             "indicative_length_of_training": "Six years",
             "exams": "Fellowship of the Royal College of Emergency Medicine (FRCEM)",
             "approved_sub_specialties": [
-            "Paediatric emergency medicine",
-            "Pre-hospital emergency medicine"
+                "Paediatric emergency medicine",
+                "Pre-hospital emergency medicine"
             ],
             "approved_dual_CCT_pairings": [
-            "Intensive care medicine"
-            ]
+                "Intensive care medicine"
+            ],
+            "competition_ratio": {
+                "CT1/ST1": {
+                    "applications": 1803,
+                    "posts": 361,
+                    "ratio": 4.99
+                },
+                "ST3": {
+                    "applications": {
+                        "ACCS": 28,
+                        "DRE-EM": 241
+                    },
+                    "posts": {
+                        "ACCS": 17,
+                        "DRE-EM": 22
+                    },
+                    "ratio": {
+                        "ACCS": 1.65,
+                        "DRE-EM": 10.95
+                    }
+                },
+                "ST4": {
+                    "applications": 131,
+                    "posts": 103,
+                    "ratio": 1.27
+                }
+            }
         }
-        },
-        {
+    },
+    {
         "name": "Endocrinology and diabetes mellitus",
         "additional_info": {
             "current_curriculum": {
-            "title": "Endocrinology and diabetes mellitus curriculum 2022",
-            "link": "URL_to_current_curriculum_pdf"
+                "title": "Endocrinology and diabetes mellitus curriculum 2022",
+                "link": "URL_to_current_curriculum_pdf"
             },
             "core_training_options": [
-            "Acute care common stem (Internal medicine)",
-            "Internal medicine - stage one"
+                "Acute care common stem (Internal medicine)",
+                "Internal medicine - stage one"
             ],
             "indicative_length_of_training": "Seven years",
             "exams": "Specialty Certificate Examination (SCE) in Endocrinology and Diabetes Mellitus",
             "approved_sub_specialties": [
-            "Stroke medicine"
+                "Stroke medicine"
             ],
             "approved_dual_CCT_pairings": [
-            "General (internal) medicine"
-            ]
+                "General (internal) medicine"
+            ],
+            "competition_ratio": {
+                "applications": 282,
+                "posts": 84,
+                "ratio": 3.36
+            }
         }
-        },
-        {
+    },
+    {
         "name": "Forensic histopathology",
         "additional_info": {
             "current_curriculum": {
-            "title": "Forensic histopathology curriculum 2021",
-            "link": "URL_to_current_curriculum_pdf"
+                "title": "Forensic histopathology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
             "core_training_options": [
-            "Integrated cellular pathology training (ICPT)"
+                "Integrated cellular pathology training (ICPT)"
             ],
             "indicative_length_of_training": "Five years",
             "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
             "approved_sub_specialties": [],
-            "approved_dual_CCT_pairings": []
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {}
         }
-        },
-        
-            {
-            "name": "Gastro-enterology",
-            "additional_info": {
-                "current_curriculum": {
+    },
+    {
+        "name": "Gastro-enterology",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Gastro-enterology curriculum 2022",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Seven years",
-                "exams": "European Specialty Examination in Gastroenterology and Hepatology (ESEGH)",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "European Specialty Examination in Gastroenterology and Hepatology (ESEGH)",
+            "approved_sub_specialties": [
                 "Stroke medicine"
-                ],
-                "approved_dual_CCT_pairings": [
+            ],
+            "approved_dual_CCT_pairings": [
                 "General (internal) medicine"
-                ]
+            ],
+            "competition_ratio": {
+                "applications": 309,
+                "posts": 111,
+                "ratio": 2.78
             }
-            },
-            {
-            "name": "General (internal) medicine",
-            "additional_info": {
-                "current_curriculum": {
+        }
+    },
+    {
+        "name": "General (internal) medicine",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "General (internal) medicine curriculum 2022",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Six years",
-                "exams": "",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Six years",
+            "exams": "",
+            "approved_sub_specialties": [
                 "Stroke medicine",
                 "Acute internal medicine",
                 "Cardiology",
@@ -449,851 +569,1186 @@
                 "Respiratory medicine",
                 "Rheumatology",
                 "Tropical medicine"
-                ],
-                "approved_dual_CCT_pairings": []
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "ST4": {
+                    "applications": 103,
+                    "posts": 29,
+                    "ratio": 3.55
+                }
             }
-            },
-            {
-            "name": "General practice",
-            "additional_info": {
-                "current_curriculum": {
+        }
+    },
+    {
+        "name": "General practice",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "General practice curriculum 2019",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
-                "Broad based training (BBT)"
-                ],
-                "indicative_length_of_training": "",
-                "exams": "",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": []
-            }
             },
-            {
-            "name": "General psychiatry",
-            "additional_info": {
-                "current_curriculum": {
+            "core_training_options": [
+                "Broad based training (BBT)"
+            ],
+            "indicative_length_of_training": "",
+            "exams": "",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 10514,
+                "posts": 3935,
+                "ratio": 2.67
+            }
+        }
+    },
+    {
+        "name": "General psychiatry",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "General psychiatry curriculum 2022",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Core psychiatry"
-                ],
-                "indicative_length_of_training": "Six years",
-                "exams": "",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Six years",
+            "exams": "",
+            "approved_sub_specialties": [
                 "Addiction psychiatry",
                 "Liaison psychiatry",
                 "Rehabilitation psychiatry"
-                ],
-                "approved_dual_CCT_pairings": [
+            ],
+            "approved_dual_CCT_pairings": [
                 "Forensic psychiatry",
                 "Medical psychotherapy",
                 "Old age psychiatry"
-                ]
-            }
-            },
-            {
-            "name": "General surgery",
-            "additional_info": {
-                "current_curriculum": {
+            ],
+            "competition_ratio": {}
+        }
+    },
+    {
+        "name": "General surgery",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "General surgery curriculum 2021",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
-                "Core surgical training"
-                ],
-                "indicative_length_of_training": "",
-                "exams": "",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": []
-            }
             },
-            {
-            "name": "Genito-urinary medicine",
-            "additional_info": {
-                "current_curriculum": {
+            "core_training_options": [
+                "Core surgical training"
+            ],
+            "indicative_length_of_training": "",
+            "exams": "",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "ST3": {
+                    "applications": 515,
+                    "posts": 162,
+                    "ratio": 3.18
+                }
+            }
+        }
+    },
+    {
+        "name": "Genito-urinary medicine",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Genito-urinary medicine curriculum 2022",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Seven years",
-                "exams": [
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": [
                 "Diploma in Genitourinary Medicine",
                 "Diploma in HIV Medicine"
-                ],
-                "approved_sub_specialties": [
+            ],
+            "approved_sub_specialties": [
                 "Stroke medicine"
-                ],
-                "approved_dual_CCT_pairings": [
+            ],
+            "approved_dual_CCT_pairings": [
                 "General (internal) medicine"
-                ]
+            ],
+            "competition_ratio": {
+                "applications": 23,
+                "posts": 49,
+                "ratio": 0.47
             }
-            },
-            {
-            "name": "Geriatric medicine",
-            "additional_info": {
-                "current_curriculum": {
+        }
+    },
+    {
+        "name": "Geriatric medicine",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Geriatric medicine curriculum 2022",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Seven years",
-                "exams": "Specialty Certificate Examination (SCE) in Geriatric Medicine",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "Specialty Certificate Examination (SCE) in Geriatric Medicine",
+            "approved_sub_specialties": [
                 "Stroke medicine"
-                ],
-                "approved_dual_CCT_pairings": [
+            ],
+            "approved_dual_CCT_pairings": [
                 "General (internal) medicine"
-                ]
+            ],
+            "competition_ratio": {
+                "applications": 266,
+                "posts": 148,
+                "ratio": 1.80
             }
-            },
-            {
-            "name": "Haematology",
-            "additional_info": {
-                "current_curriculum": {
+        }
+    },
+    {
+        "name": "Haematology",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Haematology curriculum 2021",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one",
                 "Paediatric level 1 training"
-                ],
-                "indicative_length_of_training": "Seven years",
-                "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+            "approved_sub_specialties": [
                 "Stroke medicine (after completion of IMY3)"
-                ],
-                "approved_dual_CCT_pairings": []
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 199,
+                "posts": 92,
+                "ratio": 2.16
             }
-            },
-            {
-            "name": "Histopathology",
-            "additional_info": {
-                "current_curriculum": {
+        }
+    },
+    {
+        "name": "Histopathology",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Histopathology curriculum 2021",
-                "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
-                "Integrated cellular pathology training (ICPT)"
-                ],
-                "indicative_length_of_training": "Five years",
-                "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
-                "approved_sub_specialties": [
-                "Cytopathology"
-                ],
-                "approved_dual_CCT_pairings": []
-            }
+                "link": "URL_to current_curriculum_pdf"
             },
-            {
-            "name": "Immunology",
-            "additional_info": {
-                "current_curriculum": {
+            "core_training_options": [
+                "Integrated cellular pathology training (ICPT)"
+            ],
+            "indicative_length_of_training": "Five years",
+            "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+            "approved_sub_specialties": [
+                "Cytopathology"
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 380,
+                "posts": 109,
+                "ratio": 3.49
+            }
+        }
+    },
+    {
+        "name": "Immunology",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Immunology curriculum 2021",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one",
                 "Paediatric level 1 training"
-                ],
-                "indicative_length_of_training": "Seven years",
-                "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+            "approved_sub_specialties": [
                 "Stroke medicine"
-                ],
-                "approved_dual_CCT_pairings": []
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 42,
+                "posts": 7,
+                "ratio": 6.00
             }
-            },
-            {
-            "name": "Infectious diseases",
-            "additional_info": {
-                "current_curriculum": {
+        }
+    },
+    {
+        "name": "Infectious diseases",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Infectious diseases curriculum 2021",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Seven years",
-                "exams": "Combined Infection Certificate Examination (CICE) (Fellowship of the Royal College of Pathologists (FRCPath) Part 1)",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "Combined Infection Certificate Examination (CICE) (Fellowship of the Royal College of Pathologists (FRCPath) Part 1)",
+            "approved_sub_specialties": [
                 "Stroke medicine (after completion of IMY3)"
-                ],
-                "approved_dual_CCT_pairings": [
+            ],
+            "approved_dual_CCT_pairings": [
                 "General (internal) medicine",
                 "Medical microbiology",
                 "Medical virology"
-                ]
-            }
-            },
-            {
-            "name": "Intensive care medicine",
-            "additional_info": {
-                "current_curriculum": {
+            ],
+            "competition_ratio": {}
+        }
+    },
+    {
+        "name": "Intensive care medicine",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Curriculum for Intensive care medicine 2021",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (ACCS)",
                 "Core anaesthetics training",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Seven years",
-                "exams": "Fellowship of the Faculty of Intensive Care Medicine (FFICM)",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "Fellowship of the Faculty of Intensive Care Medicine (FFICM)",
+            "approved_sub_specialties": [
                 "Pre-hospital emergency medicine",
                 "Paediatric intensive care medicine"
-                ],
-                "approved_dual_CCT_pairings": [
+            ],
+            "approved_dual_CCT_pairings": [
                 "Acute internal medicine",
                 "Anaesthetics",
                 "Emergency medicine",
                 "Renal medicine",
                 "Respiratory medicine"
-                ]
+            ],
+            "competition_ratio": {
+                "applications": 392,
+                "posts": 178,
+                "ratio": 2.20
             }
-            },
-            {
-            "name": "Medical microbiology",
-            "additional_info": {
-                "current_curriculum": {
+        }
+    },
+    {
+        "name": "Medical microbiology",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Medical microbiology curriculum 2021",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Six years",
-                "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": [
+            ],
+            "indicative_length_of_training": "Six years",
+            "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [
                 "Infectious diseases",
                 "Tropical medicine"
-                ]
-            }
-            },
-            {
-            "name": "Medical oncology",
-            "additional_info": {
-                "current_curriculum": {
+            ],
+            "competition_ratio": {}
+        }
+    },
+    {
+        "name": "Medical oncology",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Medical oncology curriculum 2021",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Six years",
-                "exams": "Specialty Certificate Examination (SCE) in Medical Oncology",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": [
+            ],
+            "indicative_length_of_training": "Six years",
+            "exams": "Specialty Certificate Examination (SCE) in Medical Oncology",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [
                 "Stroke medicine"
-                ]
+            ],
+            "competition_ratio": {
+                "applications": 187,
+                "posts": 92,
+                "ratio": 2.03
             }
-            },
-            {
-            "name": "Medical ophthalmology",
-            "additional_info": {
-                "current_curriculum": {
+        }
+    },
+    {
+        "name": "Medical ophthalmology",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Medical ophthalmology curriculum 2021",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one",
                 "Ophthalmic specialist training (see curriculum)"
-                ],
-                "indicative_length_of_training": "Seven years",
-                "exams": "Fellowship of the Royal College of Ophthalmologists (FRCOphth) Part 1",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "Fellowship of the Royal College of Ophthalmologists (FRCOphth) Part 1",
+            "approved_sub_specialties": [
                 "Stroke medicine (after completion of IMY3)"
-                ],
-                "approved_dual_CCT_pairings": []
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 15,
+                "posts": 5,
+                "ratio": 3.00
             }
-            },
-            {
-            "name": "Medical psychotherapy",
-            "additional_info": {
-                "current_curriculum": {
+        }
+    },
+    {
+        "name": "Medical psychotherapy",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Medical psychotherapy curriculum 2022",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Core psychiatry"
-                ],
-                "indicative_length_of_training": "Six years",
-                "exams": "",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": [
+            ],
+            "indicative_length_of_training": "Six years",
+            "exams": "",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [
                 "Child and adolescent psychiatry",
                 "Forensic psychiatry",
                 "General psychiatry"
-                ]
-            }
-            },
-            {
-            "name": "Medical virology",
-            "additional_info": {
-                "current_curriculum": {
+            ],
+            "competition_ratio": {}
+        }
+    },
+    {
+        "name": "Medical virology",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Medical virology curriculum 2021",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Six years",
-                "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": [
+            ],
+            "indicative_length_of_training": "Six years",
+            "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [
                 "Infectious diseases",
                 "Tropical medicine"
-                ]
-            }
-            },
-            {
-            "name": "Neurology",
-            "additional_info": {
-                "current_curriculum": {
+            ],
+            "competition_ratio": {}
+        }
+    },
+    {
+        "name": "Neurology",
+        "additional_info": {
+            "current_curriculum": {
                 "title": "Neurology curriculum 2022",
                 "link": "URL_to_current_curriculum_pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Eight years",
-                "exams": "Specialty Certificate Examination (SCE) in Neurology",
-                "approved_sub_specialties": [
+            ],
+            "indicative_length_of_training": "Eight years",
+            "exams": "Specialty Certificate Examination (SCE) in Neurology",
+            "approved_sub_specialties": [
                 "Stroke medicine"
-                ],
-                "approved_dual_CCT_pairings": [
+            ],
+            "approved_dual_CCT_pairings": [
                 "General (internal) medicine"
-                ]
+            ],
+            "competition_ratio": {
+                "applications": 147,
+                "posts": 62,
+                "ratio": 2.37
             }
+        }
+    },
+    {
+        "name": "Neurosurgery",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Neurosurgery curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
-            {
-                "specialty": "Neurosurgery",
-                "current_curriculum": "Neurosurgery curriculum 2021",
-                "core_training_options": [
-                    "Neurosurgery is a run through programme with entry at ST1 and includes core surgery"
-                ],
-                "indicative_length_of_training_including_core": "Eight years",
-                "run_through_training_option": "Entry at ST1 with an indicative length of training of seven years",
-                "exams": "Intercollegiate Specialty Board (ISB) examination in Neurosurgery",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": []
-            },
-            {
-                "specialty": "Nuclear Medicine",
-                "current_curriculum": "Nuclear medicine curriculum 2021",
-                "core_training_options": [
-                    "Acute care common stem (Internal medicine)",
-                    "Core surgical training",
-                    "Internal medicine - stage one",
-                    "Paediatric level 1 training"
-                ],
-                "indicative_length_of_training_including_core": "Eight years",
-                "exams": [
-                    "Fellowship of the Royal College of Radiologists (FRCR)",
-                    "Diploma in Nuclear medicine"
-                ],
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": [
-                    "Clinical radiology"
-                ]
-            },
-            {
-                "specialty": "Obstetrics and Gynaecology",
-                "current_curriculum": "Obstetrics and gynaecology is a run through programme starting at ST1",
-                "core_training_options": [],
-                "indicative_length_of_training_including_core": "Seven years",
-                "exams": [
-                    "Membership of the Royal College of Obstetrics and Gynaecology (MRCOG) Part 1",
-                    "MRCOG Part 2",
-                    "MRCOG Part 3"
-                ],
-                "approved_sub_specialties": [
-                    "Gynaecological oncology",
-                    "Maternal and fetal medicine",
-                    "Reproductive medicine",
-                    "Urogynaecology"
-                ],
-                "approved_dual_CCT_pairings": []
-            },
-            {
-                "specialty": "Occupational Medicine",
-                "current_curriculum": "Occupational medicine curriculum 2022",
-                "core_training_options": "24 months of specialty training",
-                "indicative_length_of_training_including_core": "Four years",
-                "exams": [
-                    "Membership of the Faculty of Occupational Medicine (MFOM) Part 1",
-                    "MFOM Part 2"
-                ],
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": []
-            },
-            {
-                "specialty": "Old Age Psychiatry",
-                "current_curriculum": "Old age psychiatry curriculum 2022",
-                "core_training_options": [
-                    "Core psychiatry"
-                ],
-                "indicative_length_of_training_including_core": "Six years",
-                "exams": [],
-                "approved_sub_specialties": [
-                    "Liaison psychiatry",
-                    "General psychiatry"
-                ],
-                "approved_dual_CCT_pairings": []
-            },
-            {
-                "specialty": "Ophthalmology",
-                "current_curriculum": "Ophthalmology curriculum 2024",
-                "core_training_options": [
-                    "Ophthalmology is a run through programme with entry at ST1"
-                ],
-                "indicative_length_of_training_including_core": "5.5 to 7 years",
-                "exams": [
-                    "Fellowship of the Royal College of Ophthalmologists (FRCOphth)",
-                    "Refraction Certificate exam"
-                ],
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": []
-            },
-            {
-                "specialty": "Oral and Maxillo-facial Surgery",
-                "current_curriculum": "Oral and maxillo-facial surgery curriculum 2021",
-                "core_training_options": [
-                    "Core surgical training"
-                ],
-                "indicative_length_of_training_including_core": "Seven years",
-                "run_through_training_option": "Entry at ST1 with an indicative length of training of six years",
-                "exams": "Intercollegiate Specialty Board (ISB) exam in OMFS",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": []
-            },
-            {
-                "specialty": "Otolaryngology",
-                "current_curriculum": "Otolaryngology curriculum 2021",
-                "core_training_options": [
-                    "Core surgical training"
-                ],
-                "indicative_length_of_training_including_core": "Eight years",
-                "run_through_training_option": "Entry at ST1 with an indicative length of training of seven years",
-                "exams": "Intercollegiate Specialty Board (ISB) exam in Otolaryngology",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": []
-            },
-            {
-                "specialty": "Paediatric and Perinatal Pathology",
-                "current_curriculum": "Paediatric and perinatal pathology curriculum 2021",
-                "core_training_options": [
-                    "Integrated cellular pathology training (ICPT)"
-                ],
-                "indicative_length_of_training_including_core": "Five-and-a-half years",
-                "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": []
-            },
-            {
-                "specialty": "Paediatric Cardiology",
-                "current_curriculum": "Paediatric cardiology curriculum 2021",
-                "core_training_options": [
-                    "Internal medicine - stage one + indicative 12 months dedicated paediatric training",
-                    "Paediatric level 1 training"
-                ],
-                "indicative_length_of_training_including_core": "Eight years",
-                "exams": [],
-                "approved_sub_specialties": [],
-                "approved_dual_CCT_pairings": [
-                    "Stroke medicine (after completion of IMY3)"
-                ]
-            },
-            {"Paediatric surgery": {
-                "current_curriculum": {
-                    "title": "Paediatric surgery curriculum 2021",
-                    "link": "Paediatric surgery curriculum 2021",
-                    "core_training_options": [
-                        "Core surgical training"
-                    ],
-                    "indicative_length_of_training_including_core": "Eight years",
-                    "exams": [
-                        "Intercollegiate Specialty Board (ISB) examination in Paediatric surgery"
-                    ],
-                    "approved_sub_specialities": [],
-                    "approved_dual_CCT_pairings": []
+            "core_training_options": [
+                "Neurosurgery is a run through programme with entry at ST1 and includes core surgery"
+            ],
+            "indicative_length_of_training_including_core": "Eight years",
+            "run_through_training_option": "Entry at ST1 with an indicative length of training of seven years",
+            "exams": "Intercollegiate Specialty Board (ISB) examination in Neurosurgery",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "ST1": {
+                    "applications": 255,
+                    "posts": 20,
+                    "ratio": 12.75
                 },
-                "previous_editions": [
-                    {
-                        "title": "Paediatric surgery curriculum 2015",
-                        "link": "Paediatric surgery curriculum 2015"
-                    }
-                ]
+                "ST2": {
+                    "applications": 39,
+                    "posts": 2,
+                    "ratio": 19.50
+                }
+            }
+        }
+    },
+    {
+        "name": "Nuclear medicine",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Nuclear medicine curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
-            "Paediatrics": {
-                "current_curriculum": {
-                    "title": "Paediatrics curriculum 2023",
-                    "link": "Paediatrics curriculum 2023",
-                    "core_training_options": [
-                        "Core Paediatrics"
-                    ],
-                    "indicative_length_of_training_including_core": "Seven years",
-                    "exams": [
-                        "Foundation of Practice (FOP)",
-                        "Theory and Science (TAS)",
-                        "Applied Knowledge in Practice (AKP)",
-                        "MRCPCH Clinical examination"
-                    ],
-                    "approved_sub_specialities": [
-                        "Child mental health",
-                        "Community child health",
-                        "Neonatal medicine",
-                        "Paediatric allergy, immunology and infectious diseases",
-                        "Paediatric clinical pharmacology and therapeutics",
-                        "Paediatric diabetes and endocrinology",
-                        "Paediatric emergency medicine",
-                        "Paediatric gastroenterology, hepatology and nutrition",
-                        "Paediatric inherited metabolic medicine",
-                        "Paediatric intensive care medicine",
-                        "Paediatric nephrology",
-                        "Paediatric neurodisability",
-                        "Paediatric neurology",
-                        "Paediatric oncology",
-                        "Paediatric palliative medicine",
-                        "Paediatric respiratory medicine",
-                        "Paediatric rheumatology"
-                    ],
-                    "approved_dual_CCT_pairings": []
+            "core_training_options": [
+                "Acute care common stem (Internal medicine)",
+                "Core surgical training",
+                "Internal medicine - stage one",
+                "Paediatric level 1 training"
+            ],
+            "indicative_length_of_training_including_core": "Eight years",
+            "exams": [
+                "Fellowship of the Royal College of Radiologists (FRCR)",
+                "Diploma in Nuclear medicine"
+            ],
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [
+                "Clinical radiology"
+            ],
+            "competition_ratio": {
+                "applications": 17,
+                "posts": 8,
+                "ratio": 2.13
+            }
+        }
+    },
+    {
+        "name": "Obstetrics and Gynaecology",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Obstetrics and gynaecology is a run through programme starting at ST1",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [],
+            "indicative_length_of_training_including_core": "Seven years",
+            "exams": [
+                "Membership of the Royal College of Obstetrics and Gynaecology (MRCOG) Part 1",
+                "MRCOG Part 2",
+                "MRCOG Part 3"
+            ],
+            "approved_sub_specialties": [
+                "Gynaecological oncology",
+                "Maternal and fetal medicine",
+                "Reproductive medicine",
+                "Urogynaecology"
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "ST1": {
+                    "applications": 1347,
+                    "posts": 312,
+                    "ratio": 4.32
                 },
-                "previous_editions": [
-                    {
-                        "title": "Paediatrics curriculum 2018",
-                        "link": "Paediatrics curriculum 2018"
-                    },
-                    {
-                        "title": "Level 1 paediatrics syllabus 2018",
-                        "link": "Level 1 paediatrics syllabus 2018"
-                    },
-                    {
-                        "title": "Level 2 paediatrics syllabus 2018",
-                        "link": "Level 2 paediatrics syllabus 2018"
-                    },
-                    {
-                        "title": "Level 3 paediatrics syllabus 2018",
-                        "link": "Level 3 paediatrics syllabus 2018"
-                    },
-                    {
-                        "title": "General paediatrics syllabus 2021",
-                        "link": "General paediatrics syllabus 2021"
-                    },
-                    {
-                        "title": "Assessment strategy 2018",
-                        "link": "Assessment strategy 2018"
-                    }
-                ]
+                "ST3": {
+                    "applications": 345,
+                    "posts": 88,
+                    "ratio": 3.92
+                }
+            }
+        }
+    },
+    {
+        "name": "Occupational medicine",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Occupational medicine curriculum 2022",
+                "link": "URL_to_current_curriculum_pdf"
             },
-            "Palliative medicine": {
-                "current_curriculum": {
-                    "title": "Palliative medicine curriculum 2022",
-                    "link": "Palliative medicine curriculum 2022",
-                    "core_training_options": [
-                        "Acute care common stem (Internal medicine)",
-                        "Internal medicine - stage one"
-                    ],
-                    "indicative_length_of_training_including_core": "Seven years",
-                    "exams": [
-                        "Specialty Certificate Examination (SCE) in Palliative Medicine"
-                    ],
-                    "approved_sub_specialities": [
-                        "Stroke medicine"
-                    ],
-                    "approved_dual_CCT_pairings": [
-                        "General (internal) medicine"
-                    ]
+            "core_training_options": "24 months of specialty training",
+            "indicative_length_of_training_including_core": "Four years",
+            "exams": [
+                "Membership of the Faculty of Occupational Medicine (MFOM) Part 1",
+                "MFOM Part 2"
+            ],
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 50,
+                "posts": 7,
+                "ratio": 7.14
+            }
+        }
+    },
+    {
+        "name": "Old Age Psychiatry",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Old age psychiatry curriculum 2022",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Core psychiatry"
+            ],
+            "indicative_length_of_training_including_core": "Six years",
+            "exams": [],
+            "approved_sub_specialties": [
+                "Liaison psychiatry",
+                "General psychiatry"
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {}
+        }
+    },
+    {
+        "name": "Ophthalmology",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Ophthalmology curriculum 2024",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Ophthalmology is a run through programme with entry at ST1"
+            ],
+            "indicative_length_of_training_including_core": "5.5 to 7 years",
+            "exams": [
+                "Fellowship of the Royal College of Ophthalmologists (FRCOphth)",
+                "Refraction Certificate exam"
+            ],
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "ST1": {
+                    "applications": 971,
+                    "posts": 98,
+                    "ratio": 9.91
                 },
-                "previous_editions": [
-                    {
-                        "title": "Palliative medicine curriculum 2014",
-                        "link": "Palliative medicine curriculum 2014"
-                    }
-                ]
+                "ST3": {
+                    "applications": 73,
+                    "posts": 21,
+                    "ratio": 3.48
+                }
+            }
+        }
+    },
+    {
+        "name": "Oral and Maxillo-facial Surgery",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Oral and maxillo-facial surgery curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
-            "Pharmaceutical medicine": {
-                "current_curriculum": {
-                    "title": "Pharmaceutical medicine curriculum 2021",
-                    "link": "Pharmaceutical medicine curriculum 2021",
-                    "core_training_options": [
-                        "At least four years clinical training and/or experience (including Foundation)"
-                    ],
-                    "indicative_length_of_training_including_core": "Four years",
-                    "exams": [
-                        "Diploma in Pharmaceutical medicine (DPM)"
-                    ],
-                    "approved_sub_specialities": [],
-                    "approved_dual_CCT_pairings": []
+            "core_training_options": [
+                "Core surgical training"
+            ],
+            "indicative_length_of_training_including_core": "Seven years",
+            "run_through_training_option": "Entry at ST1 with an indicative length of training of six years",
+            "exams": "Intercollegiate Specialty Board (ISB) exam in OMFS",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "ST1": {
+                    "applications": 38,
+                    "posts": 12,
+                    "ratio": 3.17
                 },
-                "previous_editions": [
-                    {
-                        "title": "Pharmaceutical medicine curriculum 2014",
-                        "link": "Pharmaceutical medicine curriculum 2014"
-                    }
-                ]
+                "ST3": {
+                    "applications": 22,
+                    "posts": 30,
+                    "ratio": 0.73
+                }
+            }
+        }
+    },
+    {
+        "name": "Otolaryngology",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Otolaryngology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
             },
-            "Plastic surgery": {
-                "current_curriculum": {
-                    "title": "Plastic surgery curriculum 2021",
-                    "link": "Plastic surgery curriculum 2021",
-                    "core_training_options": [
-                        "Core surgical training"
-                    ],
-                    "indicative_length_of_training_including_core": "Eight years",
-                    "exams": [
-                        "Intercollegiate Specialty Board (ISB) examination in Plastic Surgery"
-                    ],
-                    "approved_sub_specialities": [],
-                    "approved_dual_CCT_pairings": []
+            "core_training_options": [
+                "Core surgical training"
+            ],
+            "indicative_length_of_training_including_core": "Eight years",
+            "run_through_training_option": "Entry at ST1 with an indicative length of training of seven years",
+            "exams": "Intercollegiate Specialty Board (ISB) exam in Otolaryngology",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 152,
+                "posts": 60,
+                "ratio": 2.53
+            }
+        }
+    },
+    {
+        "name": "Paediatric and Perinatal Pathology",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Paediatric and perinatal pathology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Integrated cellular pathology training (ICPT)"
+            ],
+            "indicative_length_of_training_including_core": "Five-and-a-half years",
+            "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 6,
+                "posts": 7,
+                "ratio": 0.86
+            }
+        }
+    },
+    {
+        "name": "Paediatric Cardiology",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Paediatric cardiology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Internal medicine - stage one + indicative 12 months dedicated paediatric training",
+                "Paediatric level 1 training"
+            ],
+            "indicative_length_of_training_including_core": "Eight years",
+            "exams": [],
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [
+                "Stroke medicine (after completion of IMY3)"
+            ],
+            "competition_ratio": {
+                "applications": 58,
+                "posts": 11,
+                "ratio": 5.27
+            }
+        }
+    },
+    {
+        "name": "Paediatric surgery",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Paediatric surgery curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Core surgical training"
+            ],
+            "indicative_length_of_training_including_core": "Eight years",
+            "exams": [
+                "Intercollegiate Specialty Board (ISB) examination in Paediatric surgery"
+            ],
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 74,
+                "posts": 18,
+                "ratio": 4.11
+            }
+        },
+        "previous_editions": [
+            {
+                "title": "Paediatric surgery curriculum 2015",
+                "link": "URL_to_previous_curriculum_pdf"
+            }
+        ]
+    },
+    {
+        "name": "Paediatrics",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Paediatrics curriculum 2023",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Core Paediatrics"
+            ],
+            "indicative_length_of_training_including_core": "Seven years",
+            "exams": [
+                "Foundation of Practice (FOP)",
+                "Theory and Science (TAS)",
+                "Applied Knowledge in Practice (AKP)",
+                "MRCPCH Clinical examination"
+            ],
+            "approved_sub_specialties": [
+                "Child mental health",
+                "Community child health",
+                "Neonatal medicine",
+                "Paediatric allergy, immunology and infectious diseases",
+                "Paediatric clinical pharmacology and therapeutics",
+                "Paediatric diabetes and endocrinology",
+                "Paediatric emergency medicine",
+                "Paediatric gastroenterology, hepatology and nutrition",
+                "Paediatric inherited metabolic medicine",
+                "Paediatric intensive care medicine",
+                "Paediatric nephrology",
+                "Paediatric neurodisability",
+                "Paediatric neurology",
+                "Paediatric oncology",
+                "Paediatric palliative medicine",
+                "Paediatric respiratory medicine",
+                "Paediatric rheumatology"
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "ST1": {
+                    "applications": 1231,
+                    "posts": 506,
+                    "ratio": 2.43
                 },
-                "previous_editions": [
-                    {
-                        "title": "Plastic surgery curriculum 2018",
-                        "link": "Plastic surgery curriculum 2018"
-                    }
-                ]
-            },
-            "Psychiatry of learning disability": {
-                "current_curriculum": {
-                    "title": "Psychiatry of learning disability curriculum 2022",
-                    "link": "Psychiatry of learning disability curriculum 2022",
-                    "core_training_options": [
-                        "Core psychiatry"
-                    ],
-                    "indicative_length_of_training_including_core": "Six years (uncoupled or run-through)",
-                    "exams": [
-                        "Run-through trainees will complete the Membership of the Royal College of Psychiatrists (MRCPsych) examinations prior to entry into ST4: Paper A, Paper B, Clinical Assessment of Skills and Competencies (CASC)"
-                    ],
-                    "approved_sub_specialities": [],
-                    "approved_dual_CCT_pairings": [
-                        "Child and adolescent psychiatry"
-                    ]
+                "ST3": {
+                    "applications": 340,
+                    "posts": 57,
+                    "ratio": 5.96
                 },
-                "previous_editions": [
-                    {
-                        "title": "Psychiatry of learning disability curriculum 2016",
-                        "link": "Psychiatry of learning disability curriculum 2016"
-                    }
-                ]
+                "ST4": {
+                    "applications": 361,
+                    "posts": 71,
+                    "ratio": 5.08
+                }
+            }
+        },
+        "previous_editions": [
+            {
+                "title": "Paediatrics curriculum 2018",
+                "link": "URL_to_previous_curriculum_pdf"
             },
-            "Public health medicine": {
-                "current_curriculum": {
-                    "title": "Public health medicine curriculum 2022",
-                    "link": "Public health medicine curriculum 2022",
-                    "core_training_options": [
-                        "Entry direct from foundation training"
-                    ],
-                    "indicative_length_of_training_including_core": "Five years",
-                    "exams": [
-                        "Diplomate membership of the Faculty of Public Health examination (DFPH)",
-                        "Membership of the Faculty of Public Health examination (MFPH)"
-                    ],
-                    "approved_sub_specialities": [],
-                    "approved_dual_CCT_pairings": [
-                        "General practice"
-                    ]
-                },
-                "previous_editions": [
-                    {
-                        "title": "Public health medicine curriculum 2015",
-                        "link": "Public health medicine curriculum 2015"
-                    }
-                ]
+            {
+                "title": "Level 1 paediatrics syllabus 2018",
+                "link": "URL_to_previous_curriculum_pdf"
             },
-            "Rehabilitation medicine": {
-                "current_curriculum": {
-                    "title": "Rehabilitation medicine curriculum 2021",
-                    "link": "Rehabilitation medicine curriculum 2021",
-                    "core_training_options": [
-                        "Acute care common stem (Internal medicine)",
-                        "Core anaesthetics training",
-                        "Core psychiatry training",
-                        "Core surgical training",
-                        "General Practice",
-                        "Internal medicine - stage one",
-                        "Obstetrics and gynaecology (see curriculum)",
-                        "Ophthalmic specialist training (see curriculum)",
-                        "Paediatric level 1 training"
-                    ],
-                    "indicative_length_of_training_including_core": "Six years",
-                    "exams": [],
-                    "approved_sub_specialities": [
-                        "Stroke medicine (after completion of IMY3)"
-                    ],
-                    "approved_dual_CCT_pairings": []
-                },
-                "previous_editions": [
-                    {
-                        "title": "Rehabilitation medicine curriculum 2010",
-                        "link": "Rehabilitation medicine curriculum 2010"
-                    }
-                ]
+            {
+                "title": "Level 2 paediatrics syllabus 2018",
+                "link": "URL_to_previous_curriculum_pdf"
             },
-            "Renal medicine": {
+            {
+                "title": "Level 3 paediatrics syllabus 2018",
+                "link": "URL_to_previous_curriculum_pdf"
+            },
+            {
+                "title": "General paediatrics syllabus 2021",
+                "link": "URL_to_previous_curriculum_pdf"
+            },
+            {
+                "title": "Assessment strategy 2018",
+                "link": "URL_to_previous_curriculum_pdf"
+            }
+        ]
+    },
+    {
+        "name": "Palliative medicine",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Palliative medicine curriculum 2022",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Acute care common stem (Internal medicine)",
+                "Internal medicine - stage one"
+            ],
+            "indicative_length_of_training_including_core": "Seven years",
+            "exams": [
+                "Specialty Certificate Examination (SCE) in Palliative Medicine"
+            ],
+            "approved_sub_specialties": [
+                "Stroke medicine"
+            ],
+            "approved_dual_CCT_pairings": [
+                "General (internal) medicine"
+            ],
+            "competition_ratio": {
+                "applications": 69,
+                "posts": 60,
+                "ratio": 1.15
+            }
+        },
+        "previous_editions": [
+            {
+                "title": "Palliative medicine curriculum 2014",
+                "link": "URL_to_previous_curriculum_pdf"
+            }
+        ]
+    },
+    {
+        "name": "Pharmaceutical medicine",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Pharmaceutical medicine curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "At least four years clinical training and/or experience (including Foundation)"
+            ],
+            "indicative_length_of_training_including_core": "Four years",
+            "exams": [
+                "Diploma in Pharmaceutical medicine (DPM)"
+            ],
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {}
+        },
+        "previous_editions": [
+            {
+                "title": "Pharmaceutical medicine curriculum 2014",
+                "link": "URL_to_previous_curriculum_pdf"
+            }
+        ]
+    },
+    {
+        "name": "Plastic surgery",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Plastic surgery curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Core surgical training"
+            ],
+            "indicative_length_of_training_including_core": "Eight years",
+            "exams": [
+                "Intercollegiate Specialty Board (ISB) examination in Plastic Surgery"
+            ],
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 220,
+                "posts": 52,
+                "ratio": 4.23
+            }
+        },
+        "previous_editions": [
+            {
+                "title": "Plastic surgery curriculum 2018",
+                "link": "URL_to_previous_curriculum_pdf"
+            }
+        ]
+    },
+    {
+        "name": "Psychiatry of learning disability",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Psychiatry of learning disability curriculum 2022",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Core psychiatry"
+            ],
+            "indicative_length_of_training_including_core": "Six years (uncoupled or run-through)",
+            "exams": [
+                "Run-through trainees will complete the Membership of the Royal College of Psychiatrists (MRCPsych) examinations prior to entry into ST4: Paper A, Paper B, Clinical Assessment of Skills and Competencies (CASC)"
+            ],
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [
+                "Child and adolescent psychiatry"
+            ],
+            "competition_ratio": {}
+        },
+        "previous_editions": [
+            {
+                "title": "Psychiatry of learning disability curriculum 2016",
+                "link": "URL_to_previous_curriculum_pdf"
+            }
+        ]
+    },
+    {
+        "name": "Public health medicine",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Public health medicine curriculum 2022",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Entry direct from foundation training"
+            ],
+            "indicative_length_of_training_including_core": "Five years",
+            "exams": [
+                "Diplomate membership of the Faculty of Public Health examination (DFPH)",
+                "Membership of the Faculty of Public Health examination (MFPH)"
+            ],
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [
+                "General practice"
+            ],
+            "competition_ratio": {
+                "applications": 1258,
+                "posts": 124,
+                "ratio": 10.15
+            }
+        },
+        "previous_editions": [
+            {
+                "title": "Public health medicine curriculum 2015",
+                "link": "URL_to_previous_curriculum_pdf"
+            }
+        ]
+    },
+    {
+        "name": "Rehabilitation medicine",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Rehabilitation medicine curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Acute care common stem (Internal medicine)",
+                "Core anaesthetics training",
+                "Core psychiatry training",
+                "Core surgical training",
+                "General Practice",
+                "Internal medicine - stage one",
+                "Obstetrics and gynaecology (see curriculum)",
+                "Ophthalmic specialist training (see curriculum)",
+                "Paediatric level 1 training"
+            ],
+            "indicative_length_of_training_including_core": "Six years",
+            "exams": [],
+            "approved_sub_specialties": [
+                "Stroke medicine (after completion of IMY3)"
+            ],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 41,
+                "posts": 14,
+                "ratio": 2.93
+            }
+        },
+        "previous_editions": [
+            {
+                "title": "Rehabilitation medicine curriculum 2010",
+                "link": "URL_to_previous_curriculum_pdf"
+            }
+        ]
+    },
+    {
+        "name": "Renal medicine",
+        "additional_info": {
             "current_curriculum": {
                 "title": "Renal medicine curriculum 2022",
-                "link": "Renal medicine curriculum 2022",
-                "core_training_options": [
-                    "Acute care common stem (Internal medicine)",
-                    "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training_including_core": "Seven years",
-                "exams": [
-                    "European Specialty Examination in Nephrology (ESENeph)"
-                ],
-                "approved_sub_specialities": [
-                    "Stroke medicine"
-                ],
-                "approved_dual_CCT_pairings": [
-                    "General (internal) medicine",
-                    "Intensive care medicine (including General (internal) medicine)"
-                ]
+                "link": "URL_to_current_curriculum_pdf"
             },
-            "previous_editions": [
-                {
-                    "title": "Renal medicine curriculum 2010 (amended 2019)",
-                    "link": "Renal medicine curriculum 2010 (amended 2019)"
-                }
-            ]
-            },
-            "Respiratory medicine": {
-                "current_curriculum": {
-                "name": "Respiratory medicine curriculum 2022",
+            "core_training_options": [
+                "Acute care common stem (Internal medicine)",
+                "Internal medicine - stage one"
+            ],
+            "indicative_length_of_training_including_core": "Seven years",
+            "exams": [
+                "European Specialty Examination in Nephrology (ESENeph)"
+            ],
+            "approved_sub_specialties": [
+                "Stroke medicine"
+            ],
+            "approved_dual_CCT_pairings": [
+                "General (internal) medicine",
+                "Intensive care medicine (including General (internal) medicine)"
+            ],
+            "competition_ratio": {
+                "applications": 163,
+                "posts": 52,
+                "ratio": 3.13
+            }
+        },
+        "previous_editions": [
+            {
+                "title": "Renal medicine curriculum 2010 (amended 2019)",
+                "link": "URL_to_previous_curriculum_pdf"
+            }
+        ]
+    },
+    {
+        "name": "Respiratory medicine",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Respiratory medicine curriculum 2022",
                 "link": "https://example.com/respiratory_medicine_curriculum_2022.pdf"
-                },
-                "previous_editions": {
-                "name": "Respiratory medicine curriculum 2015",
+            },
+            "previous_editions": {
+                "title": "Respiratory medicine curriculum 2015",
                 "link": "https://example.com/respiratory_medicine_curriculum_2015.pdf"
-                },
-                "core_training_options": "Acute care common stem (Internal medicine)",
-                "indicative_length_of_training": "Seven years",
-                "exams": "Specialty Certificate Examination (SCE) in Respiratory medicine",
-                "approved_sub_specialties": "Stroke medicine",
-                "approved_dual_CCT_pairings": [
+            },
+            "core_training_options": [
+                "Acute care common stem (Internal medicine)"
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "Specialty Certificate Examination (SCE) in Respiratory medicine",
+            "approved_sub_specialties": [
+                "Stroke medicine"
+            ],
+            "approved_dual_CCT_pairings": [
                 "Intensive care medicine",
                 "General (internal) medicine (including General (internal) medicine)"
-                ]
-            },
-            "Rheumatology": {
-                "current_curriculum": {
-                "name": "Rheumatology curriculum 2022",
+            ],
+            "competition_ratio": {
+                "applications": 343,
+                "posts": 109,
+                "ratio": 3.15
+            }
+        }
+    },
+    {
+        "name": "Rheumatology",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Rheumatology curriculum 2022",
                 "link": "https://example.com/rheumatology_curriculum_2022.pdf"
-                },
-                "previous_editions": {
-                "name": "Rheumatology curriculum 2010",
-                "link": "https://example.com/rheumatology_curriculum_2010.pdf"
-                },
-                "core_training_options": "Acute care common stem (Internal medicine)",
-                "indicative_length_of_training": "Seven years",
-                "exams": "Specialty Certificate Examination (SCE) in Rheumatology",
-                "approved_sub_specialties": "Stroke medicine",
-                "approved_dual_CCT_pairings": [
-                "General (internal) medicine"
-                ]
             },
-            "Sport and exercise medicine": {
-                "current_curriculum": {
-                "name": "Curriculum for sport and exercise medicine 2021",
+            "previous_editions": {
+                "title": "Rheumatology curriculum 2010",
+                "link": "https://example.com/rheumatology_curriculum_2010.pdf"
+            },
+            "core_training_options": [
+                "Acute care common stem (Internal medicine)"
+            ],
+            "indicative_length_of_training": "Seven years",
+            "exams": "Specialty Certificate Examination (SCE) in Rheumatology",
+            "approved_sub_specialties": [
+                "Stroke medicine"
+            ],
+            "approved_dual_CCT_pairings": [
+                "General (internal) medicine"
+            ],
+            "competition_ratio": {
+                "applications": 193,
+                "posts": 44,
+                "ratio": 4.39
+            }
+        }
+    },
+    {
+        "name": "Sport and exercise medicine",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Curriculum for sport and exercise medicine 2021",
                 "link": "https://example.com/sport_exercise_medicine_curriculum_2021.pdf"
-                },
-                "previous_editions": {
-                "name": "Curriculum for sport and exercise medicine 2010",
+            },
+            "previous_editions": {
+                "title": "Curriculum for sport and exercise medicine 2010",
                 "link": "https://example.com/sport_exercise_medicine_curriculum_2010.pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "General practice",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Six years",
-                "exams": "Membership exam of the Faculty of Sport and Exercise Medicine (MFSEM)",
-                "approved_sub_specialties": "Stroke medicine (after completion of IMY3)"
-            },
-            "Trauma and orthopaedic surgery": {
-                "current_curriculum": {
-                "name": "Trauma and orthopaedic surgery curriculum 2021",
+            ],
+            "indicative_length_of_training": "Six years",
+            "exams": "Membership exam of the Faculty of Sport and Exercise Medicine (MFSEM)",
+            "approved_sub_specialties": [
+                "Stroke medicine (after completion of IMY3)"
+            ],
+            "competition_ratio": {
+                "applications": 62,
+                "posts": 9,
+                "ratio": 6.89
+            }
+        }
+    },
+    {
+        "name": "Trauma and orthopaedic surgery",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Trauma and orthopaedic surgery curriculum 2021",
                 "link": "https://example.com/trauma_orthopaedic_surgery_curriculum_2021.pdf"
-                },
-                "previous_editions": {
-                "name": "Trauma and orthopaedic surgery curriculum 2018",
-                "link": "https://example.com/trauma_orthopaedic_surgery_curriculum_2018.pdf"
-                },
-                "core_training_options": "Core surgical training",
-                "indicative_length_of_training": "Eight years",
-                "run_through_training_option": "Entry at ST1 with an indicative length of training of eight years",
-                "exams": "Intercollegiate Specialty Board (ISB) exam in Trauma and orthopaedic surgery"
             },
-            "Tropical medicine": {
-                "current_curriculum": {
-                "name": "Tropical medicine curriculum 2021",
+            "previous_editions": {
+                "title": "Trauma and orthopaedic surgery curriculum 2018",
+                "link": "https://example.com/trauma_orthopaedic_surgery_curriculum_2018.pdf"
+            },
+            "core_training_options": [
+                "Core surgical training"
+            ],
+            "indicative_length_of_training": "Eight years",
+            "run_through_training_option": "Entry at ST1 with an indicative length of training of eight years",
+            "exams": "Intercollegiate Specialty Board (ISB) exam in Trauma and orthopaedic surgery",
+            "competition_ratio": {
+                "applications": 483,
+                "posts": 160,
+                "ratio": 3.02
+            }
+        }
+    },
+    {
+        "name": "Tropical medicine",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Tropical medicine curriculum 2021",
                 "link": "https://example.com/tropical_medicine_curriculum_2021.pdf"
-                },
-                "previous_editions": {
-                "name": "Tropical medicine curriculum 2014",
+            },
+            "previous_editions": {
+                "title": "Tropical medicine curriculum 2014",
                 "link": "https://example.com/tropical_medicine_curriculum_2014.pdf"
-                },
-                "core_training_options": [
+            },
+            "core_training_options": [
                 "Acute care common stem (Internal medicine)",
                 "Internal medicine - stage one"
-                ],
-                "indicative_length_of_training": "Eight years",
-                "exams": "Combined Infection Certificate Examination (CICE) (Fellowship of the Royal College of Pathologists (FRCPath) Part 1)",
-                "approved_sub_specialties": "Stroke medicine (after completion of IMY3)",
-                "approved_dual_CCT_pairings": [
+            ],
+            "indicative_length_of_training": "Eight years",
+            "exams": "Combined Infection Certificate Examination (CICE) (Fellowship of the Royal College of Pathologists (FRCPath) Part 1)",
+            "approved_sub_specialties": [
+                "Stroke medicine (after completion of IMY3)"
+            ],
+            "approved_dual_CCT_pairings": [
                 "General (internal) medicine",
                 "Medical microbiology",
                 "Medical virology"
-                ]
-            },
-            "Urology": {
-                "current_curriculum": {
-                "name": "Urology curriculum 2021",
+            ],
+            "competition_ratio": {}
+        }
+    },
+    {
+        "name": "Urology",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Urology curriculum 2021",
                 "link": "https://example.com/urology_curriculum_2021.pdf"
-                },
-                "previous_editions": {
-                "name": "Urology curriculum 2016",
-                "link": "https://example.com/urology_curriculum_2016.pdf"
-                },
-                "core_training_options": "Core surgical training",
-                "indicative_length_of_training": "Seven years",
-                "run_through_training_option": "Entry at ST1 with an indicative length of training of seven years",
-                "exams": "Intercollegiate Specialty Board (ISB) examination in Urology"
             },
-            "Vascular surgery": {
-                "current_curriculum": {
-                "name": "Vascular surgery curriculum 2021",
+            "previous_editions": {
+                "title": "Urology curriculum 2016",
+                "link": "https://example.com/urology_curriculum_2016.pdf"
+            },
+            "core_training_options": [
+                "Core surgical training"
+            ],
+            "indicative_length_of_training": "Seven years",
+            "run_through_training_option": "Entry at ST1 with an indicative length of training of seven years",
+            "exams": "Intercollegiate Specialty Board (ISB) examination in Urology",
+            "competition_ratio": {
+                "applications": 252,
+                "posts": 82,
+                "ratio": 3.07
+            }
+        }
+    },
+    {
+        "name": "Vascular surgery",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Vascular surgery curriculum 2021",
                 "link": "https://example.com/vascular_surgery_curriculum_2021.pdf"
-                },
-                "previous_editions": {
-                "name": "Vascular surgery curriculum 2018",
+            },
+            "previous_editions": {
+                "title": "Vascular surgery curriculum 2018",
                 "link": "https://example.com/vascular_surgery_curriculum_2018.pdf"
-                },
-                "core_training_options": "Core surgical training",
-                "indicative_length_of_training": "Eight years",
-                "run_through_training_option": "Entry at ST1 with an indicative length of training of eight years",
-                "exams": "Intercollegiate Specialty Board (ISB) exam in Vascular Surgery"
+            },
+            "core_training_options": [
+                "Core surgical training"
+            ],
+            "indicative_length_of_training": "Eight years",
+            "run_through_training_option": "Entry at ST1 with an indicative length of training of eight years",
+            "exams": "Intercollegiate Specialty Board (ISB) exam in Vascular Surgery",
+            "competition_ratio": {
+                "applications": 191,
+                "posts": 42,
+                "ratio": 4.55
             }
-            }
-        ]
+        }
     }
-
-
-
+]
+}
