@@ -10,6 +10,7 @@
  * - About: About page component
  * - Articles: Articles page component
  * - Guides: Guides page component
+ * - Specialties: Specialties page component
  * - Research: Research page component
  * - Theory: Theory page component
  * - FooterStyles.css: CSS styles for the Footer component
@@ -22,6 +23,7 @@
  * - "/quiz": Quiz component
  * - "/articles": Articles component
  * - "/guides": Guides component
+ * - "/specialties": Specialties component
  * - "/research": Research component
  * - "/theory": Theory component
  * 
@@ -41,6 +43,7 @@ import Quiz from './Quiz'; // Import Quiz page component
 import About from './pages/About'; // Import About page component
 import Articles from './pages/Articles'; // Import Articles page component
 import Guides from './pages/Guides'; // Import Guides page component
+import Specialties from './pages/Specialties'; // Import Specialties page component
 import Research from './pages/Research'; // Import Research page component
 import Theory from './pages/Theory'; // Import Theory page component
 
@@ -56,6 +59,7 @@ function App() {
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/articles" element={<Articles />} />
             <Route path="/guides" element={<Guides />} />
+            <Route path="/specialties" element={<Specialties />} />
             <Route path="/research" element={<Research />} />
             <Route path="/theory" element={<Theory />} />
           </Routes>
