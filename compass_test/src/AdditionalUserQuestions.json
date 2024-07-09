@@ -1,0 +1,478 @@
+{
+    "AdditionalUserQuestions": [
+      {
+        "Question": "Have you completed any AMKs?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          }
+        ]
+      },
+      {
+        "Question": "Do you want personalized help by uploading your feedback form and grade?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          }
+        ]
+      },
+      {
+        "Question": "What is your age?",
+        "Answers": []
+      },
+      {
+        "Question": "What is your gender?",
+        "Answers": [
+          {
+            "Text": "Male",
+            "Option": "A"
+          },
+          {
+            "Text": "Female",
+            "Option": "B"
+          },
+          {
+            "Text": "Other",
+            "Option": "C"
+          },
+          {
+            "Text": "Prefer not to say",
+            "Option": "D"
+          }
+        ]
+      },
+      {
+        "Question": "What year of medical school are you currently in?",
+        "Answers": [
+          {
+            "Text": "Pre-med",
+            "Option": "A"
+          },
+          {
+            "Text": "Year 1",
+            "Option": "B"
+          },
+          {
+            "Text": "Year 2",
+            "Option": "C"
+          },
+          {
+            "Text": "Year 3",
+            "Option": "D"
+          },
+          {
+            "Text": "Year 4",
+            "Option": "E"
+          },
+          {
+            "Text": "Year 5",
+            "Option": "F"
+          },
+          {
+            "Text": "Post med",
+            "Option": "G"
+          }
+        ]
+      },
+      {
+        "Question": "Which medical school are you attending?",
+        "Answers": []
+      },
+      {
+        "Question": "What is your current academic performance or ranking?",
+        "Answers": []
+      },
+      {
+        "Question": "Have you completed any clinical placements? If yes, which ones?",
+        "Answers": []
+      },
+      {
+        "Question": "Which specialties have you found most interesting during your placements?",
+        "Answers": []
+      },
+      {
+        "Question": "Do you have any healthcare experience prior to medical school?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          }
+        ]
+      },
+      {
+        "Question": "What extracurricular activities are you involved in at your medical school?",
+        "Answers": []
+      },
+      {
+        "Question": "How many hours per week do you dedicate to studying outside of class?",
+        "Answers": []
+      },
+      {
+        "Question": "What is your preferred method of study (e.g., group study, solo study, online resources)?",
+        "Answers": []
+      },
+      {
+        "Question": "Do you have a mentor or advisor within the medical field?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          }
+        ]
+      },
+      {
+        "Question": "How do you manage stress and workload?",
+        "Answers": []
+      },
+      {
+        "Question": "What is your primary motivation for choosing a medical specialty?",
+        "Answers": []
+      },
+      {
+        "Question": "What factors are most important to you in selecting a specialty (e.g., work-life balance, income, patient interaction)?",
+        "Answers": []
+      },
+      {
+        "Question": "How important is work-life balance to you?",
+        "Answers": [
+          {
+            "Text": "Very important",
+            "Option": "A"
+          },
+          {
+            "Text": "Somewhat important",
+            "Option": "B"
+          },
+          {
+            "Text": "Not important",
+            "Option": "C"
+          }
+        ]
+      },
+      {
+        "Question": "What are your long-term career goals in medicine?",
+        "Answers": []
+      },
+      {
+        "Question": "Are you interested in academic medicine or primarily clinical practice?",
+        "Answers": [
+          {
+            "Text": "Academic medicine",
+            "Option": "A"
+          },
+          {
+            "Text": "Clinical practice",
+            "Option": "B"
+          },
+          {
+            "Text": "Both",
+            "Option": "C"
+          }
+        ]
+      },
+      {
+        "Question": "Do you plan to pursue further specialization or fellowship training?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          },
+          {
+            "Text": "Undecided",
+            "Option": "C"
+          }
+        ]
+      },
+      {
+        "Question": "What are your thoughts on research and its role in your career?",
+        "Answers": []
+      },
+      {
+        "Question": "Are you interested in teaching or mentoring future medical students?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          }
+        ]
+      },
+      {
+        "Question": "How important is salary in your decision-making process?",
+        "Answers": [
+          {
+            "Text": "Very important",
+            "Option": "A"
+          },
+          {
+            "Text": "Somewhat important",
+            "Option": "B"
+          },
+          {
+            "Text": "Not important",
+            "Option": "C"
+          }
+        ]
+      },
+      {
+        "Question": "Are you willing to work in underserved or rural areas within the UK?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          },
+          {
+            "Text": "Undecided",
+            "Option": "C"
+          }
+        ]
+      },
+      {
+        "Question": "How do you feel about the length and intensity of specialty training?",
+        "Answers": []
+      },
+      {
+        "Question": "What is your preferred work environment (e.g., NHS hospital, private practice, academic setting)?",
+        "Answers": []
+      },
+      {
+        "Question": "How do you handle high-pressure situations?",
+        "Answers": []
+      },
+      {
+        "Question": "Are you interested in global health or working abroad during your career?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          }
+        ]
+      },
+      {
+        "Question": "How do you feel about long working hours or being on-call?",
+        "Answers": []
+      },
+      {
+        "Question": "What type of patient population do you prefer working with (e.g., children, elderly, specific diseases)?",
+        "Answers": []
+      },
+      {
+        "Question": "How would you rate your manual dexterity and interest in surgical skills?",
+        "Answers": []
+      },
+      {
+        "Question": "Do you enjoy patient interaction or prefer more technical, behind-the-scenes work?",
+        "Answers": []
+      },
+      {
+        "Question": "How important is job stability and security to you?",
+        "Answers": [
+          {
+            "Text": "Very important",
+            "Option": "A"
+          },
+          {
+            "Text": "Somewhat important",
+            "Option": "B"
+          },
+          {
+            "Text": "Not important",
+            "Option": "C"
+          }
+        ]
+      },
+      {
+        "Question": "Are you interested in medical innovation and technology?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          }
+        ]
+      },
+      {
+        "Question": "Do you have any specific medical role models or influences in the UK healthcare system?",
+        "Answers": []
+      },
+      {
+        "Question": "How do you feel about collaborative work versus independent practice?",
+        "Answers": []
+      },
+      {
+        "Question": "What are your thoughts on the ethical aspects of medical practice?",
+        "Answers": []
+      },
+      {
+        "Question": "Are you interested in healthcare policy-making or administration within the NHS?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+          },
+          {
+            "Text": "No",
+            "Option": "B"
+          }
+        ]
+      },
+      {
+        "Question": "How important is geographic location in your specialty choice?",
+        "Answers": [
+          {
+            "Text": "Very important",
+            "Option": "A"
+          },
+          {
+            "Text": "Somewhat important",
+            "Option": "B"
+          },
+          {
+            "Text": "Not important",
+            "Option": "C"
+          }
+        ]
+      },
+      {
+        "Question": "Are you considering a dual degree (e.g., MBBS/PhD, MBBS/MBA)?",
+        "Answers": [
+          {
+            "Text": "Yes",
+            "Option": "A"
+        },
+        {
+          "Text": "No",
+          "Option": "B"
+        },
+        {
+          "Text": "Maybe",
+          "Option": "C"
+        }
+      ]
+    },
+    {
+      "Question": "What languages do you speak fluently?",
+      "Answers": []
+    },
+    {
+      "Question": "How important is mentorship in your career development?",
+      "Answers": [
+        {
+          "Text": "Very important",
+          "Option": "A"
+        },
+        {
+          "Text": "Somewhat important",
+          "Option": "B"
+        },
+        {
+          "Text": "Not important",
+          "Option": "C"
+        }
+      ]
+    },
+    {
+      "Question": "What medical conferences or workshops have you attended?",
+      "Answers": []
+    },
+    {
+      "Question": "How do you stay updated with medical advancements and news?",
+      "Answers": []
+    },
+    {
+      "Question": "Do you have any personal experiences that influence your specialty choice?",
+      "Answers": []
+    },
+    {
+      "Question": "Are you interested in telemedicine or digital health?",
+      "Answers": [
+        {
+          "Text": "Yes",
+          "Option": "A"
+        },
+        {
+          "Text": "No",
+          "Option": "B"
+        }
+      ]
+    },
+    {
+      "Question": "How do you view the future of your potential specialty within the NHS?",
+      "Answers": []
+    },
+    {
+      "Question": "How important is family support in your career decisions?",
+      "Answers": [
+        {
+          "Text": "Very important",
+          "Option": "A"
+        },
+        {
+          "Text": "Somewhat important",
+          "Option": "B"
+        },
+        {
+          "Text": "Not important",
+          "Option": "C"
+        }
+      ]
+    },
+    {
+      "Question": "What is your opinion on multidisciplinary team-based care within the NHS?",
+      "Answers": []
+    },
+    {
+      "Question": "How do you envision your typical workday in your preferred specialty?",
+      "Answers": []
+    },
+    {
+      "Question": "Are you aware of the UK Foundation Programme and its role in your specialty training?",
+      "Answers": [
+        {
+          "Text": "Yes",
+          "Option": "A"
+        },
+        {
+          "Text": "No",
+          "Option": "B"
+        }
+      ]
+    }
+]
+}
