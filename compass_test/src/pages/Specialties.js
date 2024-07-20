@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import specialtiesData from '../SpecialtyOverview.json'; // Adjust the path as necessary
 import mbtiData from '../MBTI_specialties.json'; // Adjust the path as necessary
+import LadderDiagram from '../careerTimeline';
 
 const Specialties = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState(null);
@@ -73,6 +74,8 @@ const Specialties = () => {
           })}
         </div>
       )}
+
+      <LadderDiagram />
     </div>
   );
 };
