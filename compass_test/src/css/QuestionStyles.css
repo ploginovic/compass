@@ -30,22 +30,26 @@ input[type="radio"]:checked + label {
 }
 
 /* New quiz-container class for styling the quiz area */
-/* Add this to your existing QuestionStyles.css */
 .quiz-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  margin: 0 auto; /* Centers the container horizontally */
+  width: 100%; /* Make the container span the full width */
   padding: 20px;
   background-color: #a1ffcd22;
   border-radius: 22px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 /* Styles for the current and inactive questions */
 .question {
   margin-bottom: 20px;
+}
+
+.question.answered {
+  filter: none;
+  pointer-events: auto; /* Enable interaction with answered questions */
 }
 
 .question.inactive {
@@ -57,4 +61,3 @@ input[type="radio"]:checked + label {
   filter: none;
   pointer-events: auto; /* Enable interaction with the current question */
 }
-

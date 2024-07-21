@@ -1,0 +1,198 @@
+
+{
+    "ISTJ": {
+      "type": "Introverted–Sensing–Thinking–Judging",
+      "specialties": [
+        "Dermatology",
+        "Obstetrics and Gynaecology",
+        "General practice",
+        "Urology",
+        "Trauma and orthopaedic surgery"
+      ]
+    },
+    "ISFJ": {
+      "type": "Introverted–Sensing–Feeling–Judging",
+      "specialties": [
+        "Anaesthetics",
+        "Ophthalmology",
+        "General practice",
+        "Paediatrics"
+      ]
+    },
+    "ISTP": {
+      "type": "Introverted–Sensing–Thinking–Perceptive",
+      "specialties": [
+        "Otolaryngology",
+        "Anaesthetics",
+        "Clinical radiology",
+        "Clinical oncology",
+        "Nuclear medicine",
+        "Ophthalmology",
+        "General practice"
+      ]
+    },
+    "ISFP": {
+      "type": "Introverted–Sensing–Feeling–Perceptive",
+      "specialties": [
+        "Anaesthetics",
+        "Urology",
+        "General practice",
+        "Cardio-thoracic surgery"
+      ]
+    },
+    "INFJ": {
+      "type": "Introverted–Intuitive–Feeling–Judging",
+      "specialties": [
+        "General psychiatry",
+        "Child and adolescent psychiatry",
+        "Acute internal medicine",
+        "Cardio-thoracic surgery",
+        "General surgery",
+        "Chemical pathology",
+        "Diagnostic neuropathology",
+        "Forensic histopathology",
+        "Histopathology",
+        "Paediatric and Perinatal Pathology"
+      ]
+    },
+    "ESTJ": {
+      "type": "Extroverted–Sensing–Thinking–Judging",
+      "specialties": [
+        "Obstetrics and Gynaecology",
+        "General practice",
+        "General surgery",
+        "Trauma and orthopaedic surgery",
+        "Paediatrics"
+      ]
+    },
+    "ESFJ": {
+      "type": "Extroverted–Sensing–Feeling–Judging",
+      "specialties": [
+        "Paediatrics",
+        "Trauma and orthopaedic surgery",
+        "Otolaryngology",
+        "General practice",
+        "Acute internal medicine"
+      ]
+    },
+    "ENFP": {
+      "type": "Extroverted–Intuitive–Feeling–Perceptive",
+      "specialties": [
+        "General psychiatry",
+        "Child and adolescent psychiatry",
+        "Dermatology",
+        "Otolaryngology",
+        "Paediatrics"
+      ]
+    },
+    "INTJ": {
+      "type": "Introverted–Intuitive–Thinking–Judging",
+      "specialties": [
+        "General psychiatry",
+        "Child and adolescent psychiatry",
+        "Chemical pathology",
+        "Diagnostic neuropathology",
+        "Forensic histopathology",
+        "Histopathology",
+        "Paediatric and Perinatal Pathology",
+        "Neurology",
+        "Acute internal medicine",
+        "Anaesthetics"
+      ]
+    },
+    "INFP": {
+      "type": "Introverted–Intuitive–Feeling–Perceptive",
+      "specialties": [
+        "General psychiatry",
+        "Child and adolescent psychiatry",
+        "Cardiology",
+        "Paediatric Cardiology",
+        "Neurology",
+        "Dermatology",
+        "Chemical pathology",
+        "Diagnostic neuropathology",
+        "Forensic histopathology",
+        "Histopathology",
+        "Paediatric and Perinatal Pathology"
+      ]
+    },
+    "INTP": {
+      "type": "Introverted–Intuitive–Thinking–Perceptive",
+      "specialties": [
+        "Neurology",
+        "Chemical pathology",
+        "Diagnostic neuropathology",
+        "Forensic histopathology",
+        "Histopathology",
+        "Paediatric and Perinatal Pathology",
+        "General psychiatry",
+        "Child and adolescent psychiatry",
+        "Cardiology",
+        "Paediatric Cardiology",
+        "Cardio-thoracic surgery"
+      ]
+    },
+    "ESTP": {
+      "type": "Extroverted–Sensing–Thinking–Perceptive",
+      "specialties": [
+        "Trauma and orthopaedic surgery",
+        "Dermatology",
+        "General practice",
+        "Clinical radiology",
+        "Clinical oncology",
+        "Nuclear medicine",
+        "General surgery"
+      ]
+    },
+    "ESFP": {
+      "type": "Extroverted–Sensing–Feeling–Perceptive",
+      "specialties": [
+        "Ophthalmology",
+        "Cardio-thoracic surgery",
+        "Obstetrics and Gynaecology",
+        "Trauma and orthopaedic surgery",
+        "General surgery"
+      ]
+    },
+    "ENTP": {
+      "type": "Extroverted–Intuitive–Thinking–Perceptive",
+      "specialties": [
+        "Otolaryngology",
+        "General psychiatry",
+        "Child and adolescent psychiatry",
+        "Clinical radiology",
+        "Clinical oncology",
+        "Nuclear medicine",
+        "Paediatrics",
+        "Chemical pathology",
+        "Diagnostic neuropathology",
+        "Forensic histopathology",
+        "Histopathology",
+        "Paediatric and Perinatal Pathology"
+      ]
+    },
+    "ENFJ": {
+      "type": "Extroverted–Intuitive–Feeling–Judging",
+      "specialties": [
+        "Cardio-thoracic surgery",
+        "Dermatology",
+        "General psychiatry",
+        "Child and adolescent psychiatry",
+        "Ophthalmology",
+        "Clinical radiology",
+        "Clinical oncology",
+        "Nuclear medicine"
+      ]
+    },
+    "ENTJ": {
+      "type": "Extroverted–Intuitive–Thinking–Judging",
+      "specialties": [
+        "Neurology",
+        "Cardiology",
+        "Paediatric Cardiology",
+        "Urology",
+        "Cardio-thoracic surgery",
+        "Acute internal medicine"
+      ]
+    }
+  }

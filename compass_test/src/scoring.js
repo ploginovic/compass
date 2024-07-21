@@ -1,4 +1,24 @@
-// scoring.js
+/**
+ * scoring.js
+ * 
+ * This module provides functions to handle scoring logic for a quiz, particularly for calculating MBTI (Myers-Briggs Type Indicator) types.
+ * 
+ * Functions:
+ * - `getOppositeDimension(dimension)`: Returns the opposite MBTI dimension for a given dimension.
+ * - `updateScores(scores, dimension, option)`: Updates the scores based on the selected answer option.
+ * - `calculateMBTI(scores)`: Calculates the MBTI type based on the scores.
+ * 
+ * @module scoring
+ */
+
+/**
+ * Returns the opposite MBTI dimension for a given dimension.
+ * 
+ * @param {string} dimension - The MBTI dimension ('E', 'I', 'S', 'N', 'T', 'F', 'J', 'P').
+ * @returns {string} - The opposite MBTI dimension.
+ * @example
+ * getOppositeDimension('E'); // Returns 'I'
+ */
 
 export const getOppositeDimension = (dimension) => {
     return dimension === 'E' ? 'I' : 

@@ -11,11 +11,12 @@ const menuItems = [
     ],
   },
   {
-    title: 'Whatevs',
+    title: 'Theory and Specialties',
     link: '/premium-suites',
     submenu: [
       { title: 'New Research', link: '/research' },
       { title: 'Theory', link: '/theory' },
+      { title: 'Specialties', link: '/specialties' },
     ],
   },
 ];
