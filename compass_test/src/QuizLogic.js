@@ -1,43 +1,6 @@
-/**
- * Custom hook `useQuizLogic` that manages the state and logic for a quiz application.
- * 
- * This hook handles:
- * - Current question index (`currentQuestion`)
- * - User's scores for each dimension (`scores`)
- * - Selected answers for each question (`selectedAnswers`)
- * - List of answered questions (`answeredQuestions`)
- * 
- * State Persistence:
- * - The state is saved to and retrieved from localStorage to persist across sessions.
- * 
- * Functions:
- * - `resetQuiz`: Resets the quiz state and clears localStorage.
- * - `handleAnswerOptionClick`: Updates scores, selected answers, and answered questions when an answer option is selected.
- * 
- * Dependencies:
- * - `questions` from './questions.json': Array of quiz questions.
- * - `updateScores` and `calculateMBTI` from './scoring': Functions to update scores and calculate MBTI type.
- * 
- * @returns {object} - The current state and functions to manage the quiz logic.
- * @property {number} currentQuestion - The index of the current question.
- * @property {object} scores - The user's scores for each dimension.
- * @property {array} selectedAnswers - The selected answers for each question.
- * @property {array} answeredQuestions - The list of answered question IDs.
- * @property {function} handleAnswerOptionClick - Function to handle answer option selection.
- * @property {function} resetQuiz - Function to reset the quiz state.
- * 
- * @example
- * const {
- *   currentQuestion,
- *   scores,
- *   selectedAnswers,
- *   answeredQuestions,
- *   handleAnswerOptionClick
- * } = useQuizLogic();
- */
 import { useState, useEffect } from 'react';
 import questions from './questions.json'; // Import questions
-import { updateScores, calculateMBTI } from './scoring';
+import { updateScores, calculateScores } from './scoring';
 
 const useQuizLogic = () => {
   const [currentQuestion, setCurrentQuestion] = useState(() => {
@@ -108,7 +71,7 @@ const useQuizLogic = () => {
     setScores(prevScores => updateScores(prevScores, dimension, option));
     setSelectedAnswers(prev => {
       const newAnswers = [...prev];
-      newAnswers[index] = option; // or however you store the selected answer
+      newAnswers[index] = option;
       return newAnswers;
     });
     setAnsweredQuestions(prev => {
@@ -116,20 +79,26 @@ const useQuizLogic = () => {
       if (!newAnswered.includes(index)) {
         newAnswered.push(index);
       }
-      console.log('Updated Answered Questions:', newAnswered);
       return newAnswered;
     });
 
     const nextQuestion = index + 1;
-    console.log('Updated Answered Questions:', answeredQuestions);
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
-      // Calculate the user's MBTI type based on scores
-      const mbtiType = calculateMBTI(scores);
-      alert(`You have finished the quiz! Your MBTI type is: ${mbtiType}`);
+      // Display the user's scores
+      const finalScores = calculateScores(scores);
+      alert(`You have finished the quiz! Your scores are: ${JSON.stringify(finalScores)}`);
       resetQuiz();
     }
+  };
+
+  const handleSelectAnswer = (answer, index) => {
+    setSelectedAnswers(prev => {
+      const newAnswers = [...prev];
+      newAnswers[index] = answer;
+      return newAnswers;
+    });
   };
 
   return {
@@ -137,8 +106,11 @@ const useQuizLogic = () => {
     scores,
     selectedAnswers,
     answeredQuestions,
-    handleAnswerOptionClick
+    handleAnswerOptionClick,
+    handleSelectAnswer,
+    resetQuiz
   };
 }
 
 export default useQuizLogic;
+

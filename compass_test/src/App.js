@@ -39,7 +39,7 @@ import Header from './Header';
 import './css/HeaderStyles.css'; // Style for Header
 import './css/QuestionStyles.css'; // Style for Question and Quiz
 import Home from './pages/Home'; // Import Home page component
-import Quiz from './Quiz'; // Import Quiz page component
+import Quiz from './pages/Quiz'; // Import Quiz page component
 import About from './pages/About'; // Import About page component
 import Articles from './pages/Articles'; // Import Articles page component
 import Guides from './pages/Guides'; // Import Guides page component

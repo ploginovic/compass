@@ -1,73 +1,20 @@
 [
     {
-        "question": "At a party do you?",
-        "dimension": "E", 
-        "answers": [
-        {
-            "text": "Talk to or interact with many people including strangers",
-            "option": "A" 
-        },
-        {
-            "text": "Talk to or interact with a few people known to you",
-            "option": "B" 
-        }
-        ]
+        "question": "You regularly make new friends.",
+        "dimension": "E"
     },
     {
-        "question": "Are you more?",
-        "dimension": "E", 
-        "answers": [
-        {
-            "text": "Realistic (you don't tend to guess or speculate what if...)",
-            "option": "A" 
-        },
-        {
-            "text": "A person who thinks about what might be or guesses rather than a realist",
-            "option": "B" 
-        }
-        ]
+        "question": "Complex and novel ideas excite you more than simple and straightforward ones.",
+        "dimension": "N"
     },
     {
-        "question": "It is worse to?",
-        "dimension": "E", 
-        "answers": [
-        {
-            "text": "Have your 'head in the clouds' / dreamer",
-            "option": "A" 
-        },
-        {
-            "text": "Be stuck in a rut doing the same thing all the time (routine)",
-            "option": "B" 
-        }
-        ]
+        "question": "You usually feel more persuaded by what resonates emotionally with you than by factual arguments.",
+        "dimension": "F"
     },
     {
-        "question": "Doesnt matter, youre still a GP",
-        "dimension": "E", 
-        "answers": [
-        {
-            "text": "Yay",
-            "option": "A" 
-        },
-        {
-            "text": ":D",
-            "option": "B" 
-        }
-        ]
-    },
-    {
-        "question": "Click here to find out the result",
-        "dimension": "E", 
-        "answers": [
-        {
-            "text": "Yay",
-            "option": "A" 
-        },
-        {
-            "text": ":D",
-            "option": "B" 
-        }
-        ]
+        "question": "Your living and working spaces are clean and organized.",
+        "dimension": "J"
     }
+    
+
 ]
-  
