@@ -46,6 +46,8 @@ import Guides from './pages/Guides'; // Import Guides page component
 import Specialties from './pages/Specialties'; // Import Specialties page component
 import Research from './pages/Research'; // Import Research page component
 import Theory from './pages/Theory'; // Import Theory page component
+import Login from './Login'; // Import Login component
+
 
 function App() {
   return (
@@ -62,6 +64,7 @@ function App() {
             <Route path="/specialties" element={<Specialties />} />
             <Route path="/research" element={<Research />} />
             <Route path="/theory" element={<Theory />} />
+            <Route path="/login" element={<Login />} /> {/* Add Login route */}
           </Routes>
         </div>
         <Footer />
