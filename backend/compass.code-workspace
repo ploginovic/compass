@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "compass",
+			"path": "../compass"
+		},
+		{
+			"name": "backend",
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
