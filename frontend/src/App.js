@@ -47,6 +47,7 @@ import Specialties from './pages/Specialties'; // Import Specialties page compon
 import Research from './pages/Research'; // Import Research page component
 import Theory from './pages/Theory'; // Import Theory page component
 import Login from './Login'; // Import Login component
+import Results from './Results';
 
 
 function App() {
@@ -59,6 +60,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/quiz" element={<Quiz />} />
+
+            <Route path="/results" element={<Results />} />
             <Route path="/articles" element={<Articles />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/specialties" element={<Specialties />} />

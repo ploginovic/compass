@@ -14,5 +14,69 @@
     {
         "question": "Your living and working spaces are clean and organized.",
         "dimension": "J"
+    },
+    {
+        "question": "You find the idea of networking or promoting yourself to strangers very daunting.",
+        "dimension": "I"
+    },
+    {
+        "question": "You prioritize and plan tasks effectively, often completing them well before the deadline.",
+        "dimension": "J"
+    },
+    {
+        "question": "People's stories and emotions speak louder to you than numbers or data.",
+        "dimension": "F"
+    },
+    {
+        "question": "You like to use organizing tools like schedules and lists.",
+        "dimension": "J"
+    },
+    {
+        "question": "Even a small mistake can cause you to doubt your overall abilities and knowledge.",
+        "dimension": "T"
+    },
+    {
+        "question": "You feel comfortable just walking up to someone you find interesting and striking up a conversation.",
+        "dimension": "E"
+    },
+    {
+        "question": "You are not too interested in discussions about various interpretations of creative works.",
+        "dimension": "S"
+    },
+    {
+        "question": "You prioritize facts over people's feelings when determining a course of action.",
+        "dimension": "T"
+    },
+    {
+        "question": "You find the idea of networking or promoting yourself to strangers very daunting.",
+        "dimension": "I"
+    },
+    {
+        "question": "You prioritize and plan tasks effectively, often completing them well before the deadline.",
+        "dimension": "J"
+    },
+    {
+        "question": "People's stories and emotions speak louder to you than numbers or data.",
+        "dimension": "F"
+    },
+    {
+        "question": "You like to use organizing tools like schedules and lists.",
+        "dimension": "J"
+    },
+    {
+        "question": "Even a small mistake can cause you to doubt your overall abilities and knowledge.",
+        "dimension": "T"
+    },
+    {
+        "question": "You feel comfortable just walking up to someone you find interesting and striking up a conversation.",
+        "dimension": "E"
+    },
+    {
+        "question": "You are not too interested in discussions about various interpretations of creative works.",
+        "dimension": "S"
+    },
+    {
+        "question": "You prioritize facts over people's feelings when determining a course of action.",
+        "dimension": "T"
     }
 ]

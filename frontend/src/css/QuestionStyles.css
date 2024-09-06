@@ -108,3 +108,50 @@ input[type="radio"]:checked + label.likert-circle {
 .refresh-button:hover {
   background-color: #0056b3;
 }
+
+.go-back-button {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.go-back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+  position: fixed; /* Fixed at the top of the window */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align to the left edge of the window */
+  width: 100%; /* Full width of the window */
+  z-index: 100; /* Make sure it's above other content */
+  background-color: white; /* Optional: Add a background color */
+  padding: 10px; /* Optional: Add some padding for space around the bar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%; /* Full width inside the container */
+  height: 20px; /* Height of the progress bar */
+  background-color: #e0e0e0; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure rounded corners stay applied */
+}
+
+/* Progress (filled portion) */
+.progress {
+  height: 100%; /* Full height of the progress bar */
+  background-color: #4caf50; /* Green color for progress */
+  transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+

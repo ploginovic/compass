@@ -19,6 +19,7 @@ const Login = () => {
             return;
         }
         try {
+            // eslint-disable-next-line no-unused-vars
             const response = await axios.post('/login', { email, password });
             alert('You have logged in!');
         } catch (error) {
@@ -29,6 +30,7 @@ const Login = () => {
     const handleRegisterSubmit = async (event) => {
         event.preventDefault();
         try {
+            // eslint-disable-next-line no-unused-vars
             const response = await axios.post('/register', { email: registerEmail, password: registerPassword });
             setIsRegistered(true);
             setShowLogin(true);

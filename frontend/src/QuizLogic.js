@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import questions from './questions.json'; // Import questions
+import { useNavigate } from 'react-router-dom';  // Import the useNavigate hook
+import questions from './questions.json';
 import { updateScores, calculateScores } from './scoring';
 
 const useQuizLogic = () => {
@@ -7,6 +8,7 @@ const useQuizLogic = () => {
     const savedCurrentQuestion = localStorage.getItem('currentQuestion');
     return savedCurrentQuestion !== null ? JSON.parse(savedCurrentQuestion) : 0;
   });
+  
   const [scores, setScores] = useState(() => {
     const savedScores = localStorage.getItem('scores');
     return savedScores !== null ? JSON.parse(savedScores) : {
@@ -20,14 +22,21 @@ const useQuizLogic = () => {
       P: 0
     };
   });
+  
   const [selectedAnswers, setSelectedAnswers] = useState(() => {
     const savedSelectedAnswers = localStorage.getItem('selectedAnswers');
     return savedSelectedAnswers !== null ? JSON.parse(savedSelectedAnswers) : [];
   });
+  
   const [answeredQuestions, setAnsweredQuestions] = useState(() => {
     const savedAnsweredQuestions = localStorage.getItem('answeredQuestions');
     return savedAnsweredQuestions !== null ? JSON.parse(savedAnsweredQuestions) : [];
   });
+  
+  const [page, setPage] = useState(0);  // New state to handle pagination
+  const questionsPerPage = 7;  // Define how many questions per page
+  
+  const navigate = useNavigate();  // Initialize the useNavigate hook
 
   useEffect(() => {
     localStorage.setItem('currentQuestion', JSON.stringify(currentQuestion));
@@ -39,12 +48,12 @@ const useQuizLogic = () => {
 
   useEffect(() => {
     localStorage.setItem('selectedAnswers', JSON.stringify(selectedAnswers));
-    console.log('Selected Answers:', selectedAnswers); // Log selected answers
+    console.log('Selected Answers:', selectedAnswers); 
   }, [selectedAnswers]);
 
   useEffect(() => {
     localStorage.setItem('answeredQuestions', JSON.stringify(answeredQuestions));
-    console.log('Answered Questions:', answeredQuestions); // Log answered questions
+    console.log('Answered Questions:', answeredQuestions); 
   }, [answeredQuestions]);
 
   const resetQuiz = () => {
@@ -61,6 +70,7 @@ const useQuizLogic = () => {
     });
     setSelectedAnswers([]);
     setAnsweredQuestions([]);
+    setPage(0);  // Reset the page to 0
     localStorage.removeItem('currentQuestion');
     localStorage.removeItem('scores');
     localStorage.removeItem('selectedAnswers');
@@ -86,10 +96,18 @@ const useQuizLogic = () => {
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
     } else {
-      // Display the user's scores
       const finalScores = calculateScores(scores);
-      alert(`You have finished the quiz! Your scores are: ${JSON.stringify(finalScores)}`);
+      console.log("Final Scores:", finalScores);
+
+      // Navigate to results page and pass finalScores in the state
+      navigate('/results', { state: { finalScores } });
+      
       resetQuiz();
+    }
+
+    // If it's the 7th question on the current page, move to the next page
+    if ((index + 1) % questionsPerPage === 0) {
+      setPage(prevPage => prevPage + 1);
     }
   };
 
@@ -101,6 +119,18 @@ const useQuizLogic = () => {
     });
   };
 
+  const goToNextPage = () => {
+    if ((page + 1) * questionsPerPage < questions.length) {
+      setPage(prevPage => prevPage + 1);
+    }
+  };
+
+  const goToPreviousPage = () => {
+    if (page > 0) {
+      setPage(prevPage => prevPage - 1);
+    }
+  };
+
   return {
     currentQuestion,
     scores,
@@ -108,9 +138,12 @@ const useQuizLogic = () => {
     answeredQuestions,
     handleAnswerOptionClick,
     handleSelectAnswer,
-    resetQuiz
+    resetQuiz,
+    page,  // Expose page state
+    goToNextPage,  // Expose function to move to the next page
+    goToPreviousPage,  // Expose function to move to the previous page
+    questionsPerPage  // Expose questions per page
   };
-}
+};
 
 export default useQuizLogic;
-
