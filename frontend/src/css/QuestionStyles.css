@@ -129,8 +129,8 @@ input[type="radio"]:checked + label.likert-circle {
 
 /* Progress Bar Container */
 .progress-bar-container {
-  position: fixed; /* Fixed at the top of the window */
-  top: 0; /* Align it to the top */
+  position: fixed ; /* Fixed at the top of the window */
+  top: 15; /* Align it to the top. NEEDs to be below header*/
   left: 0; /* Align to the left edge of the window */
   width: 100%; /* Full width of the window */
   z-index: 100; /* Make sure it's above other content */

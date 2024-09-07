@@ -79,11 +79,13 @@ function Quiz() {
     page,
     goToNextPage,
     goToPreviousPage,
-    questionsPerPage
+    questionsPerPage,
+    developerMode,
+    toggleDeveloperMode  // Import toggle function for developer mode
   } = useQuizLogic();
 
   // Calculate total progress as a percentage
-  const totalQuestions = questions.length; // Total number of questions
+  const totalQuestions = developerMode ? 4 : questions.length; // Limit to 4 questions in developer mode
   const answeredCount = selectedAnswers.filter(answer => answer !== undefined).length; // Count of answered questions
   const progress = (answeredCount / totalQuestions) * 100; // Calculate progress as a percentage
 
@@ -96,6 +98,11 @@ function Quiz() {
       <div className="quiz-container">
         {/* Refresh button */}
         <button className="refresh-button" onClick={resetQuiz}>Refresh</button>
+
+        {/* Developer Mode Toggle Button */}
+        <button className="developer-mode-button" onClick={toggleDeveloperMode}>
+          {developerMode ? 'Disable Developer Mode' : 'Enable Developer Mode'}
+        </button>
 
         {/* Progress Bar */}
         <div className="progress-bar-container">
@@ -129,4 +136,3 @@ function Quiz() {
 }
 
 export default Quiz;
-

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';  // Import the useNavigate hook
+import { useNavigate } from 'react-router-dom';
 import questions from './questions.json';
 import { updateScores, calculateScores } from './scoring';
 
@@ -8,7 +8,7 @@ const useQuizLogic = () => {
     const savedCurrentQuestion = localStorage.getItem('currentQuestion');
     return savedCurrentQuestion !== null ? JSON.parse(savedCurrentQuestion) : 0;
   });
-  
+
   const [scores, setScores] = useState(() => {
     const savedScores = localStorage.getItem('scores');
     return savedScores !== null ? JSON.parse(savedScores) : {
@@ -22,20 +22,21 @@ const useQuizLogic = () => {
       P: 0
     };
   });
-  
+
   const [selectedAnswers, setSelectedAnswers] = useState(() => {
     const savedSelectedAnswers = localStorage.getItem('selectedAnswers');
     return savedSelectedAnswers !== null ? JSON.parse(savedSelectedAnswers) : [];
   });
-  
+
   const [answeredQuestions, setAnsweredQuestions] = useState(() => {
     const savedAnsweredQuestions = localStorage.getItem('answeredQuestions');
     return savedAnsweredQuestions !== null ? JSON.parse(savedAnsweredQuestions) : [];
   });
-  
+
   const [page, setPage] = useState(0);  // New state to handle pagination
+  const [developerMode, setDeveloperMode] = useState(false); // New state for developer mode
   const questionsPerPage = 7;  // Define how many questions per page
-  
+
   const navigate = useNavigate();  // Initialize the useNavigate hook
 
   useEffect(() => {
@@ -48,12 +49,10 @@ const useQuizLogic = () => {
 
   useEffect(() => {
     localStorage.setItem('selectedAnswers', JSON.stringify(selectedAnswers));
-    console.log('Selected Answers:', selectedAnswers); 
   }, [selectedAnswers]);
 
   useEffect(() => {
     localStorage.setItem('answeredQuestions', JSON.stringify(answeredQuestions));
-    console.log('Answered Questions:', answeredQuestions); 
   }, [answeredQuestions]);
 
   const resetQuiz = () => {
@@ -93,7 +92,9 @@ const useQuizLogic = () => {
     });
 
     const nextQuestion = index + 1;
-    if (nextQuestion < questions.length) {
+    const totalQuestions = developerMode ? 4 : questions.length;  // Limit to 4 questions in developer mode
+
+    if (nextQuestion < totalQuestions) {
       setCurrentQuestion(nextQuestion);
     } else {
       const finalScores = calculateScores(scores);
@@ -120,7 +121,8 @@ const useQuizLogic = () => {
   };
 
   const goToNextPage = () => {
-    if ((page + 1) * questionsPerPage < questions.length) {
+    const totalQuestions = developerMode ? 4 : questions.length;
+    if ((page + 1) * questionsPerPage < totalQuestions) {
       setPage(prevPage => prevPage + 1);
     }
   };
@@ -129,6 +131,12 @@ const useQuizLogic = () => {
     if (page > 0) {
       setPage(prevPage => prevPage - 1);
     }
+  };
+
+  // Toggle developer mode to limit questions
+  const toggleDeveloperMode = () => {
+    setDeveloperMode(prevMode => !prevMode);
+    resetQuiz();  // Reset the quiz when toggling developer mode
   };
 
   return {
@@ -142,7 +150,9 @@ const useQuizLogic = () => {
     page,  // Expose page state
     goToNextPage,  // Expose function to move to the next page
     goToPreviousPage,  // Expose function to move to the previous page
-    questionsPerPage  // Expose questions per page
+    questionsPerPage,  // Expose questions per page
+    developerMode,  // Expose developer mode state
+    toggleDeveloperMode  // Expose developer mode toggle function
   };
 };
 

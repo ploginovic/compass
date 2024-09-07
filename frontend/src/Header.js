@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import menuItems from './menuConfig';
-import Logo from './assets/logo.svg'; // Ensure the path is correct
+import Logo from './assets/logo_v2.svg'; // Ensure the path is correct
 
 const Header = () => {
   return (
