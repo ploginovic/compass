@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import menuItems from './menuConfig';
 import Logo from './assets/logo_v2.svg'; // Ensure the path is correct
 
 const Header = () => {
+  const [isVisible, setIsVisible] = useState(true); // State to control header visibility
+  const [lastScrollY, setLastScrollY] = useState(0); // State to track the last scroll position
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get the current scroll position
+      const currentScrollY = window.scrollY;
+
+      // If scrolling down, hide the header; if scrolling up, show it
+      if (currentScrollY > lastScrollY && currentScrollY > 20) {
+        setIsVisible(false); // Hide the header when scrolling down
+      } else if (currentScrollY < lastScrollY) {
+        setIsVisible(true); // Show the header when scrolling up
+      }
+
+      // Update the last scroll position
+      setLastScrollY(currentScrollY);
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className="header">
+    <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
       <NavLink to="/" exact className="header-logo">
         <img src={Logo} alt="CompassMed Logo" />
       </NavLink>

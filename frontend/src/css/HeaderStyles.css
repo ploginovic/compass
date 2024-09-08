@@ -1,3 +1,4 @@
+/* Base header styling */
 .header {
   display: flex;
   justify-content: center; /* Center the header content horizontally */
@@ -6,9 +7,29 @@
   background-color: #f4f4f4;
   width: 100%;
   box-sizing: border-box;
-  position: relative; /* Add position relative to position quiz button */
+  position: fixed; /* Fix it at the top */
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Ensure the header is above other content */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions for visibility */
+  pointer-events: auto; /* Ensure pointer events are active */
 }
 
+/* Hidden state for header (when user scrolls down) */
+.header.hidden {
+  transform: translateY(-100%); /* Move the header out of view */
+  opacity: 0; /* Make the header invisible */
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+/* Visible state for header (when user scrolls up) */
+.header.visible {
+  transform: translateY(0); /* Reset to original position */
+  opacity: 1; /* Fully visible */
+  pointer-events: auto; /* Enable interaction */
+}
+
+/* Header logo styles */
 .header-logo {
   margin: 10px;
   text-decoration: none;
@@ -22,12 +43,14 @@
   height: 40px; /* Adjust the height as needed */
 }
 
+/* Navigation container */
 .nav-container {
   display: flex;
-  justify-content: center; /* Center the nav menu within the header */
+  justify-content: center;
   flex-grow: 1; /* Allow the nav container to grow and center itself */
 }
 
+/* Navigation menu */
 .nav-menu {
   display: flex;
   justify-content: space-between; /* Space links evenly */
@@ -37,11 +60,13 @@
   padding: 0;
 }
 
+/* Individual menu item */
 .menu-item {
   position: relative;
   margin: 0 20px; /* Keep equal spacing between links */
 }
 
+/* Submenu styling */
 .submenu {
   display: none;
   position: absolute;
@@ -57,6 +82,7 @@
   display: block;
 }
 
+/* Link styles */
 nav a {
   padding: 10px;
   text-decoration: none;
@@ -68,6 +94,7 @@ nav a.active {
   color: #007BFF;
 }
 
+/* Header buttons styling */
 .header-buttons {
   position: absolute;
   right: 20px; /* Lock to the right */
@@ -75,6 +102,7 @@ nav a.active {
   gap: 10px; /* Add some space between the buttons */
 }
 
+/* Button styling */
 .quiz-button, .login-button {
   background-color: #007BFF;
   color: #fff;

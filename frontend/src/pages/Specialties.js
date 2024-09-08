@@ -1,8 +1,7 @@
-// Hello :D
-
 import React, { useState } from 'react';
 import specialtiesData from '../SpecialtyOverview.json'; // Adjust the path as necessary
 import mbtiData from '../MBTI_specialties.json'; // Adjust the path as necessary
+import '../css/SpecialtiesStyles.css'; // Import the CSS file
 import LadderDiagram from '../careerTimeline';
 
 const Specialties = () => {
@@ -17,16 +16,8 @@ const Specialties = () => {
     setSelectedMBTI(event.target.value);
   };
 
-  const boxStyle = {
-    border: '1px solid #ccc',
-    borderRadius: '10px',
-    padding: '20px',
-    marginBottom: '20px',
-    backgroundColor: '#f9f9f9',
-  };
-
   const renderSpecialtyDetails = (specialty) => (
-    <div style={boxStyle} key={specialty.name}>
+    <div className="specialty-details" key={specialty.name}>
       <h3>{specialty.name}</h3>
       <p><strong>Current Curriculum:</strong> <a href={specialty.additional_info.current_curriculum.link}>{specialty.additional_info.current_curriculum.title}</a></p>
       <p><strong>Core Training Options:</strong> {Array.isArray(specialty.additional_info.core_training_options) ? specialty.additional_info.core_training_options.join(', ') : 'N/A'}</p>
@@ -41,35 +32,45 @@ const Specialties = () => {
   );
 
   return (
-    <div>
+    <div className="specialties-container">
       <h2>Specialties Page</h2>
       <p>Welcome to the Specialties page! Click on a specialty to see more details.</p>
-      
+
       {selectedSpecialty && renderSpecialtyDetails(selectedSpecialty)}
 
       <ul>
-        {specialtiesData.specialties.sort((a, b) => a.name.localeCompare(b.name)).map((specialty, index) => (
-          <li key={index}>
-            <button onClick={() => handleSpecialtyClick(specialty)}>
-              {specialty.name}
-            </button>
-          </li>
-        ))}
+        {specialtiesData.specialties
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((specialty, index) => (
+            <li key={index}>
+              <button onClick={() => handleSpecialtyClick(specialty)}>
+                {specialty.name}
+              </button>
+            </li>
+          ))}
       </ul>
 
       <h2>MBTI Personalities</h2>
-      <select value={selectedMBTI} onChange={handleMBTIChange}>
+      <select
+        value={selectedMBTI}
+        onChange={handleMBTIChange}
+        className="mbti-selector"
+      >
         <option value="">Select MBTI Personality</option>
         {Object.keys(mbtiData).map((mbtiType, index) => (
-          <option value={mbtiType} key={index}>{mbtiType}</option>
+          <option value={mbtiType} key={index}>
+            {mbtiType}
+          </option>
         ))}
       </select>
 
       {selectedMBTI && (
-        <div>
+        <div className="mbti-section">
           <h3>{mbtiData[selectedMBTI].type}</h3>
           {mbtiData[selectedMBTI].specialties.map((specialtyName, index) => {
-            const specialty = specialtiesData.specialties.find(s => s.name === specialtyName);
+            const specialty = specialtiesData.specialties.find(
+              (s) => s.name === specialtyName
+            );
             return specialty && renderSpecialtyDetails(specialty);
           })}
         </div>
