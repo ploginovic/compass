@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import specialtiesData from './SpecialtyOverview.json'; // Path to the specialties data
 import mbtiData from './MBTI_specialties.json'; // Path to the MBTI-specialties mapping data
+import './css/App.css'; // Ensure you import your global styles
 
 const Results = () => {
   const location = useLocation();
@@ -15,7 +16,7 @@ const Results = () => {
 
   // Helper function to display the specialty details
   const renderSpecialtyDetails = (specialty) => (
-    <div key={specialty.name} style={boxStyle}>
+    <div className="specialty-box" key={specialty.name}>
       <h3>{specialty.name}</h3>
       <p><strong>Current Curriculum:</strong> <a href={specialty.additional_info.current_curriculum.link}>{specialty.additional_info.current_curriculum.title}</a></p>
       <p><strong>Core Training Options:</strong> {Array.isArray(specialty.additional_info.core_training_options) ? specialty.additional_info.core_training_options.join(', ') : 'N/A'}</p>
@@ -29,20 +30,11 @@ const Results = () => {
     </div>
   );
 
-  // Styles for the specialty box
-  const boxStyle = {
-    border: '1px solid #ccc',
-    borderRadius: '10px',
-    padding: '20px',
-    marginBottom: '20px',
-    backgroundColor: '#f9f9f9',
-  };
-
   // Get specialties based on the user's MBTI type
   const specialtiesForPersonality = mbtiData[personalityType]?.specialties || [];
 
   return (
-    <div>
+    <div className="content"> {/* Ensure all content is within the 'content' container */}
       <h1>Your MBTI Personality Type: {personalityType}</h1>
 
       <h2>Score Breakdown:</h2>

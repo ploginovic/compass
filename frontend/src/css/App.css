@@ -6,6 +6,7 @@
 }
 
 .content {
+  padding-top: 3vh; /* Adjust this value to match the header's height */
   flex: 1;
 }
 

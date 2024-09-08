@@ -19,6 +19,7 @@ input[type="radio"]:checked + label.likert-circle {
 .app {
   width: 100%;
   display: flex;
+  padding-top: 2vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -34,8 +35,8 @@ input[type="radio"]:checked + label.likert-circle {
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
-  padding: 20px;
-  background-color: #a1ffcd22;
+  padding: 1vh;
+  background-color: #0986431e;
   border-radius: 22px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -52,8 +53,8 @@ input[type="radio"]:checked + label.likert-circle {
 }
 
 .question.inactive {
-  filter: blur(3px);
-  pointer-events: none;
+  filter: blur(2.5px);
+  pointer-events: auto;
 }
 
 .question.current {
@@ -93,12 +94,13 @@ input[type="radio"]:checked + label.likert-circle {
 }
 
 .refresh-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: fixed; /* Fix it to the viewport */
+  bottom: 80px; /* Adjust this to be above the developer button */
+  left: 20px; /* Align to the left side of the viewport */
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #ff8f2c;
   color: white;
+  z-index: 10000; /* Ensure it's above most other content */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -106,8 +108,9 @@ input[type="radio"]:checked + label.likert-circle {
 }
 
 .refresh-button:hover {
-  background-color: #0056b3;
+  background-color: #94765c; /* Slightly darker on hover */
 }
+
 
 .go-back-button {
   position: absolute;
@@ -153,5 +156,23 @@ input[type="radio"]:checked + label.likert-circle {
   height: 100%; /* Full height of the progress bar */
   background-color: #4caf50; /* Green color for progress */
   transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+.developer-mode-button {
+  z-index: 10001; /* Ensure it stays above other elements */
+  position: fixed; /* Fix it in the viewport */
+  bottom: 20px; /* Distance from the bottom of the screen */
+  left: 20px; /* Distance from the left side of the screen */
+  padding: 10px 20px;
+  background-color: #ff9832;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.developer-mode-button:hover {
+  background-color: #0056b3;
 }
 

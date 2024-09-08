@@ -32,51 +32,53 @@ const Specialties = () => {
   );
 
   return (
-    <div className="specialties-container">
-      <h2>Specialties Page</h2>
-      <p>Welcome to the Specialties page! Click on a specialty to see more details.</p>
+    <div className="content"> {/* Main content container */}
+      <div className="specialties-container"> {/* Ensure it is inside the specialties container */}
+        <h2>Specialties Page</h2>
+        <p>Welcome to the Specialties page! Click on a specialty to see more details.</p>
 
-      {selectedSpecialty && renderSpecialtyDetails(selectedSpecialty)}
+        {selectedSpecialty && renderSpecialtyDetails(selectedSpecialty)}
 
-      <ul>
-        {specialtiesData.specialties
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .map((specialty, index) => (
-            <li key={index}>
-              <button onClick={() => handleSpecialtyClick(specialty)}>
-                {specialty.name}
-              </button>
-            </li>
+        <ul>
+          {specialtiesData.specialties
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((specialty, index) => (
+              <li key={index}>
+                <button onClick={() => handleSpecialtyClick(specialty)}>
+                  {specialty.name}
+                </button>
+              </li>
+            ))}
+        </ul>
+
+        <h2>MBTI Personalities</h2>
+        <select
+          value={selectedMBTI}
+          onChange={handleMBTIChange}
+          className="mbti-selector"
+        >
+          <option value="">Select MBTI Personality</option>
+          {Object.keys(mbtiData).map((mbtiType, index) => (
+            <option value={mbtiType} key={index}>
+              {mbtiType}
+            </option>
           ))}
-      </ul>
+        </select>
 
-      <h2>MBTI Personalities</h2>
-      <select
-        value={selectedMBTI}
-        onChange={handleMBTIChange}
-        className="mbti-selector"
-      >
-        <option value="">Select MBTI Personality</option>
-        {Object.keys(mbtiData).map((mbtiType, index) => (
-          <option value={mbtiType} key={index}>
-            {mbtiType}
-          </option>
-        ))}
-      </select>
+        {selectedMBTI && (
+          <div className="mbti-section">
+            <h3>{mbtiData[selectedMBTI].type}</h3>
+            {mbtiData[selectedMBTI].specialties.map((specialtyName, index) => {
+              const specialty = specialtiesData.specialties.find(
+                (s) => s.name === specialtyName
+              );
+              return specialty && renderSpecialtyDetails(specialty);
+            })}
+          </div>
+        )}
 
-      {selectedMBTI && (
-        <div className="mbti-section">
-          <h3>{mbtiData[selectedMBTI].type}</h3>
-          {mbtiData[selectedMBTI].specialties.map((specialtyName, index) => {
-            const specialty = specialtiesData.specialties.find(
-              (s) => s.name === specialtyName
-            );
-            return specialty && renderSpecialtyDetails(specialty);
-          })}
-        </div>
-      )}
-
-      <LadderDiagram />
+        <LadderDiagram /> {/* Keep LadderDiagram within the container */}
+      </div>
     </div>
   );
 };
