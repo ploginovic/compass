@@ -223,5 +223,65 @@
     {
         "question": "You feel confident that things will work out for you.",
         "dimension": "T"
+    },
+    {
+        "question": "You usually stay calm, even under a lot of pressure.",
+        "dimension": "TA",
+        "number": 5
+    },
+    {
+        "question": "Even a small mistake can cause you to doubt your overall abilities and knowledge.",
+        "dimension": "TA",
+        "number": 10
+    },
+    {
+        "question": "You rarely worry about whether you make a good impression on people you meet.",
+        "dimension": "TA",
+        "number": 15
+    },
+    {
+        "question": "You are prone to worrying that things will take a turn for the worse.",
+        "dimension": "TA",
+        "number": 20
+    },
+    {
+        "question": "Your mood can change very quickly.",
+        "dimension": "TA",
+        "number": 27
+    },
+    {
+        "question": "You rarely second-guess the choices that you have made.",
+        "dimension": "TA",
+        "number": 35
+    },
+    {
+        "question": "You rarely feel insecure.",
+        "dimension": "TA",
+        "number": 40
+    },
+    {
+        "question": "You are still bothered by mistakes that you made a long time ago.",
+        "dimension": "TA",
+        "number": 45
+    },
+    {
+        "question": "Your emotions control you more than you control them.",
+        "dimension": "TA",
+        "number": 47
+    },
+    {
+        "question": "When someone thinks highly of you, you wonder how long it will take them to feel disappointed in you.",
+        "dimension": "TA",
+        "number": 50
+    },
+    {
+        "question": "You often feel overwhelmed.",
+        "dimension": "TA",
+        "number": 55
+    },
+    {
+        "question": "You feel confident that things will work out for you.",
+        "dimension": "TA",
+        "number": 60
     }
 ]
