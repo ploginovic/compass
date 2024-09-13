@@ -1,6 +1,8 @@
+// careerTimeline.js
+
 import React, { useState, useEffect } from 'react';
 
-const LadderDiagram = () => {
+const LadderDiagram = ({ endSpecialtyName }) => {
   const labels = [
     "You Are Here: Premedicine",
     "UCAT + Interviews",
@@ -8,17 +10,23 @@ const LadderDiagram = () => {
     "F1+2 Placements + Logbook",
     "Specialty Applications",
     "Specialty Run Through",
-    "Dream JOB: GP"
+    `Dream JOB: ${endSpecialtyName}`
   ];
 
-  const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const [dimensions, setDimensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
   const [isBlurred, setIsBlurred] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
-      setDimensions({ width: window.innerWidth, height: window.innerHeight });
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
     };
-    
+
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -43,7 +51,12 @@ const LadderDiagram = () => {
 
   return (
     <div>
-      <svg width="100%" height="100%" viewBox={`0 0 ${dimensions.width} ${dimensions.height}`} xmlns="http://www.w3.org/2000/svg">
+      <svg
+        width="100%"
+        height="100%"
+        viewBox={`0 0 ${dimensions.width} ${dimensions.height}`}
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <defs>
           <marker
             id="arrow"
@@ -65,11 +78,14 @@ const LadderDiagram = () => {
           const textWidth = getTextWidth(label);
           const boxWidth = textWidth + boxPadding * 2;
           const yPosition = dimensions.height - boxSpacing * (index + 1);
-          const xPosition = startX + (dimensions.width - startX * 2) / (labels.length - 1) * index;
-          const applyBlur = isBlurred && index !== 0 && index !== labels.length - 1;
+          const xPosition =
+            startX +
+            ((dimensions.width - startX * 2) / (labels.length - 1)) * index;
+          const applyBlur =
+            isBlurred && index !== 0 && index !== labels.length - 1;
 
           return (
-            <g key={index} filter={applyBlur ? "url(#blur)" : "none"}>
+            <g key={index} filter={applyBlur ? 'url(#blur)' : 'none'}>
               <rect
                 x={xPosition}
                 y={yPosition}
@@ -77,12 +93,19 @@ const LadderDiagram = () => {
                 height={boxHeight}
                 fill="#87CEEB"
               />
-              <text x={xPosition + 10} y={yPosition + 30} fill="#000">{label}</text>
+              <text x={xPosition + 10} y={yPosition + 30} fill="#000">
+                {label}
+              </text>
               {index < labels.length - 1 && (
                 <line
                   x1={xPosition + boxWidth / 2}
                   y1={yPosition}
-                  x2={startX + (dimensions.width - startX * 2) / (labels.length - 1) * (index + 1) + (getTextWidth(labels[index + 1]) + boxPadding * 2) / 2}
+                  x2={
+                    startX +
+                    ((dimensions.width - startX * 2) / (labels.length - 1)) *
+                      (index + 1) +
+                    (getTextWidth(labels[index + 1]) + boxPadding * 2) / 2
+                  }
                   y2={yPosition - boxSpacing + boxHeight}
                   stroke="#000"
                   strokeWidth="2"
@@ -93,7 +116,10 @@ const LadderDiagram = () => {
           );
         })}
       </svg>
-      <button onClick={toggleBlur} style={{ marginTop: '20px', padding: '10px 20px', fontSize: '16px' }}>
+      <button
+        onClick={toggleBlur}
+        style={{ marginTop: '20px', padding: '10px 20px', fontSize: '16px' }}
+      >
         Unlock for £10/month
       </button>
     </div>
