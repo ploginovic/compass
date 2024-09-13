@@ -4,27 +4,23 @@ import React, { useState, useEffect } from 'react';
 
 const LadderDiagram = ({ endSpecialtyName }) => {
   const labels = [
-    "You Are Here: Premedicine",
-    "UCAT + Interviews",
-    "Y1-5 Med School",
-    "F1+2 Placements + Logbook",
-    "Specialty Applications",
-    "Specialty Run Through",
-    `Dream JOB: ${endSpecialtyName}`
+    'You Are Here: Premedicine',
+    'UCAT + Interviews',
+    'Y1-5 Med School',
+    'F1+2 Placements + Logbook',
+    'Specialty Applications',
+    'Specialty Run Through',
+    `Dream JOB: ${endSpecialtyName}`,
   ];
 
-  const [dimensions, setDimensions] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
-  });
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   const [isBlurred, setIsBlurred] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
-      setDimensions({
-        width: window.innerWidth,
-        height: window.innerHeight
-      });
+      setWindowWidth(window.innerWidth);
+      setWindowHeight(window.innerHeight);
     };
 
     window.addEventListener('resize', handleResize);
@@ -42,8 +38,26 @@ const LadderDiagram = ({ endSpecialtyName }) => {
 
   const boxPadding = 20;
   const boxHeight = 50;
-  const boxSpacing = Math.min(dimensions.height / labels.length, 100); // Dynamic vertical space
-  const startX = Math.max(dimensions.width / 10, 50); // Dynamic start X position
+  const boxSpacing = 50; // Fixed vertical space between boxes
+  const verticalPadding = 20; // Top and bottom padding
+  const horizontalPadding = 50; // Left and right padding
+
+  // Calculate total SVG height (the same as before)
+  const svgHeight =
+    labels.length * boxHeight +
+    (labels.length - 1) * boxSpacing +
+    verticalPadding * 2;
+
+  // Calculate maximum box width
+  const maxBoxWidth = Math.max(
+    ...labels.map((label) => getTextWidth(label) + boxPadding * 2)
+  );
+
+  // Calculate total horizontal space
+  const totalHorizontalSpace = windowWidth - horizontalPadding * 2 - maxBoxWidth;
+
+  // Calculate horizontal spacing between nodes
+  const horizontalSpacing = totalHorizontalSpace / (labels.length - 1);
 
   const toggleBlur = () => {
     setIsBlurred(!isBlurred);
@@ -53,8 +67,8 @@ const LadderDiagram = ({ endSpecialtyName }) => {
     <div>
       <svg
         width="100%"
-        height="100%"
-        viewBox={`0 0 ${dimensions.width} ${dimensions.height}`}
+        height={svgHeight}
+        viewBox={`0 0 ${windowWidth} ${svgHeight}`}
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
@@ -77,10 +91,16 @@ const LadderDiagram = ({ endSpecialtyName }) => {
         {labels.map((label, index) => {
           const textWidth = getTextWidth(label);
           const boxWidth = textWidth + boxPadding * 2;
-          const yPosition = dimensions.height - boxSpacing * (index + 1);
+
+          // Recalculate yPosition to start from the bottom (bottom-up direction)
+          const yPosition =
+            svgHeight - verticalPadding - (index + 1) * (boxHeight + boxSpacing);
+
+          // Calculate xPosition with proper padding
           const xPosition =
-            startX +
-            ((dimensions.width - startX * 2) / (labels.length - 1)) * index;
+            horizontalPadding +
+            (totalHorizontalSpace / (labels.length - 1)) * index;
+
           const applyBlur =
             isBlurred && index !== 0 && index !== labels.length - 1;
 
@@ -96,22 +116,35 @@ const LadderDiagram = ({ endSpecialtyName }) => {
               <text x={xPosition + 10} y={yPosition + 30} fill="#000">
                 {label}
               </text>
-              {index < labels.length - 1 && (
-                <line
-                  x1={xPosition + boxWidth / 2}
-                  y1={yPosition}
-                  x2={
-                    startX +
-                    ((dimensions.width - startX * 2) / (labels.length - 1)) *
-                      (index + 1) +
-                    (getTextWidth(labels[index + 1]) + boxPadding * 2) / 2
-                  }
-                  y2={yPosition - boxSpacing + boxHeight}
-                  stroke="#000"
-                  strokeWidth="2"
-                  markerEnd="url(#arrow)"
-                />
-              )}
+              {index < labels.length - 1 && (() => {
+                // Calculate next box position and width
+                const nextTextWidth = getTextWidth(labels[index + 1]);
+                const nextBoxWidth = nextTextWidth + boxPadding * 2;
+
+                // Start the line at the top of the current box
+                const lineStartY = yPosition;
+                // End the line at the bottom of the next box
+                const nextYPosition =
+                  svgHeight -
+                  verticalPadding -
+                  (index + 2) * (boxHeight + boxSpacing);
+
+                const nextXPosition =
+                  horizontalPadding +
+                  (totalHorizontalSpace / (labels.length - 1)) * (index + 1);
+
+                return (
+                  <line
+                    x1={xPosition + boxWidth / 2}
+                    y1={lineStartY}
+                    x2={nextXPosition + nextBoxWidth / 2}
+                    y2={nextYPosition + boxHeight}
+                    stroke="#000"
+                    strokeWidth="2"
+                    markerEnd="url(#arrow)"
+                  />
+                );
+              })()}
             </g>
           );
         })}
