@@ -69,21 +69,104 @@ const Results = () => {
     </div>
   );
 
+  // Function to render the spectrum bars with actual scores next to labels
+  const renderSpectrumBar = (label1, label2, score1, score2) => {
+    const maxScore = 5; // Assuming maximum score per trait is 5
+    const difference = score1 - score2; // Range from -5 to +5
+    const percentage = ((difference + maxScore) / (2 * maxScore)) * 100; // Convert to percentage for positioning
+
+    return (
+      <div style={{ marginBottom: '30px' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginBottom: '5px',
+          }}
+        >
+          <span>
+            {label1}: {score1}
+          </span>
+          <span>
+            {label2}: {score2}
+          </span>
+        </div>
+        <div
+          style={{
+            position: 'relative',
+            height: '20px',
+            background: '#e0e0e0',
+            borderRadius: '10px',
+          }}
+        >
+          <div
+            style={{
+              position: 'absolute',
+              left: '50%',
+              top: 0,
+              width: '2px',
+              height: '100%',
+              background: '#000',
+              transform: 'translateX(-50%)',
+            }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              left: `${percentage}%`,
+              top: 0,
+              width: '10px',
+              height: '20px',
+              background: '#007bff',
+              borderRadius: '5px',
+              transform: 'translateX(-50%)',
+            }}
+          />
+        </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginTop: '5px',
+          }}
+        >
+          <span>-{maxScore}</span>
+          <span>0</span>
+          <span>+{maxScore}</span>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="specialties-container">
       <h2>Your MBTI Personality Type: {personalityType}</h2>
 
       <h3>Score Breakdown:</h3>
-      <ul>
-        <li>Extroversion (E): {scores.E}</li>
-        <li>Introversion (I): {scores.I}</li>
-        <li>Sensing (S): {scores.S}</li>
-        <li>Intuition (N): {scores.N}</li>
-        <li>Thinking (T): {scores.T}</li>
-        <li>Feeling (F): {scores.F}</li>
-        <li>Judging (J): {scores.J}</li>
-        <li>Perceiving (P): {scores.P}</li>
-      </ul>
+      {renderSpectrumBar(
+        'Extroversion (E)',
+        'Introversion (I)',
+        scores.E,
+        scores.I
+      )}
+      {renderSpectrumBar(
+        'Sensing (S)',
+        'Intuition (N)',
+        scores.S,
+        scores.N
+      )}
+      {renderSpectrumBar(
+        'Thinking (T)',
+        'Feeling (F)',
+        scores.T,
+        scores.F
+      )}
+      {renderSpectrumBar(
+        'Judging (J)',
+        'Perceiving (P)',
+        scores.J,
+        scores.P
+      )}
 
       <h3>Suitable Specialties for {personalityType}:</h3>
       {specialtiesForPersonality.length > 0 ? (
