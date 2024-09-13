@@ -1,0 +1,57 @@
+/* HomeStyles.css */
+
+.home-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .home-container h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .home-container h2 {
+    color: #006400;
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  
+  .home-container p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .home-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .home-container li {
+    margin-bottom: 10px;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .start-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #0056b3;
+  }
