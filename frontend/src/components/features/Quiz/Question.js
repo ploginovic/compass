@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './css/QuestionStyles.css'; // Adjust path based on where your CSS file is located
+import './QuestionStyles.css'; // Adjust path based on where your CSS file is located
 
 function Question({ data, isCurrentQuestion, handleAnswerOptionClick, selectedAnswer, setSelectedAnswer }) {
   

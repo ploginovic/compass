@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import menuItems from './menuConfig';
-import Logo from './assets/logo_v2.svg'; // Ensure the path is correct
+import './HeaderStyles.css'; // Style for Header
+import Logo from '../../assets/logo_v2.svg'; // Ensure the path is correct
 
 const Header = () => {
   const [isVisible, setIsVisible] = useState(true); // State to control header visibility

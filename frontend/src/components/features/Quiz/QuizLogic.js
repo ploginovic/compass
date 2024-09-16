@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import questions from './questions.json';
-import { updateScores, calculateScores } from './scoring';
+import { updateScores, calculateScores } from './Scoring';
 
 const useQuizLogic = () => {
   const [currentQuestion, setCurrentQuestion] = useState(() => {

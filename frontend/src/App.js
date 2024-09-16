@@ -33,11 +33,8 @@
  */
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Footer from './Footer';
-import './css/FooterStyles.css';
-import Header from './Header';
-import './css/HeaderStyles.css'; // Style for Header
-import './css/QuestionStyles.css'; // Style for Question and Quiz
+import Footer from './components/layout/Footer';
+import Header from './components/layout/Header';
 import Home from './pages/Home'; // Import Home page component
 import Quiz from './pages/Quiz'; // Import Quiz page component
 import About from './pages/About'; // Import About page component
@@ -46,8 +43,8 @@ import Guides from './pages/Guides'; // Import Guides page component
 import Specialties from './pages/Specialties'; // Import Specialties page component
 import Research from './pages/Research'; // Import Research page component
 import Theory from './pages/Theory'; // Import Theory page component
-import Login from './Login'; // Import Login component
-import Results from './Results';
+import Login from './components/features/auth/Login'; // Import Login component
+import Results from './components/features/Results/Results';
 
 
 function App() {

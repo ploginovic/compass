@@ -2,11 +2,11 @@
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import specialtiesData from './SpecialtyOverview.json'; // Path to the specialties data
-import mbtiData from './MBTI_specialties.json'; // Path to the MBTI-specialties mapping data
-import LadderDiagram from './careerTimeline'; // Import the LadderDiagram component
-import './css/App.css'; // Global styles
-import './css/SpecialtiesStyles.css'; // Import your specialties styles
+import specialtiesData from '../../../data/SpecialtyOverview.json'; // Path to the specialties data
+import mbtiData from '../../../data/MBTI_specialties.json'; // Path to the MBTI-specialties mapping data
+import LadderDiagram from '../careerTimeline/CareerTimeline'; // Import the LadderDiagram component
+import '../../../css/App.css'; // Global styles
+//import './css/SpecialtiesStyles.css'; // Import your specialties styles
 
 const Results = () => {
   const location = useLocation();

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import specialtiesData from '../SpecialtyOverview.json'; // Adjust the path as necessary
-import mbtiData from '../MBTI_specialties.json'; // Adjust the path as necessary
-import '../css/SpecialtiesStyles.css'; // Import the CSS file
-import LadderDiagram from '../careerTimeline';
+import specialtiesData from '../data/SpecialtyOverview.json'; // Adjust the path as necessary
+import mbtiData from '../data/MBTI_specialties.json'; // Adjust the path as necessary
+import '../components/features/Results/SpecialtiesStyles.css'; // Import the CSS file
+import LadderDiagram from '../components/features/careerTimeline/CareerTimeline';
 
 const Specialties = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState(null);

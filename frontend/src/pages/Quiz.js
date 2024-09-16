@@ -63,11 +63,10 @@ Gainesville, Fla: Center for Applications of Psychological Type; 1977.
  * )
  */
 import React from 'react';
-import '../css/HeaderStyles.css'; // Adjusted path for HeaderStyles.css
-import '../css/QuestionStyles.css'; // Adjusted path for QuestionStyles.css
-import Question from '../Question';
-import questions from '../questions.json'; // Import questions
-import useQuizLogic from '../QuizLogic'; // Import the custom hook
+import '../components/features/Quiz/QuestionStyles.css'; // Adjusted path for QuestionStyles.css
+import Question from '../components/features/Quiz/Question';
+import questions from '../components/features/Quiz/questions.json'; // Import questions
+import useQuizLogic from '../components/features/Quiz/QuizLogic'; // Import the custom hook
 
 function Quiz() {
   const {

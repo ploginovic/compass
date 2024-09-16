@@ -11,7 +11,7 @@
  * )
  */
 import React from 'react';
-import './css/FooterStyles.css';
+import './FooterStyles.css';
 
 function Footer() {
   return (
