@@ -11,16 +11,18 @@ const useQuizLogic = () => {
 
   const [scores, setScores] = useState(() => {
     const savedScores = localStorage.getItem('scores');
-    return savedScores !== null ? JSON.parse(savedScores) : {
-      E: 0,
-      I: 0,
-      S: 0,
-      N: 0,
-      T: 0,
-      F: 0,
-      J: 0,
-      P: 0
-    };
+    return savedScores !== null
+      ? JSON.parse(savedScores)
+      : {
+          E: 0,
+          I: 0,
+          S: 0,
+          N: 0,
+          T: 0,
+          F: 0,
+          J: 0,
+          P: 0,
+        };
   });
 
   const [selectedAnswers, setSelectedAnswers] = useState(() => {
@@ -33,11 +35,11 @@ const useQuizLogic = () => {
     return savedAnsweredQuestions !== null ? JSON.parse(savedAnsweredQuestions) : [];
   });
 
-  const [page, setPage] = useState(0);  // New state to handle pagination
+  const [page, setPage] = useState(0); // New state to handle pagination
   const [developerMode, setDeveloperMode] = useState(false); // New state for developer mode
-  const questionsPerPage = 7;  // Define how many questions per page
+  const questionsPerPage = 7; // Define how many questions per page
 
-  const navigate = useNavigate();  // Initialize the useNavigate hook
+  const navigate = useNavigate(); // Initialize the useNavigate hook
 
   useEffect(() => {
     localStorage.setItem('currentQuestion', JSON.stringify(currentQuestion));
@@ -65,11 +67,11 @@ const useQuizLogic = () => {
       T: 0,
       F: 0,
       J: 0,
-      P: 0
+      P: 0,
     });
     setSelectedAnswers([]);
     setAnsweredQuestions([]);
-    setPage(0);  // Reset the page to 0
+    setPage(0); // Reset the page to 0
     localStorage.removeItem('currentQuestion');
     localStorage.removeItem('scores');
     localStorage.removeItem('selectedAnswers');
@@ -77,12 +79,16 @@ const useQuizLogic = () => {
   };
 
   const handleAnswerOptionClick = (dimension, option, index) => {
-    setScores(prevScores => updateScores(prevScores, dimension, option));
+    // Calculate the updated scores synchronously
+    const updatedScores = updateScores(scores, dimension, option);
+    setScores(updatedScores);
+
     setSelectedAnswers(prev => {
       const newAnswers = [...prev];
       newAnswers[index] = option;
       return newAnswers;
     });
+
     setAnsweredQuestions(prev => {
       const newAnswered = [...prev];
       if (!newAnswered.includes(index)) {
@@ -92,18 +98,20 @@ const useQuizLogic = () => {
     });
 
     const nextQuestion = index + 1;
-    const totalQuestions = developerMode ? 4 : questions.length;  // Limit to 4 questions in developer mode
+    const totalQuestions = developerMode ? 4 : questions.length; // Limit to 4 questions in developer mode
 
     if (nextQuestion < totalQuestions) {
       setCurrentQuestion(nextQuestion);
     } else {
-      const finalScores = calculateScores(scores);
-      console.log("Final Scores:", finalScores);
+      // Use the updatedScores to calculate the final scores
+      const finalScores = calculateScores(updatedScores);
+      console.log('Final Scores:', finalScores);
 
       // Navigate to results page and pass finalScores in the state
       navigate('/results', { state: { finalScores } });
-      
-      resetQuiz();
+
+      //resetQuiz(); 
+      // This was messing with the final Question being evaluated, removed for now
     }
 
     // If it's the 7th question on the current page, move to the next page
@@ -136,8 +144,9 @@ const useQuizLogic = () => {
   // Toggle developer mode to limit questions
   const toggleDeveloperMode = () => {
     setDeveloperMode(prevMode => !prevMode);
-    resetQuiz();  // Reset the quiz when toggling developer mode
+    resetQuiz(); // Reset the quiz when toggling developer mode
   };
+
 
   return {
     currentQuestion,
@@ -147,12 +156,12 @@ const useQuizLogic = () => {
     handleAnswerOptionClick,
     handleSelectAnswer,
     resetQuiz,
-    page,  // Expose page state
-    goToNextPage,  // Expose function to move to the next page
-    goToPreviousPage,  // Expose function to move to the previous page
-    questionsPerPage,  // Expose questions per page
-    developerMode,  // Expose developer mode state
-    toggleDeveloperMode  // Expose developer mode toggle function
+    page, // Expose page state
+    goToNextPage, // Expose function to move to the next page
+    goToPreviousPage, // Expose function to move to the previous page
+    questionsPerPage, // Expose questions per page
+    developerMode, // Expose developer mode state
+    toggleDeveloperMode, // Expose developer mode toggle function
   };
 };
 

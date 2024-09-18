@@ -3,44 +3,45 @@ input[type="radio"] {
   display: none;
 }
 
+/* General label styling */
 label {
   cursor: pointer;
   display: inline-block;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 /* Style for selected labels */
 input[type="radio"]:checked + label.likert-circle {
-  border-color: #006400;
-  background-color: #153f45;
-  color: rgb(104, 201, 127);
+  border-color: #000;
+  background-color: #007bff;
+  transform: scale(1.1);
 }
 
+/* Container for the entire application */
 .app {
   width: 100%;
   display: flex;
   padding-top: 2vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
+/* Main quiz container */
 .quiz-container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
   padding: 1vh;
-  background-color: #0986431e;
-  border-radius: 22px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+  box-sizing: border-box;
 }
 
+/* Individual question styling */
 .question {
   width: 80%;
   max-width: 600px;
@@ -48,20 +49,22 @@ input[type="radio"]:checked + label.likert-circle {
   padding: 20px;
   background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: filter 0.3s ease;
+  box-sizing: border-box;
 }
 
+/* Inactive question styling */
 .question.inactive {
   filter: blur(2.5px);
-  pointer-events: auto;
+  pointer-events: none;
 }
 
+/* Active question styling */
 .question.current {
   filter: none;
   pointer-events: auto;
 }
 
+/* Likert scale container */
 .likert-scale {
   display: flex;
   align-items: center;
@@ -70,109 +73,155 @@ input[type="radio"]:checked + label.likert-circle {
   margin-top: 20px;
 }
 
+/* Likert option styling */
 .likert-option {
   flex: 1;
   text-align: center;
   position: relative;
 }
 
-.likert-circle-3,
-.likert-circle-2,
-.likert-circle-1,
-.likert-circle-0 {
+/* Circular button styling */
+.likert-circle {
   display: inline-block;
   width: 30px;
   height: 30px;
-  border: 2px solid #3919b9;
+  border: 2px solid;
+  border-color: #3919b9 ;
   border-radius: 50%;
+  background-color: #e0e0e0; /* Default color */
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-input[type="radio"]:checked + label.likert-circle {
-  background-color: #153f45;
-  border-color: #003366;
-}
+/* Gradient colors for Likert scale options */
+.likert-circle-0 { border-color: #ff0000; } /* Strongly Disagree */
+.likert-circle-1 { border-color: #ff4d4d; } /* Disagree */
+.likert-circle-2 { border-color: #ff9999; } /* Slightly Disagree */
+.likert-circle-3 { border-color: #e0e0e0; } /* Neutral */
+.likert-circle-4 { border-color: #a6d785; } /* Slightly Agree */
+.likert-circle-5 { border-color: #66cc66; } /* Agree */
+.likert-circle-6 { border-color: #008000; } /* Strongly Agree */
 
-.refresh-button {
-  position: fixed; /* Fix it to the viewport */
-  bottom: 80px; /* Adjust this to be above the developer button */
-  left: 20px; /* Align to the left side of the viewport */
-  padding: 10px 20px;
-  background-color: #ff8f2c;
-  color: white;
-  z-index: 10000; /* Ensure it's above most other content */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.refresh-button:hover {
-  background-color: #94765c; /* Slightly darker on hover */
-}
-
-
-.go-back-button {
+/* Add labels to extreme options via CSS */
+.likert-option:first-child::after {
+  content: 'Disagree';
   position: absolute;
-  top: 50px;
-  right: 20px;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-top: 20px;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
 }
 
-.go-back-button:hover {
-  background-color: #0056b3;
+.likert-option:last-child::after {
+  content: 'Agree';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
 }
 
 /* Progress Bar Container */
 .progress-bar-container {
-  position: fixed ; /* Fixed at the top of the window */
-  top: 10; /* Align it to the top./
-  left: 0; /* Align to the left edge of the window */
-  width: 100%; /* Full width of the window */
-  z-index: 1; /* Make sure it's above other content */
-  background-color: white; /* Optional: Add a background color */
-  padding: 10px; /* Optional: Add some padding for space around the bar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+  position: fixed;
+  padding-top: 80px;
+  top: 80px; /* Default top position when header is visible */
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: top 0.3s ease; /* Smooth transition */
 }
+
 
 /* Progress Bar */
 .progress-bar {
-  width: 100%; /* Full width inside the container */
-  height: 20px; /* Height of the progress bar */
+  width: 100%;
+  height: 20px;
   background-color: #e0e0e0; /* Light gray background */
-  border-radius: 10px; /* Rounded corners */
-  overflow: hidden; /* Ensure rounded corners stay applied */
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Progress (filled portion) */
 .progress {
-  height: 100%; /* Full height of the progress bar */
+  height: 100%;
   background-color: #4caf50; /* Green color for progress */
-  transition: width 0.3s ease-in-out; /* Smooth transition */
+  transition: width 0.3s ease-in-out;
 }
 
-.developer-mode-button {
-  z-index: 10001; /* Ensure it stays above other elements */
-  position: fixed; /* Fix it in the viewport */
-  bottom: 20px; /* Distance from the bottom of the screen */
-  left: 20px; /* Distance from the left side of the screen */
+/* Refresh button styling */
+.refresh-button {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
   padding: 10px 20px;
-  background-color: #ff9832;
+  background-color: #ff8f2c;
   color: white;
+  z-index: 1000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+}
+
+.refresh-button:hover {
+  background-color: #e67600;
+}
+
+/* Developer mode toggle button */
+.developer-mode-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #ff9832;
+  color: white;
+  z-index: 1000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .developer-mode-button:hover {
+  background-color: #e67600;
+}
+
+/* Pagination buttons container */
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Pagination button styling */
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
   background-color: #0056b3;
 }
 
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .likert-circle {
+    width: 25px;
+    height: 25px;
+  }
+
+  .question {
+    width: 90%;
+    padding: 15px;
+  }
+}
