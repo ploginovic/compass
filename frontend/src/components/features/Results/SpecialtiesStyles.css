@@ -1,106 +1,106 @@
 /* Container for the entire Specialties page */
 .specialties-container {
-  width: 80%; /* Adjust the width as needed */
-  margin: 0 auto; /* Center the container */
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
-
-/* Main header styling */
-.specialties-container h2 {
-  color: #003366;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Subheading styling */
-.specialties-container h3 {
-  color: #006400;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-/* Paragraph styling */
-.specialties-container p {
-  line-height: 1.6;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-/* Styles for the list of specialties */
-.specialties-container ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.specialties-container li {
-  margin-bottom: 15px;
-}
-
-/* Button styling for specialties */
-.specialties-container button {
-  padding: 1vh 1.5vh;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.specialties-container button:hover {
-  background-color: #0056b3;
-}
-
-/* Dropdown selector for MBTI */
-.specialties-container select {
-  width: 100%;
-  padding: 10px;
-  margin: 20px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-/* Styling for the specialty details box */
-.specialty-details {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Style for blockquotes in specialty details */
-.specialty-details blockquote {
-  margin: 20px 0;
-  padding: 10px 20px;
-  background-color: #e0f7fa;
-  border-left: 5px solid #007BFF;
-  font-style: italic;
-  color: #555;
-}
-
-/* MBTI section styling */
-.mbti-section {
-  margin-top: 40px;
-}
-
-.mbti-section h3 {
-  font-size: 20px;
-  color: #003366;
-}
-
-/* Responsive styling */
-@media (max-width: 768px) {
-  .specialties-container {
-    width: 90%; /* Adjust for smaller screens */
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: Arial, sans-serif;
   }
-}
+  
+  /* Main header styling */
+  .specialties-container h2 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Subheading styling */
+  .specialties-container h3 {
+    color: #006400;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  /* Paragraph styling */
+  .specialties-container p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Styles for the list of specialties */
+  .specialties-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .specialties-container li {
+    margin-bottom: 15px;
+  }
+  
+  /* Button styling for specialties */
+  .specialties-container button {
+    padding: 1vh 1.5vh;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .specialties-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Dropdown selector for MBTI */
+  .specialties-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Styling for the specialty details box */
+  .specialty-details {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for blockquotes in specialty details */
+  .specialty-details blockquote {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #e0f7fa;
+    border-left: 5px solid #007BFF;
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* MBTI section styling */
+  .mbti-section {
+    margin-top: 40px;
+  }
+  
+  .mbti-section h3 {
+    font-size: 20px;
+    color: #003366;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .specialties-container {
+      width: 90%; /* Adjust for smaller screens */
+    }
+  }

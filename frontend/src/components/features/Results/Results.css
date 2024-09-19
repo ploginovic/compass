@@ -1,0 +1,123 @@
+/* General styles for the results page */
+.results-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* Styles for panels */
+.panel {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.panel-header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.panel-content {
+  padding: 20px;
+}
+
+/* Styles for the spectrum bars */
+.spectrum-bar {
+  margin-bottom: 30px;
+}
+
+.spectrum-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.spectrum-container {
+  position: relative;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.spectrum-bar-center {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #000;
+  transform: translateX(-50%);
+}
+
+.spectrum-indicator {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 20px;
+  background: #007bff;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+.spectrum-scale {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for specialties grid */
+.specialties-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.specialty-item {
+  flex: 1 0 30%; /* Adjust the basis value as needed */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.specialty-item:hover {
+  transform: translateY(-5px);
+}
+
+.specialty-button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.specialty-details {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* Styles for pathway section */
+.pathway-section {
+  margin-top: 40px;
+}
