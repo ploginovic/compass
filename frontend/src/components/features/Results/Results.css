@@ -52,28 +52,28 @@
 
 /* Styles for the spectrum bars */
 .spectrum-bar {
-  margin-bottom: 30px;
+  margin-bottom: 2px; /* Reduced from 10px to 2px */
 }
 
 .spectrum-labels {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
+  margin-bottom: 2px; /* Reduced space between labels and bar */
 }
 
 .spectrum-container {
   position: relative;
-  height: 20px;
+  height: 15px; /* Reduced height */
   background: #e0e0e0;
   border-radius: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .spectrum-bar-center {
   position: absolute;
   left: 50%;
   top: 0;
-  width: 2px;
+  width: 1px; /* Reduced width */
   height: 100%;
   background: #000;
   transform: translateX(-50%);
@@ -82,16 +82,17 @@
 .spectrum-indicator {
   position: absolute;
   top: 0;
-  width: 10px;
-  height: 20px;
+  width: 8px; /* Reduced width */
+  height: 15px; /* Reduced height */
   background: #007bff;
-  border-radius: 5px;
+  border-radius: 4px;
   transform: translateX(-50%);
 }
 
 .spectrum-scale {
   display: flex;
   justify-content: space-between;
+  font-size: 12px; /* Reduced font size */
 }
 
 /* Styles for specialties panel */
@@ -142,28 +143,77 @@
   border-radius: 8px;
 }
 
-/* Styles for pathway section */
-.pathway-section {
-  margin-top: 40px;
+/* Styles for 'Why This Specialty Fits Your Personality' */
+.why-specialty {
+  margin-top: 20px;
 }
 
-/* Styles for the 'Choose Specialty' button */
-.choose-specialty-button-container {
+.why-specialty h4 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.why-specialty p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Styles for the specialty dropdown */
+.specialty-dropdown {
+  margin-top: 10px;
+}
+
+.specialty-dropdown label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.specialty-dropdown select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Styles for the 'Compare Specialties' and 'Choose Specialty' buttons */
+.compare-choose-buttons {
   text-align: center;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.compare-specialties-button {
+  background-color: #6c757d;
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.compare-specialties-button:hover {
+  background-color: #5a6268;
 }
 
 .choose-specialty-button {
   background-color: #007bff;
   color: #ffffff;
   border: none;
-  padding: 10px 40px;
-  font-size: 16px;
+  padding: 8px 20px;
+  font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.choose-specialty-button:hover {
+.choose-specialty-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.choose-specialty-button:hover:not(:disabled) {
   background-color: #0056b3;
 }
 
@@ -195,4 +245,118 @@
   to {
     width: 100%;
   }
+}
+
+/* Styles for the compare overlay */
+.compare-overlay {
+  position: fixed;
+  top: 90px; /* Adjusted to be below the header */
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #ffffff; /* Ensure background is white */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  z-index: 1000;
+  overflow: auto;
+}
+
+.compare-overlay-content {
+  padding: 20px;
+  position: relative;
+}
+
+.close-overlay-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ccc;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.close-overlay-button:hover {
+  background: #aaa;
+}
+
+.compare-overlay-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.compare-columns {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.compare-column {
+  flex: 1;
+}
+
+.compare-column select {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  margin-bottom: 20px;
+  font-size: 30px; /* Increased font size */
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.comparison-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.comparison-table td {
+  font-size: 14px;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.compare-feature {
+  text-align: left;
+  width: 30%;
+}
+
+.compare-value {
+  width: 35%;
+}
+
+@media screen and (max-width: 768px) {
+  .compare-columns {
+    flex-direction: column;
+  }
+
+  .compare-feature,
+  .compare-value {
+    width: 100%;
+  }
+}
+
+/* Ensure the overlay is scrollable if content overflows */
+.compare-overlay {
+  overflow: auto;
 }
