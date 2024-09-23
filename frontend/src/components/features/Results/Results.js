@@ -10,7 +10,11 @@ import './Results.css'; // Import your specialties styles
 
 const Results = () => {
   const location = useLocation();
-  const [expandedPanel, setExpandedPanel] = useState(null); // State for tracking expanded panels
+  const [selectedSpecialty, setSelectedSpecialty] = useState(null); // State for the selected specialty
+  const [chosenSpecialty, setChosenSpecialty] = useState(null); // State for the specialty chosen for the ladder
+  const [loading, setLoading] = useState(false); // State for loading bar
+  const [showPanel3, setShowPanel3] = useState(false); // State to control visibility of Panel 3
+
   const finalScores = location.state?.finalScores;
 
   if (!finalScores) {
@@ -24,6 +28,11 @@ const Results = () => {
 
   // Get the first specialty name
   const firstSpecialtyName = specialtiesForPersonality[0] || 'GP';
+
+  // Initialize chosenSpecialty with firstSpecialtyName if not set
+  if (!chosenSpecialty) {
+    setChosenSpecialty(firstSpecialtyName);
+  }
 
   // Helper function to display the specialty details
   const renderSpecialtyDetails = (specialty) => (
@@ -96,67 +105,94 @@ const Results = () => {
     );
   };
 
-  // Function to handle panel expansion
-  const togglePanel = (panel) => {
-    setExpandedPanel(expandedPanel === panel ? null : panel);
+  const handleChooseSpecialty = () => {
+    if (selectedSpecialty) {
+      setChosenSpecialty(selectedSpecialty.name);
+      setLoading(true);
+
+      // Simulate a 2-second loading time
+      setTimeout(() => {
+        setLoading(false);
+        setShowPanel3(true);
+      }, 2000);
+    }
   };
 
   return (
     <div className="results-container">
       <div className="panel">
-        <div className="panel-header" onClick={() => togglePanel('traits')}>
+        <div className="panel-header">
+          <div className="panel-number">1</div>
           <h2>Your MBTI Personality Type: {personalityType}</h2>
         </div>
-        {expandedPanel === 'traits' && (
-          <div className="panel-content">
-            <h3>Score Breakdown:</h3>
-            {renderSpectrumBar('Extroversion (E)', 'Introversion (I)', scores.E, scores.I)}
-            {renderSpectrumBar('Sensing (S)', 'Intuition (N)', scores.S, scores.N)}
-            {renderSpectrumBar('Thinking (T)', 'Feeling (F)', scores.T, scores.F)}
-            {renderSpectrumBar('Judging (J)', 'Perceiving (P)', scores.J, scores.P)}
-          </div>
-        )}
+        <div className="panel-content">
+          <h3>Score Breakdown:</h3>
+          {renderSpectrumBar('Extroversion (E)', 'Introversion (I)', scores.E, scores.I)}
+          {renderSpectrumBar('Sensing (S)', 'Intuition (N)', scores.S, scores.N)}
+          {renderSpectrumBar('Thinking (T)', 'Feeling (F)', scores.T, scores.F)}
+          {renderSpectrumBar('Judging (J)', 'Perceiving (P)', scores.J, scores.P)}
+          {/* Removed the Next button */}
+        </div>
       </div>
 
       <div className="panel">
-        <div className="panel-header" onClick={() => togglePanel('specialties')}>
+        <div className="panel-header">
+          <div className="panel-number">2</div>
           <h2>Suggested Specialties for {personalityType}</h2>
         </div>
-        {expandedPanel === 'specialties' && (
-          <div className="panel-content">
-            <div className="specialties-grid">
-              {specialtiesForPersonality.length > 0 ? (
-                specialtiesForPersonality.map((specialtyName) => {
-                  const specialty = specialtiesData.specialties.find(
-                    (s) => s.name === specialtyName
-                  );
-                  return (
-                    <div key={specialtyName} className="specialty-item">
-                      <button className="specialty-button" onClick={() => togglePanel(specialtyName)}>
-                        {specialtyName}
-                      </button>
-                      {expandedPanel === specialtyName && specialty && renderSpecialtyDetails(specialty)}
-                    </div>
-                  );
-                })
-              ) : (
-                <p>No specialties available for this personality type.</p>
-              )}
+        <div className="panel-content specialties-panel">
+          <div className="specialties-list">
+            {specialtiesForPersonality.length > 0 ? (
+              specialtiesForPersonality.map((specialtyName, index) => {
+                const specialty = specialtiesData.specialties.find(
+                  (s) => s.name === specialtyName
+                );
+                return (
+                  <div
+                    key={specialtyName}
+                    className={`specialty-item ${selectedSpecialty && selectedSpecialty.name === specialtyName ? 'selected' : ''}`}
+                    onClick={() => setSelectedSpecialty(specialty)}
+                  >
+                    <span className="specialty-number">{index + 1}</span>
+                    <span className="specialty-name">{specialtyName}</span>
+                  </div>
+                );
+              })
+            ) : (
+              <p>No specialties available for this personality type.</p>
+            )}
+          </div>
+          {selectedSpecialty && (
+            <div className="specialty-details-panel">
+              {renderSpecialtyDetails(selectedSpecialty)}
+            </div>
+          )}
+        </div>
+        <div className="choose-specialty-button-container">
+          <button className="choose-specialty-button" onClick={handleChooseSpecialty}>
+            Choose Specialty
+          </button>
+        </div>
+        {loading && (
+          <div className="loading-bar-container">
+            <div className="loading-bar">
+              <div className="loading-progress"></div>
             </div>
           </div>
         )}
       </div>
 
-      <div className="panel">
-        <div className="panel-header" onClick={() => togglePanel('pathway')}>
-          <h2>Pathway to Your Desired Specialty</h2>
-        </div>
-        {expandedPanel === 'pathway' && (
-          <div className="panel-content">
-            <LadderDiagram endSpecialtyName={firstSpecialtyName} />
+      {showPanel3 && (
+        <div className="panel">
+          <div className="panel-header">
+            <div className="panel-number">3</div>
+            <h2>Pathway to Your Desired Specialty</h2>
           </div>
-        )}
-      </div>
+          <div className="panel-content">
+            <LadderDiagram endSpecialtyName={chosenSpecialty} />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
