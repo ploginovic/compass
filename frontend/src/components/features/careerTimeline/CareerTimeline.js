@@ -1,4 +1,4 @@
-// careerTimeline.js
+// CareerTimeline.js
 
 import React, { useState, useEffect } from 'react';
 
@@ -14,13 +14,12 @@ const LadderDiagram = ({ endSpecialtyName }) => {
   ];
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   const [isBlurred, setIsBlurred] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-      setWindowHeight(window.innerHeight);
+      // Removed setWindowHeight since windowHeight is not used
     };
 
     window.addEventListener('resize', handleResize);
@@ -42,7 +41,7 @@ const LadderDiagram = ({ endSpecialtyName }) => {
   const verticalPadding = 20; // Top and bottom padding
   const horizontalPadding = 50; // Left and right padding
 
-  // Calculate total SVG height (the same as before)
+  // Calculate total SVG height
   const svgHeight =
     labels.length * boxHeight +
     (labels.length - 1) * boxSpacing +
@@ -54,7 +53,8 @@ const LadderDiagram = ({ endSpecialtyName }) => {
   );
 
   // Calculate total horizontal space
-  const totalHorizontalSpace = windowWidth - horizontalPadding * 2 - maxBoxWidth;
+  const totalHorizontalSpace =
+    windowWidth - horizontalPadding * 2 - maxBoxWidth;
 
   // Calculate horizontal spacing between nodes
   const horizontalSpacing = totalHorizontalSpace / (labels.length - 1);
@@ -96,10 +96,8 @@ const LadderDiagram = ({ endSpecialtyName }) => {
           const yPosition =
             svgHeight - verticalPadding - (index + 1) * (boxHeight + boxSpacing);
 
-          // Calculate xPosition with proper padding
-          const xPosition =
-            horizontalPadding +
-            (totalHorizontalSpace / (labels.length - 1)) * index;
+          // Calculate xPosition using horizontalSpacing
+          const xPosition = horizontalPadding + horizontalSpacing * index;
 
           const applyBlur =
             isBlurred && index !== 0 && index !== labels.length - 1;
@@ -129,9 +127,7 @@ const LadderDiagram = ({ endSpecialtyName }) => {
                   verticalPadding -
                   (index + 2) * (boxHeight + boxSpacing);
 
-                const nextXPosition =
-                  horizontalPadding +
-                  (totalHorizontalSpace / (labels.length - 1)) * (index + 1);
+                const nextXPosition = horizontalPadding + horizontalSpacing * (index + 1);
 
                 return (
                   <line
