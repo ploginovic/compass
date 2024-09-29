@@ -127,8 +127,7 @@ input[type="radio"]:checked + label.likert-circle {
 /* Progress Bar Container */
 .progress-bar-container {
   position: fixed;
-  padding-top: 80px;
-  top: 80px; /* Default top position when header is visible */
+  top: 80px; /* Default top position when the header is visible */
   left: 0;
   width: 100%;
   z-index: 1;
@@ -138,6 +137,10 @@ input[type="radio"]:checked + label.likert-circle {
   transition: top 0.3s ease; /* Smooth transition */
 }
 
+/* Fixed position when the header is hidden */
+.progress-bar-container.fixed {
+  top: 0; /* Move progress bar to the top of the page when header is hidden */
+}
 
 /* Progress Bar */
 .progress-bar {
@@ -154,6 +157,7 @@ input[type="radio"]:checked + label.likert-circle {
   background-color: #4caf50; /* Green color for progress */
   transition: width 0.3s ease-in-out;
 }
+
 
 /* Refresh button styling */
 .refresh-button {

@@ -27,12 +27,11 @@
  * )
  */
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../components/features/Quiz/QuestionStyles.css'; // Adjusted path for QuestionStyles.css
 import Question from '../components/features/Quiz/Question';
 import questions from '../components/features/Quiz/questions.json'; // Import questions
 import useQuizLogic from '../components/features/Quiz/QuizLogic'; // Import the custom hook
-
 
 function Quiz() {
   const {
@@ -49,19 +48,42 @@ function Quiz() {
     toggleDeveloperMode,
   } = useQuizLogic();
 
-  // Calculate total progress as a percentage
-  const totalQuestions = developerMode ? 4 : questions.length; // Limit to 4 questions in developer mode
+  const totalQuestions = developerMode ? 4 : questions.length;
   const answeredCount = selectedAnswers.filter(
     (answer) => answer !== undefined
-  ).length; // Count of answered questions
-  const progress = (answeredCount / totalQuestions) * 100; // Calculate progress as a percentage
+  ).length;
+  const progress = (answeredCount / totalQuestions) * 100;
 
-  // Get the questions to display on the current page
   const startIndex = page * questionsPerPage;
   const currentQuestions = questions.slice(
     startIndex,
     startIndex + questionsPerPage
   );
+
+  // --- NEW: State to track if progress bar should be fixed at the top ---
+  const [isProgressFixed, setIsProgressFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector('.header');
+      if (!header) return; // Make sure header exists
+
+      const headerHeight = header.offsetHeight; // Get header height
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > headerHeight) {
+        setIsProgressFixed(true); // Fix progress bar when header is hidden
+      } else {
+        setIsProgressFixed(false); // Unfix progress bar when header is visible
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div className="app">
@@ -80,7 +102,7 @@ function Quiz() {
         </button>
 
         {/* Progress Bar */}
-        <div className="progress-bar-container">
+        <div className={`progress-bar-container ${isProgressFixed ? 'fixed' : ''}`}>
           <div className="progress-bar">
             <div
               className="progress"
