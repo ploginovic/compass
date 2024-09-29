@@ -1,57 +1,141 @@
-/* HomeStyles.css */
-
+/* Container for the home page content */
 .home-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
-  
-  .home-container h1 {
-    text-align: center;
-    color: #003366;
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .home-container h2 {
-    color: #006400;
-    font-size: 28px;
-    margin-top: 30px;
-  }
-  
-  .home-container p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  
-  .home-container ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .home-container li {
-    margin-bottom: 10px;
-  }
-  
-  .button-container {
-    text-align: center;
-    margin-top: 40px;
-  }
-  
-  .start-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .start-button:hover {
-    background-color: #0056b3;
-  }
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #e3e2e4bd; /* Platinum background for the entire container */
+  color: #0A1931; /* Oxford Blue for the main text color */
+  font-size: x-large;
+  padding: 5vh;
+  border-radius: 12px;
+
+  /* New Attributes to Enhance Text */
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.15); /* Subtle shadow to make text pop */
+  letter-spacing: 0.05em; /* Slightly increase spacing for readability */
+  line-height: 1.7; /* Increase line height for readability */
+}
+
+.home-container h1 {
+  font-weight: 700; /* Make headings bold */
+  text-transform: uppercase; /* Make headings uppercase */
+  background: linear-gradient(90deg, #16496D, #0a9688); /* Add a gradient text effect */
+  -webkit-background-clip: text; /* Ensure the gradient only fills the text */
+  -webkit-text-fill-color: transparent; /* Transparent text with gradient fill */
+}
+
+.home-container h2 {
+  font-weight: 200; /* Make headings bold */
+  text-transform: uppercase; /* Make headings uppercase */
+  background: linear-gradient(-90deg, #e3e2e4, #ffffff); /* Add a gradient text effect */
+  -webkit-background-clip: text; /* Ensure the gradient only fills the text */
+  -webkit-text-fill-color: transparent; /* Transparent text with gradient fill */
+}
+
+/* Highlight important keywords or phrases */
+.home-container strong {
+  font-weight: bold;
+  background-color: #16496D; /* Indigo background for keywords */
+  color: #fff; /* White text on indigo background */
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Panel row for aligning panels */
+.panel-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.panel {
+  background-color: #ffffff; /* Keep the rest of the panel white */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(10, 25, 49, 0.5); /* Slight shadow for depth */
+  width: 100%;
+  position: relative;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(10, 25, 49, 0.7);
+}
+
+/* Cambridge Blue panel headers */
+.panel-header {
+  background-color: #16496D !important; /* Cambridge Blue for the header */
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: left; /* Align the text to the left */
+}
+
+.panel-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0; /* Remove default margin */
+}
+
+/* Panel content styling remains the same */
+.panel-content {
+  font-size: 20px;
+  color: #0A1931; /* Oxford Blue for the content text */
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Arrow control styles */
+.arrow-control {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 32px;
+  cursor: pointer;
+  color: #02A1CF; /* Blue Green for the arrow */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.arrow-control:hover {
+  color: #16496D; /* Darken the arrow on hover */
+  transform: scale(1.1);
+}
+
+/* Panel-specific sizes */
+.why-panel {
+  flex: 1;
+  font-size: 20px;
+}
+
+.what-panel {
+  flex: 1;
+  font-size: 20px;
+}
+
+.how-panel {
+  width: 61%;
+  margin: 0 auto;
+}
+
+/* Button container styles */
+.button-container {
+  margin-top: 40px;
+}
+
+.start-button {
+  background-color: #02A1CF; /* Blue Green for the button */
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #16496D; /* Indigo Dye on hover */
+  transform: translateY(-3px);
+}

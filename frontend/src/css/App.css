@@ -6,7 +6,7 @@
 }
 
 .content {
-  padding-top: 10vh; /* Adjust this value to match the header's height */
+  padding-top: 5vh; /* Adjust this value to match the header's height */
   flex: 1;
 }
 
@@ -21,7 +21,8 @@
   }
 }
 
-.App-header {
+/* what is this?? */
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -30,7 +31,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
