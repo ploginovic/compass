@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import specialtiesData from '../../../data/SpecialtyOverview.json'; // Adjust the path as necessary
 import mbtiData from '../../../data/MBTI_specialties.json'; // Adjust the path as necessary
+import mbtiDescriptions from '../../../data/MBTI_descriptions.json'; // Import MBTI descriptions
 import LadderDiagram from '../careerTimeline/CareerTimeline'; // Import the LadderDiagram component
 import '../../../css/App.css'; // Global styles
 import './Results.css'; // Import your specialties styles
@@ -23,6 +24,8 @@ const Results = () => {
   // Get specialties based on the user's MBTI type
   const personalityType = finalScores?.personalityType || '';
   const scores = finalScores?.scores || {};
+
+  const personalityDescription = mbtiDescriptions[personalityType] || 'Description not available.';
 
   const specialtiesForPersonality = mbtiData[personalityType]?.specialties || [];
 
@@ -270,6 +273,9 @@ const Results = () => {
           <h2>Your MBTI Personality Type: {personalityType}</h2>
         </div>
         <div className="panel-content">
+          <h3>Personality Type Description</h3>
+          <p className="personality-description">{personalityDescription}</p>
+
           <h3>Score Breakdown:</h3>
           {renderSpectrumBar('Extroversion (E)', 'Introversion (I)', scores.E, scores.I)}
           {renderSpectrumBar('Sensing (S)', 'Intuition (N)', scores.S, scores.N)}
