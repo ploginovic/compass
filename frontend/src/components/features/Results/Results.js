@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import specialtiesData from '../../../data/SpecialtyOverview.json'; // Adjust the path as necessary
 import mbtiData from '../../../data/MBTI_specialties.json'; // Adjust the path as necessary
 import mbtiDescriptions from '../../../data/MBTI_descriptions.json'; // Import MBTI descriptions
+import personalitySpecialtyDescriptions from '../../../data/PersonalitySpecialtyDescriptions.json'; // Import the new JSON file
 import LadderDiagram from '../careerTimeline/CareerTimeline'; // Import the LadderDiagram component
 import '../../../css/App.css'; // Global styles
 import './Results.css'; // Import your specialties styles
@@ -64,53 +65,61 @@ const Results = () => {
   }
 
   // Helper function to display the specialty details
-  const renderSpecialtyDetails = (specialty) => (
-    <div className="specialty-details" key={specialty.name}>
-      <h3>{specialty.name}</h3>
-      <p>
-        <strong>Current Curriculum:</strong>{' '}
-        <a href={specialty.additional_info.current_curriculum.link}>
-          {specialty.additional_info.current_curriculum.title}
-        </a>
-      </p>
-      <p>
-        <strong>Core Training Options:</strong>{' '}
-        {Array.isArray(specialty.additional_info.core_training_options)
-          ? specialty.additional_info.core_training_options.join(', ')
-          : 'N/A'}
-      </p>
-      <p>
-        <strong>Indicative Length of Training:</strong>{' '}
-        {specialty.additional_info.indicative_length_of_training || 'N/A'}
-      </p>
-      <p>
-        <strong>Exams:</strong> {specialty.additional_info.exams || 'N/A'}
-      </p>
-      <p>
-        <strong>Approved Sub-Specialties:</strong>{' '}
-        {Array.isArray(specialty.additional_info.approved_sub_specialties)
-          ? specialty.additional_info.approved_sub_specialties.join(', ')
-          : 'N/A'}
-      </p>
-      <p>
-        <strong>Approved Dual CCT Pairings:</strong>{' '}
-        {Array.isArray(specialty.additional_info.approved_dual_CCT_pairings)
-          ? specialty.additional_info.approved_dual_CCT_pairings.join(', ')
-          : 'N/A'}
-      </p>
-      {specialty.additional_info.competition_ratio && (
+  const renderSpecialtyDetails = (specialty) => {
+    // Fetch the personalized description
+    const specialtyName = specialty.name;
+    const personalitySpecialtyDescription =
+      personalitySpecialtyDescriptions[personalityType]?.[specialtyName] ||
+      'No description available for this specialty and personality combination.';
+
+    return (
+      <div className="specialty-details" key={specialty.name}>
+        <h3>{specialty.name}</h3>
         <p>
-          <strong>Competition Ratio:</strong>{' '}
-          {JSON.stringify(specialty.additional_info.competition_ratio)}
+          <strong>Current Curriculum:</strong>{' '}
+          <a href={specialty.additional_info.current_curriculum.link}>
+            {specialty.additional_info.current_curriculum.title}
+          </a>
         </p>
-      )}
-      {/* Added section for 'Why This Specialty Fits Your Personality' */}
-      <div className="why-specialty">
-        <h4>Why This Specialty Fits Your Personality</h4>
-        <p>[Placeholder text]</p>
+        <p>
+          <strong>Core Training Options:</strong>{' '}
+          {Array.isArray(specialty.additional_info.core_training_options)
+            ? specialty.additional_info.core_training_options.join(', ')
+            : 'N/A'}
+        </p>
+        <p>
+          <strong>Indicative Length of Training:</strong>{' '}
+          {specialty.additional_info.indicative_length_of_training || 'N/A'}
+        </p>
+        <p>
+          <strong>Exams:</strong> {specialty.additional_info.exams || 'N/A'}
+        </p>
+        <p>
+          <strong>Approved Sub-Specialties:</strong>{' '}
+          {Array.isArray(specialty.additional_info.approved_sub_specialties)
+            ? specialty.additional_info.approved_sub_specialties.join(', ')
+            : 'N/A'}
+        </p>
+        <p>
+          <strong>Approved Dual CCT Pairings:</strong>{' '}
+          {Array.isArray(specialty.additional_info.approved_dual_CCT_pairings)
+            ? specialty.additional_info.approved_dual_CCT_pairings.join(', ')
+            : 'N/A'}
+        </p>
+        {specialty.additional_info.competition_ratio && (
+          <p>
+            <strong>Competition Ratio:</strong>{' '}
+            {JSON.stringify(specialty.additional_info.competition_ratio)}
+          </p>
+        )}
+        {/* Updated section for 'Why This Specialty Fits Your Personality' */}
+        <div className="why-specialty">
+          <h4>Why This Specialty Fits Your Personality</h4>
+          <p>{personalitySpecialtyDescription}</p>
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   // Function to render the spectrum bars with actual scores next to labels
   const renderSpectrumBar = (label1, label2, score1, score2) => {
