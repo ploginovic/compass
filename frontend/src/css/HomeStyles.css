@@ -1,17 +1,19 @@
+/* HomeStyles.css */
+
 /* Container for the home page content */
 .home-container {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   font-family: 'Arial', sans-serif;
-  background-color: #e3e2e4bd; /* Platinum background for the entire container */
-  color: #0A1931; /* Oxford Blue for the main text color */
+  background-color: #f7f7f7; /* Light gray background for the entire container */
+  color: #006989; /* Dark teal for the main text color */
   font-size: x-large;
   padding: 5vh;
   border-radius: 12px;
 
-  /* New Attributes to Enhance Text */
-  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.15); /* Subtle shadow to make text pop */
+  /* Enhanced Text Attributes */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow to make text pop */
   letter-spacing: 0.05em; /* Slightly increase spacing for readability */
   line-height: 1.7; /* Increase line height for readability */
 }
@@ -19,24 +21,24 @@
 .home-container h1 {
   font-weight: 700; /* Make headings bold */
   text-transform: uppercase; /* Make headings uppercase */
-  background: linear-gradient(90deg, #16496D, #0a9688); /* Add a gradient text effect */
+  background: linear-gradient(90deg, #006989, #007090); /* Gradient text effect */
   -webkit-background-clip: text; /* Ensure the gradient only fills the text */
   -webkit-text-fill-color: transparent; /* Transparent text with gradient fill */
 }
 
 .home-container h2 {
-  font-weight: 200; /* Make headings bold */
-  text-transform: uppercase; /* Make headings uppercase */
-  background: linear-gradient(-90deg, #e3e2e4, #ffffff); /* Add a gradient text effect */
-  -webkit-background-clip: text; /* Ensure the gradient only fills the text */
-  -webkit-text-fill-color: transparent; /* Transparent text with gradient fill */
+  font-weight: 200;
+  text-transform: uppercase;
+  background: linear-gradient(-90deg, #A3BAC3, #EAEBED); /* Gradient text effect */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Highlight important keywords or phrases */
 .home-container strong {
   font-weight: bold;
-  background-color: #16496D; /* Indigo background for keywords */
-  color: #fff; /* White text on indigo background */
+  background-color: #007090; /* Teal background for keywords */
+  color: #fff; /* White text on teal background */
   padding: 2px 5px;
   border-radius: 3px;
 }
@@ -50,9 +52,9 @@
 }
 
 .panel {
-  background-color: #ffffff; /* Keep the rest of the panel white */
+  background-color: #fff; /* Keep the rest of the panel white */
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(10, 25, 49, 0.5); /* Slight shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 105, 137, 0.2); /* Slight shadow for depth */
   width: 100%;
   position: relative;
   padding: 30px;
@@ -61,15 +63,16 @@
 
 .panel:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(10, 25, 49, 0.7);
+  box-shadow: 0 8px 16px rgba(0, 105, 137, 0.3);
 }
 
-/* Cambridge Blue panel headers */
+/* Panel headers */
 .panel-header {
-  background-color: #16496D !important; /* Cambridge Blue for the header */
+  background-color: #007090 !important; /* Teal for the header */
   padding: 10px 20px;
   border-radius: 8px;
   text-align: left; /* Align the text to the left */
+  color: #fff; /* White text for header */
 }
 
 .panel-header h2 {
@@ -78,10 +81,10 @@
   margin: 0; /* Remove default margin */
 }
 
-/* Panel content styling remains the same */
+/* Panel content styling */
 .panel-content {
   font-size: 20px;
-  color: #0A1931; /* Oxford Blue for the content text */
+  color: #006989; /* Dark teal for the content text */
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -93,12 +96,12 @@
   bottom: 20px;
   font-size: 32px;
   cursor: pointer;
-  color: #02A1CF; /* Blue Green for the arrow */
+  color: #01A7C2; /* Lighter teal for the arrow */
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .arrow-control:hover {
-  color: #16496D; /* Darken the arrow on hover */
+  color: #007090; /* Darken the arrow on hover */
   transform: scale(1.1);
 }
 
@@ -124,7 +127,7 @@
 }
 
 .start-button {
-  background-color: #02A1CF; /* Blue Green for the button */
+  background-color: #01A7C2; /* Light teal for the button */
   color: #fff;
   padding: 15px 40px;
   border: none;
@@ -136,6 +139,6 @@
 }
 
 .start-button:hover {
-  background-color: #16496D; /* Indigo Dye on hover */
+  background-color: #007090; /* Darken on hover */
   transform: translateY(-3px);
 }
