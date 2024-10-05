@@ -38,7 +38,7 @@ import Header from './components/layout/Header';
 import Home from './pages/Home'; // Import Home page component
 import Quiz from './pages/Quiz'; // Import Quiz page component
 import About from './pages/About'; // Import About page component
-import Articles from './pages/Articles'; // Import Articles page component
+import Test from './pages/Test'; // Import Test page component
 import Guides from './pages/Guides'; // Import Guides page component
 import Specialties from './pages/Specialties'; // Import Specialties page component
 import Research from './pages/Research'; // Import Research page component
@@ -59,7 +59,7 @@ function App() {
             <Route path="/quiz" element={<Quiz />} />
 
             <Route path="/results" element={<Results />} />
-            <Route path="/articles" element={<Articles />} />
+            <Route path="/test" element={<Test />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/specialties" element={<Specialties />} />
             <Route path="/research" element={<Research />} />

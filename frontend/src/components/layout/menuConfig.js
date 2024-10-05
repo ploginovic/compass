@@ -6,7 +6,7 @@ const menuItems = [
     title: 'Personality Types',
     link: '/personality-types',
     submenu: [
-      { title: 'Articles', link: '/articles' },
+      { title: 'Test', link: '/test' },
       { title: 'Specialized Guides', link: '/guides' },
     ],
   },
