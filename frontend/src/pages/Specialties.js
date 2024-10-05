@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import specialtiesData from '../data/SpecialtyOverview.json'; // Adjust the path as necessary
 import mbtiData from '../data/MBTI_specialties.json'; // Adjust the path as necessary
-import generalSurgeryData from '../data/General_surgery_test_requirements.json'; // Adjust the path as necessary
+import generalSurgeryData from '../data/GeneralSurgeryTestRequirements.json'; // Adjust the path as necessary
 import '../components/features/Results/SpecialtiesStyles.css'; // Import the CSS file
 import LadderDiagram from '../components/features/careerTimeline/CareerTimeline';
 
