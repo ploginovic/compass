@@ -134,7 +134,7 @@ input[type="radio"]:checked + label.likert-circle {
   background-color: white;
   padding: 10px;
   box-sizing: border-box;
-  transition: top 0.3s ease; /* Smooth transition */
+  transition: top 0.22s ease-in-out; /* Smooth transition */
 }
 
 /* Fixed position when the header is hidden */
@@ -145,7 +145,7 @@ input[type="radio"]:checked + label.likert-circle {
 /* Progress Bar */
 .progress-bar {
   width: 100%;
-  height: 20px;
+  height: 2.2vh; /*Was 20 px previously*/
   background-color: #e0e0e0; /* Light gray background */
   border-radius: 10px;
   overflow: hidden;
@@ -154,8 +154,8 @@ input[type="radio"]:checked + label.likert-circle {
 /* Progress (filled portion) */
 .progress {
   height: 100%;
-  background-color: #4caf50; /* Green color for progress */
-  transition: width 0.3s ease-in-out;
+  background-color: #8FC0A9; /* Green color for progress */
+  transition: width 0.4s ease-in-out;
 }
 
 
