@@ -1,37 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import menuItems from './menuConfig';
 import './HeaderStyles.css'; // Style for Header
 import Logo from '../../assets/logo_v2.svg'; // Ensure the path is correct
+import useHeaderVisibility from '../../hooks/useHeaderVisibility'; // Import the custom hook
 
 const Header = () => {
-  const [isVisible, setIsVisible] = useState(true); // State to control header visibility
-  const [lastScrollY, setLastScrollY] = useState(0); // State to track the last scroll position
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Get the current scroll position
-      const currentScrollY = window.scrollY;
-
-      // If scrolling down, hide the header; if scrolling up, show it
-      if (currentScrollY > lastScrollY && currentScrollY > 20) {
-        setIsVisible(false); // Hide the header when scrolling down
-      } else if (currentScrollY < lastScrollY) {
-        setIsVisible(true); // Show the header when scrolling up
-      }
-
-      // Update the last scroll position
-      setLastScrollY(currentScrollY);
-    };
-
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollY]);
+  const isVisible = useHeaderVisibility(); // Use the custom hook
 
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>

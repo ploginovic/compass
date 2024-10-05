@@ -27,11 +27,12 @@
  * )
  */
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../components/features/Quiz/QuestionStyles.css'; // Adjusted path for QuestionStyles.css
 import Question from '../components/features/Quiz/Question';
 import questions from '../components/features/Quiz/questions.json'; // Import questions
 import useQuizLogic from '../components/features/Quiz/QuizLogic'; // Import the custom hook
+import useHeaderVisibility from '../hooks/useHeaderVisibility'; // Import custom hook for header visibility
 
 function Quiz() {
   const {
@@ -60,30 +61,9 @@ function Quiz() {
     startIndex + questionsPerPage
   );
 
-  // --- NEW: State to track if progress bar should be fixed at the top ---
-  const [isProgressFixed, setIsProgressFixed] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const header = document.querySelector('.header');
-      if (!header) return; // Make sure header exists
-
-      const headerHeight = header.offsetHeight; // Get header height
-      const currentScroll = window.scrollY;
-
-      if (currentScroll > headerHeight) {
-        setIsProgressFixed(true); // Fix progress bar when header is hidden
-      } else {
-        setIsProgressFixed(false); // Unfix progress bar when header is visible
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // Use the custom hook to track header visibility
+  const isHeaderVisible = useHeaderVisibility();
+  const isProgressFixed = !isHeaderVisible; // Fix the progress bar when the header is hidden
 
   return (
     <div className="app">
