@@ -104,3 +104,50 @@
       width: 90%; /* Adjust for smaller screens */
     }
   }
+
+  .general-surgery-section {
+    margin-top: 40px;
+  }
+  
+  .tabs-container {
+    display: flex;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+  
+  .tabs button {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 15px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tabs button:hover {
+    background-color: #ddd;
+  }
+  
+  .tabs button.active {
+    background-color: #007090;
+    color: white;
+  }
+  
+  .tab-content {
+    flex-grow: 1;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .year-section {
+    margin-bottom: 20px;
+  }
+  
+  .year-section h4 {
+    margin-top: 20px;
+  }

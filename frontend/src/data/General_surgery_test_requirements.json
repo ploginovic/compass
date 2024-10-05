@@ -1,0 +1,305 @@
+{
+    "Medical School": {
+      "Duration": "5-6 years",
+      "Requirements": [
+        "Pass all exams and assessments",
+        "Engage in extracurricular activities related to surgery",
+        "Obtain medical degree (MBBS/MBChB)"
+      ],
+      "Overview": "Undergraduate medical education covering basic sciences and clinical studies.",
+      "Years": {
+        "Year 1": {
+          "Stage": "Pre-Clinical Studies",
+          "Curriculum": [
+            "Basic sciences: anatomy, physiology, biochemistry, pharmacology",
+            "Introduction to clinical skills and professionalism"
+          ],
+          "Requirements": [
+            "Pass written exams and practical assessments",
+            "Complete required coursework and assignments"
+          ],
+          "Additional Opportunities": [
+            "Join surgical societies",
+            "Attend surgical skills workshops"
+          ]
+        },
+        "Year 2": {
+          "Stage": "Pre-Clinical Studies",
+          "Curriculum": [
+            "Continuation of basic sciences",
+            "Advanced clinical skills"
+          ],
+          "Requirements": [
+            "Pass written exams and practical assessments",
+            "Complete required coursework and assignments"
+          ],
+          "Additional Opportunities": [
+            "Participate in research projects",
+            "Shadow surgeons"
+          ]
+        },
+        "Year 3": {
+          "Stage": "Clinical Studies",
+          "Curriculum": [
+            "Clinical rotations in various specialties, including surgery",
+            "Participation in ward rounds, clinics, and operating theatres"
+          ],
+          "Requirements": [
+            "Pass clinical exams (OSCEs) and written assessments",
+            "Demonstrate competency in clinical skills and patient interactions"
+          ]
+        },
+        "Year 4": {
+          "Stage": "Clinical Studies",
+          "Curriculum": [
+            "Continued clinical rotations",
+            "Increased responsibility in patient care"
+          ],
+          "Requirements": [
+            "Pass clinical exams and assessments",
+            "Engage in elective surgical placements if possible"
+          ]
+        },
+        "Year 5": {
+          "Stage": "Preparation for Practice",
+          "Curriculum": [
+            "Advanced clinical rotations",
+            "Electives focusing on surgical specialties"
+          ],
+          "Requirements": [
+            "Pass final medical exams",
+            "Obtain medical degree (MBBS/MBChB)",
+            "Apply for the Foundation Programme via UKFPO"
+          ]
+        },
+        "Year 6 (Optional)": {
+          "Stage": "Intercalated Degree",
+          "Curriculum": [
+            "BSc degree in a related field"
+          ],
+          "Requirements": [
+            "Complete intercalated degree requirements"
+          ],
+          "Additional Opportunities": [
+            "Conduct research projects",
+            "Publish papers"
+          ]
+        }
+      }
+    },
+    "Foundation Programme": {
+      "Duration": "2 years",
+      "Requirements": [
+        "Complete FY1 and FY2 competencies",
+        "Obtain Full GMC Registration",
+        "Build competitive portfolio for core training applications"
+      ],
+      "Overview": "General medical training to build foundational clinical skills.",
+      "Years": {
+        "FY1": {
+          "Stage": "Foundation Year 1",
+          "Rotations": [
+            "3-4 months in different specialties, including at least one surgical placement"
+          ],
+          "Requirements": [
+            "Obtain Full Registration with GMC upon satisfactory completion",
+            "Complete e-Portfolio entries and assessments",
+            "Demonstrate competencies outlined in the Foundation Programme Curriculum"
+          ]
+        },
+        "FY2": {
+          "Stage": "Foundation Year 2",
+          "Rotations": [
+            "Further rotations in various specialties, with opportunities to choose surgical placements"
+          ],
+          "Requirements": [
+            "Complete mandatory assessments and maintain e-Portfolio",
+            "Engage in audit, quality improvement projects, or research",
+            "Prepare for specialty applications"
+          ],
+          "Exams": [
+            "Consider taking MRCS Part A exam (optional at this stage)"
+          ]
+        }
+      }
+    },
+    "Core Surgical Training": {
+      "Duration": "2 years",
+      "Requirements": [
+        "Pass MRCS Part A and Part B exams",
+        "Achieve all competencies and maintain e-Portfolio",
+        "Prepare for specialty training applications"
+      ],
+      "Overview": "Focused surgical training to build core surgical competencies.",
+      "Years": {
+        "CT1": {
+          "Stage": "Core Training Year 1",
+          "Application": {
+            "Timeline": "November of FY2",
+            "Requirements": [
+              "Completion of FY2 competencies",
+              "Competitive portfolio",
+              "Strong references and performance in interviews"
+            ]
+          },
+          "Clinical Experience": [
+            "Rotations in different surgical specialties (e.g., general surgery, orthopaedics)"
+          ],
+          "Requirements": [
+            "Register with ISCP",
+            "Maintain e-Portfolio documenting competencies and assessments",
+            "Complete Work-Based Assessments (WBAs)"
+          ],
+          "Exams": [
+            "Pass MRCS Part A (if not already done)"
+          ]
+        },
+        "CT2": {
+          "Stage": "Core Training Year 2",
+          "Clinical Experience": [
+            "Continued rotations with increasing responsibility"
+          ],
+          "Requirements": [
+            "Complete mandatory courses (e.g., ATLS)",
+            "Achieve all Core Surgical Training competencies as per ISCP",
+            "Obtain satisfactory Educational Supervisor reports"
+          ],
+          "Exams": [
+            "Pass MRCS Part B to attain full Membership of the Royal College of Surgeons"
+          ]
+        }
+      }
+    },
+    "Specialty Training in General Surgery": {
+      "Duration": "6 years",
+      "Requirements": [
+        "Gain extensive operative experience",
+        "Pass FRCS examination",
+        "Complete all curricular requirements and competencies",
+        "Demonstrate leadership and teaching abilities"
+      ],
+      "Overview": "Advanced surgical training specializing in General Surgery.",
+      "Years": {
+        "ST3": {
+          "Stage": "Specialty Training Year 3",
+          "Application": {
+            "Timeline": "During CT2",
+            "Requirements": [
+              "Completion of Core Surgical Training competencies",
+              "Full MRCS qualification",
+              "Enhanced portfolio with evidence of commitment to surgery"
+            ]
+          },
+          "Clinical Experience": [
+            "Begin higher specialty training specifically in General Surgery"
+          ],
+          "Requirements": [
+            "Continued e-Portfolio documentation",
+            "Participate in operative procedures under supervision"
+          ],
+          "Professional Development": [
+            "Engage in teaching, research, and leadership opportunities"
+          ]
+        },
+        "ST4": {
+          "Stage": "Specialty Training Year 4",
+          "Clinical Experience": [
+            "Increased operative experience and responsibility"
+          ],
+          "Requirements": [
+            "Meet operative logbook targets",
+            "Continue WBAs and receive satisfactory supervisor reports",
+            "Attend mandatory training days and courses"
+          ],
+          "Exams": [
+            "Start preparing for FRCS exams"
+          ]
+        },
+        "ST5": {
+          "Stage": "Specialty Training Year 5",
+          "Clinical Experience": [
+            "Further exposure to sub-specialties within General Surgery"
+          ],
+          "Requirements": [
+            "Maintain operative logbook",
+            "Participate in audits and research"
+          ]
+        },
+        "ST6": {
+          "Stage": "Specialty Training Year 6",
+          "Clinical Experience": [
+            "Assume more complex surgical responsibilities"
+          ],
+          "Requirements": [
+            "Continue achieving competencies",
+            "Prepare intensively for FRCS examination"
+          ]
+        },
+        "ST7": {
+          "Stage": "Specialty Training Year 7",
+          "Clinical Experience": [
+            "Function as a senior registrar with significant autonomy"
+          ],
+          "Requirements": [
+            "Complete all required competencies and logbook cases",
+            "Demonstrate management and leadership skills"
+          ],
+          "Exams": [
+            "Pass FRCS General Surgery examination"
+          ],
+          "Preparation for Consultancy": [
+            "Attend courses on interview skills, CV preparation, and consultancy roles"
+          ]
+        },
+        "ST8": {
+          "Stage": "Specialty Training Year 8",
+          "Clinical Experience": [
+            "Finalize training with focus on areas of interest"
+          ],
+          "Requirements": [
+            "Ensure all competencies are met",
+            "Obtain final supervisor approvals"
+          ],
+          "Professional Development": [
+            "Finalize research projects",
+            "Prepare for consultant applications"
+          ]
+        }
+      }
+    },
+    "Certificate of Completion of Training (CCT)": {
+      "Requirements": [
+        "Successful completion of ST3-ST8 training",
+        "Achievement of all competencies outlined in the General Surgery curriculum",
+        "Passing the FRCS examination",
+        "Approval from the ARCP panel"
+      ],
+      "Overview": "Certification indicating completion of specialty training."
+    },
+    "Consultant Position": {
+      "Requirements": [
+        "Obtain CCT",
+        "Successfully apply and interview for consultant positions",
+        "Commit to continuous professional development"
+      ],
+      "Overview": "Senior role responsible for leading surgical teams and patient care.",
+      "Steps": {
+        "Job Applications": {
+          "Preparation": [
+            "Update CV with all training, qualifications, research, and publications",
+            "Obtain strong references"
+          ],
+          "Interview Process": [
+            "Demonstrate clinical expertise, leadership, and strategic vision",
+            "Present a portfolio showcasing achievements and contributions to surgery"
+          ]
+        },
+        "Additional Opportunities": {
+          "Fellowships (Optional)": [
+            "Sub-specialty fellowships in areas like hepatobiliary, transplant, or vascular surgery",
+            "Gain additional expertise and enhance employability"
+          ]
+        }
+      }
+    }
+  }
