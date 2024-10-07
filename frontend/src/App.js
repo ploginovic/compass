@@ -45,7 +45,10 @@ import Research from './pages/Research'; // Import Research page component
 import Theory from './pages/Theory'; // Import Theory page component
 import Login from './components/features/auth/Login'; // Import Login component
 import Results from './components/features/Results/Results';
+import { Amplify } from 'aws-amplify'; // Corrected named import for Amplify
+import awsconfig from './aws-exports';
 
+Amplify.configure(awsconfig);
 
 function App() {
   return (
@@ -72,5 +75,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

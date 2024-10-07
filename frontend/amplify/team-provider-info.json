@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-medmapbackend-dev-34891-authRole",
+      "UnauthRoleArn": "arn:aws:iam::047719616881:role/amplify-medmapbackend-dev-34891-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::047719616881:role/amplify-medmapbackend-dev-34891-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-medmapbackend-dev-34891-deployment",
+      "UnauthRoleName": "amplify-medmapbackend-dev-34891-unauthRole",
+      "StackName": "amplify-medmapbackend-dev-34891",
+      "StackId": "arn:aws:cloudformation:eu-west-2:047719616881:stack/amplify-medmapbackend-dev-34891/d35ced00-8499-11ef-936d-021fc99a75b3",
+      "AmplifyAppId": "d3vkhtbjm8ypfr"
+    },
+    "categories": {
+      "auth": {
+        "medmapbackenda1dd8496": {}
+      }
+    }
+  }
+}
