@@ -31,23 +31,26 @@
  *   <App />
  * )
  */
+// src/App.js
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
-import Home from './pages/Home'; // Import Home page component
-import Quiz from './pages/Quiz'; // Import Quiz page component
-import About from './pages/About'; // Import About page component
-import Test from './pages/Test'; // Import Test page component
-import Guides from './pages/Guides'; // Import Guides page component
-import Specialties from './pages/Specialties'; // Import Specialties page component
-import Research from './pages/Research'; // Import Research page component
-import Theory from './pages/Theory'; // Import Theory page component
-import Login from './components/features/auth/Login'; // Import Login component
+import Home from './pages/Home';
+import Quiz from './pages/Quiz';
+import About from './pages/About';
+import Test from './pages/Test';
+import Guides from './pages/Guides';
+import Specialties from './pages/Specialties';
+import Research from './pages/Research';
+import Theory from './pages/Theory';
+import Login from './components/features/auth/Login';
 import Results from './components/features/Results/Results';
-import { Amplify } from 'aws-amplify'; // Corrected named import for Amplify
-import awsconfig from './aws-exports';
 import Pathfinder from './pages/Pathfinder';
+import { Amplify } from 'aws-amplify';
+import awsconfig from './aws-exports';
+import RequireAuth from './components/RequireAuth'; // Import the RequireAuth component
 
 Amplify.configure(awsconfig);
 
@@ -58,18 +61,26 @@ function App() {
         <Header />
         <div className="content">
           <Routes>
+            {/* Public routes */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/quiz" element={<Quiz />} />
-
             <Route path="/results" element={<Results />} />
             <Route path="/test" element={<Test />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/specialties" element={<Specialties />} />
-            <Route path="/pathfinder" element={<Pathfinder />} />
             <Route path="/research" element={<Research />} />
             <Route path="/theory" element={<Theory />} />
-            <Route path="/login" element={<Login />} /> {/* Add Login route */}
+            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/login" element={<Login />} /> {/* Login route */}
+            
+            <Route
+              path="/pathfinder"
+              element={
+                <RequireAuth>
+                  <Pathfinder />
+                </RequireAuth>
+              }
+            />
           </Routes>
         </div>
         <Footer />
@@ -77,4 +88,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;

@@ -1,21 +1,33 @@
-import React from 'react';
-import { withAuthenticator } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css'; // Import default Amplify styles
-import './Login.css'; // Your custom styles if needed
+import React, { useEffect } from 'react';
+import { Authenticator, useAuthenticator } from '@aws-amplify/ui-react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import '@aws-amplify/ui-react/styles.css';
 
-const Login = ({ signOut, user }) => {
+const Login = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { route } = useAuthenticator();
+
+  const from = location.state?.from || '/';
+
+  useEffect(() => {
+    if (route === 'authenticated') {
+      navigate(from, { replace: true });
+    }
+  }, [route, navigate, from]);
+
+  if (route === 'authenticated') {
+    return null;
+  }
+
   return (
-    <div className="login-container">
-      <h1>Welcome, {user?.username}!</h1>
-      <div className="auth-details">
-        <p>You are successfully logged in with AWS Amplify Authentication.</p>
-      </div>
-      <button onClick={signOut}>Sign Out</button>
-    </div>
+    <Authenticator>
+      {/* Customize the sign-in UI if needed */}
+    </Authenticator>
   );
 };
 
-// Wrap the component with the withAuthenticator HOC and enable Google sign-in
-export default withAuthenticator(Login, {
-  socialProviders: ['google'], // Enable Google as a social provider
-});
+export default Login;
+
+
+

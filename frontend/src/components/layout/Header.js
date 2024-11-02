@@ -1,28 +1,40 @@
+// src/components/layout/Header.js
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import menuItems from './menuConfig';
-import './HeaderStyles.css'; // Style for Header
+import './HeaderStyles.css'; // Styles for Header
 import Logo from '../../assets/logo_v2.svg'; // Ensure the path is correct
-import useHeaderVisibility from '../../hooks/useHeaderVisibility'; // Import the custom hook
+import useHeaderVisibility from '../../hooks/useHeaderVisibility'; // Custom hook for header visibility
+import { useAuthenticator } from '@aws-amplify/ui-react'; // Correct import
 
 const Header = () => {
   const isVisible = useHeaderVisibility(); // Use the custom hook
+  const { user, signOut } = useAuthenticator(); // Access user and signOut
 
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
-      <NavLink to="/" exact className="header-logo">
+      <NavLink to="/" end className="header-logo">
         <img src={Logo} alt="CompassMed Logo" />
       </NavLink>
       <nav className="nav-menu">
-        {menuItems.map(item => (
+        {menuItems.map((item) => (
           <div key={item.title} className="menu-item">
-            <NavLink to={item.link} exact activeClassName="active">
+            <NavLink
+              to={item.link}
+              end
+              className={({ isActive }) => (isActive ? 'active' : undefined)}
+            >
               {item.title}
             </NavLink>
             {item.submenu && (
               <div className="submenu">
-                {item.submenu.map(sub => (
-                  <NavLink key={sub.title} to={sub.link} exact activeClassName="active">
+                {item.submenu.map((sub) => (
+                  <NavLink
+                    key={sub.title}
+                    to={sub.link}
+                    end
+                    className={({ isActive }) => (isActive ? 'active' : undefined)}
+                  >
                     {sub.title}
                   </NavLink>
                 ))}
@@ -32,12 +44,21 @@ const Header = () => {
         ))}
       </nav>
       <div className="header-buttons">
-        <NavLink to="/quiz" exact className="quiz-button">
+        <NavLink to="/quiz" end className="quiz-button">
           Take the Quiz
         </NavLink>
-        <NavLink to="/login" exact className="login-button">
-          Login
-        </NavLink>
+        {user ? (
+          <div className="user-info">
+            <span className="welcome-message">Welcome, User!</span>
+            <button onClick={signOut} className="signout-button">
+              Sign Out
+            </button>
+          </div>
+        ) : (
+          <NavLink to="/login" end className="login-button">
+            Login
+          </NavLink>
+        )}
       </div>
     </header>
   );
