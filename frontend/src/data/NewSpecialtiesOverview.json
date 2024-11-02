@@ -1,0 +1,237 @@
+{
+    "specialties": [
+      {
+        "name": "Acute internal medicine",
+        "additional_info": {
+          "current_curriculum": {
+            "title": "Acute internal medicine curriculum 2022",
+            "link": "URL_to_current_curriculum_pdf"
+          },
+          "core_training_options": [
+            "Acute care common stem (Internal medicine)",
+            "Internal medicine - stage one"
+          ],
+          "indicative_length_of_training": "Seven years",
+          "exams": "Specialty Certificate Examination (SCE) in Acute Medicine",
+          "approved_sub_specialties": [
+            "Stroke medicine"
+          ],
+          "approved_dual_CCT_pairings": [
+            "General (internal) medicine",
+            "Intensive care medicine (including General (internal) medicine)"
+          ],
+          "selection_process": {
+            "CT1": ["ACCS", "IMT"]
+          },
+          "competition_ratio_reference": "See competition ratios under 'Acute Internal Medicine ST4' in the other document"
+        }
+      },
+      {
+        "name": "Anaesthetics",
+        "additional_info": {
+          "current_curriculum": {
+            "title": "Anaesthetics curriculum",
+            "link": "URL_to_current_curriculum_pdf"
+          },
+          "core_training_options": [
+            "Acute care common stem (ACCS)",
+            "Core anaesthetics training"
+          ],
+          "indicative_length_of_training": "Seven years",
+          "exams": "Fellowship of the Royal College of Anaesthetists (FRCA)",
+          "approved_sub_specialties": [
+            "Pre-hospital emergency medicine"
+          ],
+          "approved_dual_CCT_pairings": [
+            "Intensive care medicine"
+          ],
+          "selection_process": {
+            "CT1": ["ACCS", "Core Anaesthetics Training"],
+            "ST4": ["ST4 Entry"]
+          },
+          "competition_ratio_reference": "Refer to competition ratios under 'Anaesthetics CT1' and 'Anaesthetics ST4' in the other document"
+        }
+      },
+      {
+        "name": "Cardio-thoracic surgery",
+        "additional_info": {
+          "current_curriculum": {
+            "title": "Cardio-thoracic surgery curriculum 2021",
+            "link": "URL_to_current_curriculum_pdf"
+          },
+          "core_training_options": [
+            "Core surgical training"
+          ],
+          "indicative_length_of_training": "Eight years",
+          "exams": "Intercollegiate Specialty Board (ISB) examination in Cardio-thoracic surgery",
+          "approved_sub_specialties": [
+            "Congenital cardiac surgery"
+          ],
+          "approved_dual_CCT_pairings": [],
+          "selection_process": {
+            "ST1": ["Direct ST1 Entry"]
+          },
+          "competition_ratio_reference": "See 'Cardiothoracic Surgery ST1' in the competition ratios document"
+        }
+      },
+      {
+        "name": "Cardiology",
+        "additional_info": {
+          "current_curriculum": {
+            "title": "Cardiology curriculum 2022",
+            "link": "URL_to_current_curriculum_pdf"
+          },
+          "core_training_options": [
+            "Acute care common stem (Internal medicine)",
+            "Internal medicine - stage one"
+          ],
+          "indicative_length_of_training": "Eight years",
+          "exams": "European Exam in General Cardiology (EEGC)",
+          "approved_sub_specialties": [
+            "Stroke medicine (after completion of IMY3)"
+          ],
+          "approved_dual_CCT_pairings": [
+            "General (internal) medicine"
+          ],
+          "selection_process": {
+            "ST4": ["ACCS", "IMT"]
+          },
+          "competition_ratio_reference": "Refer to 'Cardiology ST4' in the competition ratios document"
+        }
+      },
+      {
+        "name": "Chemical pathology",
+        "additional_info": {
+          "current_curriculum": {
+            "title": "Chemical pathology curriculum 2021",
+            "link": "URL_to_current_curriculum_pdf"
+          },
+          "core_training_options": [
+            "Acute care common stem (ACCS)",
+            "Broad-based training",
+            "Core anaesthetics training",
+            "Core paediatrics",
+            "Internal medicine - stage one (two years)"
+          ],
+          "indicative_length_of_training": "Seven years",
+          "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+          "approved_sub_specialties": [],
+          "approved_dual_CCT_pairings": [],
+          "selection_process": {
+            "ST3": ["ACCS", "BBT", "Core Anaesthetics Training", "Core Paediatrics", "IMT"]
+          },
+          "competition_ratio_reference": "See 'Chemical Pathology ST3' in the competition ratios document"
+        }
+      },
+      {
+        "name": "Child and adolescent psychiatry",
+        "additional_info": {
+          "current_curriculum": {
+            "title": "Child and adolescent psychiatry curriculum 2022",
+            "link": "URL_to_current_curriculum_pdf"
+          },
+          "core_training_options": [
+            "Core Psychiatry Training"
+          ],
+          "indicative_length_of_training": "Six years (uncoupled or run-through)",
+          "exams": "Membership of the Royal College of Psychiatrists (MRCPsych) examinations prior to entry into ST4: Paper A, Paper B, Clinical Assessment of Skills and Competencies (CASC)",
+          "approved_sub_specialties": [
+            "Forensic psychiatry",
+            "Medical psychotherapy",
+            "Psychiatry of learning disability"
+          ],
+          "approved_dual_CCT_pairings": [],
+          "selection_process": {
+            "ST4": ["Core Psychiatry Training"]
+          },
+          "competition_ratio_reference": "Refer to 'Psychiatry (all specialties) ST4' in the competition ratios document"
+        }
+      },
+      {
+        "name": "Clinical genetics",
+        "additional_info": {
+          "current_curriculum": {
+            "title": "Clinical genetics curriculum 2021",
+            "link": "URL_to_current_curriculum_pdf"
+          },
+          "core_training_options": [
+            "Acute care common stem (Internal medicine)",
+            "Core Anaesthetics Training",
+            "Core Psychiatry Training",
+            "Core Surgical Training",
+            "General Practice",
+            "Internal medicine - stage one",
+            "Obstetrics and Gynaecology",
+            "Ophthalmic Specialist Training",
+            "Paediatric Level 1 Training"
+          ],
+          "indicative_length_of_training": "Six years",
+          "exams": "Certificate exam in Medical Genetics",
+          "approved_sub_specialties": [
+            "Stroke medicine (after completion of IMY3)"
+          ],
+          "approved_dual_CCT_pairings": [],
+          "selection_process": {
+            "ST3": [
+              "ACCS",
+              "Core Anaesthetics Training",
+              "Core Psychiatry Training",
+              "Core Surgical Training",
+              "GP",
+              "IMT",
+              "O&G",
+              "OST",
+              "Paediatrics Level 1 Training"
+            ]
+          },
+          "competition_ratio_reference": "See 'Clinical Genetics ST3' in the competition ratios document"
+        }
+      },
+      {
+        "name": "Clinical neurophysiology",
+        "additional_info": {
+          "current_curriculum": {
+            "title": "Clinical neurophysiology curriculum 2021",
+            "link": "URL_to_current_curriculum_pdf"
+          },
+          "core_training_options": [
+            "Acute care common stem (Internal medicine)",
+            "Core Surgical Training",
+            "Internal medicine - stage one",
+            "Paediatric Level 1 Training"
+          ],
+          "indicative_length_of_training": "Six years",
+          "exams": "",
+          "approved_sub_specialties": [
+            "Stroke medicine (after completion of IMY3)"
+          ],
+          "approved_dual_CCT_pairings": [],
+          "selection_process": {
+            "ST3": ["ACCS", "CST", "IMT", "Paediatrics Level 1 Training"]
+          },
+          "competition_ratio_reference": "Refer to 'Clinical Neurophysiology ST3' in the competition ratios document"
+        }
+      },
+      {
+        "name": "Clinical oncology",
+        "additional_info": {
+          "current_curriculum": {
+            "title": "Clinical oncology curriculum 2021",
+            "link": "URL_to_current_curriculum_pdf"
+          },
+          "core_training_options": [
+            "Internal medicine - stage one (two years)"
+          ],
+          "indicative_length_of_training": "Seven years",
+          "exams": "Fellowship of the Royal College of Radiologists (FRCR)",
+          "approved_sub_specialties": [],
+          "approved_dual_CCT_pairings": [],
+          "selection_process": {
+            "ST3": ["IMT"]
+          },
+          "competition_ratio_reference": "See 'Clinical Oncology ST3' in the competition ratios document"
+        }
+      }
+    ]
+  }
+  

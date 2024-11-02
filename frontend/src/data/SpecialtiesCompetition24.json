@@ -1,0 +1,397 @@
+{
+    "Round 1": [
+      {
+        "Specialty": "ACCS Emergency Medicine CT1/ST1",
+        "Applications": 2718,
+        "Posts": 359,
+        "CompetitionRatio": 7.57
+      },
+      {
+        "Specialty": "Anaesthetics CT1",
+        "Applications": 3522,
+        "Posts": 542,
+        "CompetitionRatio": 6.5
+      },
+      {
+        "Specialty": "Cardiothoracic Surgery ST1",
+        "Applications": 408,
+        "Posts": 9,
+        "CompetitionRatio": 45.33
+      },
+      {
+        "Specialty": "Clinical Radiology ST1",
+        "Applications": 3719,
+        "Posts": 312,
+        "CompetitionRatio": 11.92
+      },
+      {
+        "Specialty": "Community Sexual and Reproductive Health ST1",
+        "Applications": 461,
+        "Posts": 18,
+        "CompetitionRatio": 25.61
+      },
+      {
+        "Specialty": "Core Psychiatry Training CT1",
+        "Applications": 4650,
+        "Posts": 492,
+        "CompetitionRatio": 9.45
+      },
+      {
+        "Specialty": "Core Surgical Training CT1",
+        "Applications": 3384,
+        "Posts": 645,
+        "CompetitionRatio": 5.25
+      },
+      {
+        "Specialty": "General Practice ST1",
+        "Applications": 15036,
+        "Posts": 4096,
+        "CompetitionRatio": 3.67
+      },
+      {
+        "Specialty": "General Practice and Public Health Medicine ST1 (Dual CCT Programme)",
+        "Applications": 1794,
+        "Posts": 16,
+        "CompetitionRatio": 112.13
+      },
+      {
+        "Specialty": "Histopathology ST1",
+        "Applications": 600,
+        "Posts": 119,
+        "CompetitionRatio": 5.04
+      },
+      {
+        "Specialty": "Internal Medicine Training CT1",
+        "Applications": 6273,
+        "Posts": 1698,
+        "CompetitionRatio": 3.69
+      },
+      {
+        "Specialty": "Neurosurgery ST1",
+        "Applications": 354,
+        "Posts": 18,
+        "CompetitionRatio": 19.67
+      },
+      {
+        "Specialty": "Obstetrics and Gynaecology ST1",
+        "Applications": 2170,
+        "Posts": 310,
+        "CompetitionRatio": 7
+      },
+      {
+        "Specialty": "Ophthalmology ST1",
+        "Applications": 1383,
+        "Posts": 96,
+        "CompetitionRatio": 14.41
+      },
+      {
+        "Specialty": "Oral and Maxillo Facial Surgery ST1",
+        "Applications": 34,
+        "Posts": 18,
+        "CompetitionRatio": 1.89
+      },
+      {
+        "Specialty": "Paediatrics ST1",
+        "Applications": 1583,
+        "Posts": 479,
+        "CompetitionRatio": 3.3
+      },
+      {
+        "Specialty": "Public Health Medicine ST1",
+        "Applications": 1816,
+        "Posts": 104,
+        "CompetitionRatio": 17.46
+      }
+    ],
+    "Round 2": [
+      {
+        "Specialty": "Acute Internal Medicine ST4",
+        "Applications": 367,
+        "Posts": 85,
+        "CompetitionRatio": 4.32
+      },
+      {
+        "Specialty": "Allergy ST3",
+        "Applications": 30,
+        "Posts": 3,
+        "CompetitionRatio": 10
+      },
+      {
+        "Specialty": "Anaesthetics ST4",
+        "Applications": 640,
+        "Posts": 391,
+        "CompetitionRatio": 1.64
+      },
+      {
+        "Specialty": "Audiovestibular Medicine ST3",
+        "Applications": 22,
+        "Posts": 4,
+        "CompetitionRatio": 5.5
+      },
+      {
+        "Specialty": "Cardiology ST4",
+        "Applications": 501,
+        "Posts": 127,
+        "CompetitionRatio": 3.94
+      },
+      {
+        "Specialty": "Chemical Pathology ST3",
+        "Applications": 26,
+        "Posts": 18,
+        "CompetitionRatio": 1.44
+      },
+      {
+        "Specialty": "Clinical Genetics ST3",
+        "Applications": 59,
+        "Posts": 15,
+        "CompetitionRatio": 3.93
+      },
+      {
+        "Specialty": "Clinical Neurophysiology ST3",
+        "Applications": 44,
+        "Posts": 8,
+        "CompetitionRatio": 5.5
+      },
+      {
+        "Specialty": "Clinical Oncology ST3",
+        "Applications": 232,
+        "Posts": 130,
+        "CompetitionRatio": 1.78
+      },
+      {
+        "Specialty": "Clinical Pharmacology and Therapeutics ST4",
+        "Applications": 23,
+        "Posts": 5,
+        "CompetitionRatio": 4.6
+      },
+      {
+        "Specialty": "Clinical Radiology ST3",
+        "Applications": 102,
+        "Posts": 17,
+        "CompetitionRatio": 6
+      },
+      {
+        "Specialty": "Combined Infection Training ST3",
+        "Applications": 153,
+        "Posts": 39,
+        "CompetitionRatio": 3.92
+      },
+      {
+        "Specialty": "Combined Infection Training ST4",
+        "Applications": 97,
+        "Posts": 14,
+        "CompetitionRatio": 6.93
+      },
+      {
+        "Specialty": "Dermatology ST3",
+        "Applications": 274,
+        "Posts": 52,
+        "CompetitionRatio": 5.27
+      },
+      {
+        "Specialty": "Diagnostic Neuropathology ST3",
+        "Applications": 6,
+        "Posts": 6,
+        "CompetitionRatio": 1
+      },
+      {
+        "Specialty": "Emergency Medicine (ACCS) ST3",
+        "Applications": 217,
+        "Posts": 25,
+        "CompetitionRatio": 8.68
+      },
+      {
+        "Specialty": "Emergency Medicine (DRE-EM) ST3",
+        "Applications": 23,
+        "Posts": 20,
+        "CompetitionRatio": 1.15
+      },
+      {
+        "Specialty": "Emergency Medicine ST4",
+        "Applications": 130,
+        "Posts": 99,
+        "CompetitionRatio": 1.31
+      },
+      {
+        "Specialty": "Endocrinology and Diabetes Mellitus ST4",
+        "Applications": 316,
+        "Posts": 97,
+        "CompetitionRatio": 3.26
+      },
+      {
+        "Specialty": "Gastroenterology ST4",
+        "Applications": 312,
+        "Posts": 98,
+        "CompetitionRatio": 3.18
+      },
+      {
+        "Specialty": "General (Internal) Medicine ST4",
+        "Applications": 145,
+        "Posts": 36,
+        "CompetitionRatio": 4.03
+      },
+      {
+        "Specialty": "General Surgery ST3",
+        "Applications": 681,
+        "Posts": 181,
+        "CompetitionRatio": 3.76
+      },
+      {
+        "Specialty": "Genitourinary Medicine ST4",
+        "Applications": 27,
+        "Posts": 51,
+        "CompetitionRatio": 0.53
+      },
+      {
+        "Specialty": "Geriatric Medicine ST4",
+        "Applications": 281,
+        "Posts": 161,
+        "CompetitionRatio": 1.75
+      },
+      {
+        "Specialty": "Haematology ST3",
+        "Applications": 207,
+        "Posts": 79,
+        "CompetitionRatio": 2.62
+      },
+      {
+        "Specialty": "Immunology ST3",
+        "Applications": 38,
+        "Posts": 12,
+        "CompetitionRatio": 3.17
+      },
+      {
+        "Specialty": "Intensive Care Medicine ST3",
+        "Applications": 426,
+        "Posts": 184,
+        "CompetitionRatio": 2.32
+      },
+      {
+        "Specialty": "Medical Oncology ST3",
+        "Applications": 265,
+        "Posts": 87,
+        "CompetitionRatio": 3.05
+      },
+      {
+        "Specialty": "Medical Ophthalmology ST3",
+        "Applications": 16,
+        "Posts": 7,
+        "CompetitionRatio": 2.29
+      },
+      {
+        "Specialty": "Neurology ST4",
+        "Applications": 189,
+        "Posts": 70,
+        "CompetitionRatio": 2.7
+      },
+      {
+        "Specialty": "Obstetrics and Gynaecology ST3",
+        "Applications": 377,
+        "Posts": 89,
+        "CompetitionRatio": 4.24
+      },
+      {
+        "Specialty": "Occupational Medicine ST3",
+        "Applications": 84,
+        "Posts": 12,
+        "CompetitionRatio": 7
+      },
+      {
+        "Specialty": "Otolaryngology ST3",
+        "Applications": 173,
+        "Posts": 59,
+        "CompetitionRatio": 2.93
+      },
+      {
+        "Specialty": "Paediatric and Perinatal Pathology ST3",
+        "Applications": 7,
+        "Posts": 3,
+        "CompetitionRatio": 2.33
+      },
+      {
+        "Specialty": "Paediatric Cardiology ST4",
+        "Applications": 53,
+        "Posts": 12,
+        "CompetitionRatio": 4.42
+      },
+      {
+        "Specialty": "Paediatric Surgery ST3",
+        "Applications": 84,
+        "Posts": 9,
+        "CompetitionRatio": 9.33
+      },
+      {
+        "Specialty": "Paediatrics ST3",
+        "Applications": 445,
+        "Posts": 63,
+        "CompetitionRatio": 7.06
+      },
+      {
+        "Specialty": "Palliative Medicine ST4",
+        "Applications": 101,
+        "Posts": 65,
+        "CompetitionRatio": 1.55
+      },
+      {
+        "Specialty": "Plastic Surgery ST3",
+        "Applications": 264,
+        "Posts": 61,
+        "CompetitionRatio": 4.33
+      },
+      {
+        "Specialty": "Psychiatry (all specialties) ST4",
+        "Applications": 486,
+        "Posts": 422,
+        "CompetitionRatio": 1.15
+      },
+      {
+        "Specialty": "Rehabilitation Medicine ST3",
+        "Applications": 58,
+        "Posts": 16,
+        "CompetitionRatio": 3.63
+      },
+      {
+        "Specialty": "Renal Medicine ST4",
+        "Applications": 181,
+        "Posts": 56,
+        "CompetitionRatio": 3.23
+      },
+      {
+        "Specialty": "Respiratory Medicine ST4",
+        "Applications": 367,
+        "Posts": 109,
+        "CompetitionRatio": 3.37
+      },
+      {
+        "Specialty": "Rheumatology ST4",
+        "Applications": 193,
+        "Posts": 38,
+        "CompetitionRatio": 5.08
+      },
+      {
+        "Specialty": "Sport and Exercise Medicine ST3",
+        "Applications": 77,
+        "Posts": 9,
+        "CompetitionRatio": 8.56
+      },
+      {
+        "Specialty": "Trauma and Orthopaedic Surgery ST3",
+        "Applications": 522,
+        "Posts": 164,
+        "CompetitionRatio": 3.18
+      },
+      {
+        "Specialty": "Urology ST3",
+        "Applications": 299,
+        "Posts": 70,
+        "CompetitionRatio": 4.27
+      },
+      {
+        "Specialty": "Vascular Surgery ST3",
+        "Applications": 173,
+        "Posts": 34,
+        "CompetitionRatio": 5.09
+      }
+    ]
+  }
+  
