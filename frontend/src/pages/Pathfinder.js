@@ -28,7 +28,9 @@ const Pathfinder = () => {
         setData(results.data);
 
         // Extract specialties for the dropdown menu
-        const specialtyNames = results.data.map((row) => row['Specialty Name']).filter(Boolean);
+        const specialtyNames = results.data
+          .map((row) => row['Specialty Name'])
+          .filter(Boolean);
         const uniqueSpecialties = Array.from(new Set(specialtyNames));
         setSpecialties(uniqueSpecialties);
       },
@@ -41,7 +43,9 @@ const Pathfinder = () => {
   useEffect(() => {
     if (selectedSpecialty && data.length > 0) {
       // Find the row corresponding to the selected specialty
-      const selectedRow = data.find((row) => row['Specialty Name'] === selectedSpecialty);
+      const selectedRow = data.find(
+        (row) => row['Specialty Name'] === selectedSpecialty
+      );
 
       if (selectedRow) {
         // Extract the values for the boxes
@@ -75,7 +79,11 @@ const Pathfinder = () => {
         {specialties.length > 0 && (
           <div className="dropdown-container">
             <label htmlFor="specialty-select">Select a Specialty:</label>
-            <select id="specialty-select" value={selectedSpecialty} onChange={handleSpecialtyChange}>
+            <select
+              id="specialty-select"
+              value={selectedSpecialty}
+              onChange={handleSpecialtyChange}
+            >
               <option value="">--Please choose an option--</option>
               {specialties.map((specialty, index) => (
                 <option key={index} value={specialty}>
@@ -90,50 +98,35 @@ const Pathfinder = () => {
         {selectedSpecialty && (
           <div className="path-container">
             {/* BMBS box */}
-            <div className="row">
-              <div className="box BMBS">BMBS</div>
-            </div>
+            <div className="box">{boxData.BMBS}</div>
 
-            {/* Arrow from BMBS */}
-            <div className="row">
-              <div className="arrow-container">
-                <div className="arrow">↓</div>
-              </div>
-            </div>
-
-            {/* N1_1 and optional N1_2 boxes */}
-            <div className="row">
-              <div className="box">{boxData.N1_1}</div>
-              {boxData.N1_2 && <div className="box">{boxData.N1_2}</div>}
-            </div>
-
-            {/* Duration labels between BMBS and N1_1 / N1_2 */}
-            <div className="row duration-row">
-              <div className="duration">{boxData.durations.dur_N1_1}</div>
-              {boxData.N1_2 && <div className="duration">{boxData.durations.dur_N1_2}</div>}
-            </div>
-
-            {/* Arrows from N1_1 / N1_2 to N2_1 */}
-            <div className="row">
-              <div className="arrow-container">
-                <div className="arrow">↓</div>
-              </div>
-              {boxData.N1_2 && (
-                <div className="arrow-container">
-                  <div className="arrow">↓</div>
-                </div>
+            {/* Arrow and duration to N1_1/N1_2 */}
+            <div className="arrow-container">
+              <div className="arrow">→</div>
+              {boxData.durations.dur_N1_1 && (
+                <div className="duration">{boxData.durations.dur_N1_1}</div>
               )}
             </div>
 
-            {/* N2_1 box */}
-            <div className="row">
-              <div
-                className="box"
-                style={{ gridColumn: boxData.N1_2 ? 'span 2' : 'auto' }}
-              >
-                {boxData.N2_1}
-              </div>
+            {/* N1_1 and N1_2 vertically stacked */}
+            <div className="stacked-boxes">
+              {boxData.N1_1 && <div className="box">{boxData.N1_1}</div>}
+              {boxData.N1_2 && <div className="box">{boxData.N1_2}</div>}
             </div>
+
+            {/* Arrows from N1_1 and N1_2 to N2_1 */}
+            <div className="arrow-to-n2">
+              {boxData.N1_1 && <div className="vertical-arrow">↓</div>}
+              {boxData.N1_2 && <div className="vertical-arrow">↓</div>}
+            </div>
+
+            {/* Arrow to N2_1 */}
+            <div className="arrow-container">
+              <div className="arrow">→</div>
+            </div>
+
+            {/* N2_1 box */}
+            <div className="box">{boxData.N2_1}</div>
           </div>
         )}
 
@@ -174,14 +167,10 @@ const Pathfinder = () => {
           font-weight: bold;
         }
         .path-container {
-          display: grid;
-          grid-template-columns: ${boxData.N1_2 ? '1fr 1fr' : '1fr'};
-          grid-gap: 10px;
-          justify-items: center;
+          display: flex;
+          align-items: center;
           margin-bottom: 20px;
-        }
-        .row {
-          display: contents;
+          position: relative;
         }
         .box {
           background-color: #4caf50;
@@ -191,28 +180,43 @@ const Pathfinder = () => {
           font-weight: bold;
           min-width: 100px;
           text-align: center;
-          margin: 5px 0;
-        }
-        .BMBS {
-          grid-column: ${boxData.N1_2 ? 'span 2' : 'auto'};
+          margin: 5px;
+          position: relative;
         }
         .arrow-container {
           display: flex;
-          justify-content: center;
           align-items: center;
+          position: relative;
         }
         .arrow {
           font-size: 24px;
-          margin: 5px 0;
-        }
-        .duration-row {
-          display: contents;
+          margin: 0 5px;
         }
         .duration {
+          position: absolute;
+          top: -25px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #2196f3;
+          color: white;
+          padding: 2px 5px;
+          border-radius: 3px;
           font-size: 12px;
-          color: #555;
-          text-align: center;
-          margin-bottom: 5px;
+          white-space: nowrap;
+        }
+        .stacked-boxes {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .vertical-arrow {
+          font-size: 24px;
+          margin: -5px 0;
+        }
+        .arrow-to-n2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       `}</style>
     </div>
