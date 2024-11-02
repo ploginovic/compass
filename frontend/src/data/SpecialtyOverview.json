@@ -21,9 +21,34 @@
                     "Intensive care medicine (including General (internal) medicine)"
                 ],
                 "competition_ratio": {
-                    "CT1": {"applications": 2718,
-                    "posts": 359,
-                    "ratio": 7.57}    
+                    "applications": 335,
+                    "posts": 82,
+                    "ratio": 4.09
+                }
+            }
+        },
+        {
+            "name": "Allergy",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Allergy curriculum 2021",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (Internal medicine)",
+                    "Internal medicine - stage one",
+                    "Paediatric level 1 training"
+                ],
+                "indicative_length_of_training": "Six years",
+                "exams": "Allergy and Clinical Immunology Certificate Examination (ACICE)",
+                "approved_sub_specialties": [
+                    "Stroke medicine (after completion of IMY3)"
+                ],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {
+                    "applications": 35,
+                    "posts": 2,
+                    "ratio": 17.50
                 }
             }
         },
@@ -48,9 +73,9 @@
                 ],
                 "competition_ratio": {
                     "CT1": {
-                        "applications": 3522,
-                        "posts": 542,
-                        "ratio": 6.50
+                        "applications": 2604,
+                        "posts": 545,
+                        "ratio": 4.78
                     },
                     "ST4": {
                         "applications": 640,
@@ -58,6 +83,55 @@
                         "ratio": 1.60
                     }
                 }
+            }
+        },
+        {
+            "name": "Audio vestibular medicine",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Audio vestibular medicine curriculum 2021",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (Internal medicine)",
+                    "Core surgery (ENT)",
+                    "General practice",
+                    "Internal medicine - stage one",
+                    "Paediatric level 1 training"
+                ],
+                "indicative_length_of_training": "Six years",
+                "exams": "",
+                "approved_sub_specialties": [
+                    "Stroke medicine (after completion of IMY3)"
+                ],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {
+                    "applications": 6,
+                    "posts": 5,
+                    "ratio": 1.20
+                }
+            }
+        },
+        {
+            "name": "Aviation and space medicine",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Aviation and space medicine curriculum 2022",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (Internal medicine)",
+                    "Core anaesthetics training",
+                    "Internal medicine - stage one",
+                    "General practice"
+                ],
+                "indicative_length_of_training": "Six years",
+                "exams": "Diploma in Aviation medicine (DAvMed)",
+                "approved_sub_specialties": [
+                    "Stroke medicine (after completion of IMY3)"
+                ],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {}
             }
         },
         {
@@ -77,12 +151,9 @@
                 ],
                 "approved_dual_CCT_pairings": [],
                 "competition_ratio": {
-
-                    "ST1":{
-                        "applications": 408,
-                        "posts": 9,
-                        "ratio": 45.33
-                    }
+                    "applications": 298,
+                    "posts": 11,
+                    "ratio": 27.09
                 }
             }
         },
@@ -109,6 +180,31 @@
                     "applications": 433,
                     "posts": 140,
                     "ratio": 3.09
+                }
+            }
+        },
+        {
+            "name": "Chemical pathology",
+            "additional_info": {
+                "current_curriculum": {
+                    "title": "Chemical pathology curriculum 2021",
+                    "link": "URL_to_current_curriculum_pdf"
+                },
+                "core_training_options": [
+                    "Acute care common stem (ACCS)",
+                    "Broad-based training",
+                    "Core anaesthetics training",
+                    "Core paediatrics",
+                    "Internal medicine - stage one (two years)"
+                ],
+                "indicative_length_of_training": "Seven years",
+                "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+                "approved_sub_specialties": [],
+                "approved_dual_CCT_pairings": [],
+                "competition_ratio": {
+                    "applications": 12,
+                    "posts": 7,
+                    "ratio": 1.71
                 }
             }
         },
@@ -304,6 +400,27 @@
                 "applications": 241,
                 "posts": 32,
                 "ratio": 7.53
+            }
+        }
+    },
+    {
+        "name": "Diagnostic neuropathology",
+        "additional_info": {
+            "current_curriculum": {
+                "title": "Diagnostic neuropathology curriculum 2021",
+                "link": "URL_to_current_curriculum_pdf"
+            },
+            "core_training_options": [
+                "Integrated cellular pathology training (ICPT)"
+            ],
+            "indicative_length_of_training": "Five-and-a-half to six years",
+            "exams": "Fellowship of the Royal College of Pathologists (FRCPath)",
+            "approved_sub_specialties": [],
+            "approved_dual_CCT_pairings": [],
+            "competition_ratio": {
+                "applications": 2,
+                "posts": 11,
+                "ratio": 0.18
             }
         }
     },
