@@ -47,6 +47,7 @@ import Login from './components/features/auth/Login'; // Import Login component
 import Results from './components/features/Results/Results';
 import { Amplify } from 'aws-amplify'; // Corrected named import for Amplify
 import awsconfig from './aws-exports';
+import Pathfinder from './pages/Pathfinder';
 
 Amplify.configure(awsconfig);
 
@@ -65,6 +66,7 @@ function App() {
             <Route path="/test" element={<Test />} />
             <Route path="/guides" element={<Guides />} />
             <Route path="/specialties" element={<Specialties />} />
+            <Route path="/pathfinder" element={<Pathfinder />} />
             <Route path="/research" element={<Research />} />
             <Route path="/theory" element={<Theory />} />
             <Route path="/login" element={<Login />} /> {/* Add Login route */}
