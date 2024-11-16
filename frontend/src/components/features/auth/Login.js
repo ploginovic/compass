@@ -21,9 +21,11 @@ const Login = () => {
   }
 
   return (
-    <Authenticator>
-      {/* Customize the sign-in UI if needed */}
-    </Authenticator>
+    <div className="content">
+      <Authenticator>
+        {/* Customize the sign-in UI if needed */}
+      </Authenticator>
+    </div>
   );
 };
 
