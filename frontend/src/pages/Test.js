@@ -2,7 +2,7 @@ import React from 'react';
 
 const Test = () => {
   return (
-    <div>
+    <div className='content'>
       <h2>Test Page</h2>
       <p>Welcome to the Test page!</p>
     </div>
