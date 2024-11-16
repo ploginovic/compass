@@ -16,7 +16,7 @@ import './FooterStyles.css';
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2024 My Application. All rights reserved.</p>
+      <p>&copy; 2025 MedMap Ltd. All rights reserved.</p>
     </footer>
   );
 }
