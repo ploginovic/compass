@@ -1,5 +1,3 @@
-// Pathfinder.js
-
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 
@@ -24,10 +22,8 @@ const Pathfinder = () => {
       header: true,
       skipEmptyLines: true,
       complete: function (results) {
-        console.log('Parsing complete:', results);
         setData(results.data);
 
-        // Extract specialties for the dropdown menu
         const specialtyNames = results.data
           .map((row) => row['Specialty Name'])
           .filter(Boolean);
@@ -42,13 +38,11 @@ const Pathfinder = () => {
 
   useEffect(() => {
     if (selectedSpecialty && data.length > 0) {
-      // Find the row corresponding to the selected specialty
       const selectedRow = data.find(
         (row) => row['Specialty Name'] === selectedSpecialty
       );
 
       if (selectedRow) {
-        // Extract the values for the boxes
         const boxValues = {
           BMBS: 'BMBS',
           N1_1: selectedRow['N1_1'] || '',
@@ -75,7 +69,6 @@ const Pathfinder = () => {
         <h2>Pathfinder Page</h2>
         <p>Welcome to the Pathfinder page!</p>
 
-        {/* Dropdown Menu */}
         {specialties.length > 0 && (
           <div className="dropdown-container">
             <label htmlFor="specialty-select">Select a Specialty:</label>
@@ -94,70 +87,37 @@ const Pathfinder = () => {
           </div>
         )}
 
-        {/* Container for the boxes and arrows */}
         {selectedSpecialty && (
-          <div className="path-container">
-            {/* BMBS box */}
-            <div className="box">{boxData.BMBS}</div>
+          <div className="flowchart-container">
+            <div className="flowchart">
+              {/* Horizontal flowchart */}
+              <div className="row">
+                {/* BMBS */}
+                <div className="box">{boxData.BMBS}</div>
+                <div className="arrow-right"></div>
 
-            {/* Arrow and duration to N1_1/N1_2 */}
-            <div className="arrow-container">
-              <div className="arrow">→</div>
-              {boxData.durations.dur_N1_1 && (
-                <div className="duration">{boxData.durations.dur_N1_1}</div>
-              )}
+                {/* Parallel branches */}
+                <div className="parallel-branches">
+                  <div className="branch">
+                    <div className="box">{boxData.N1_1 || 'None'}</div>
+                    <div className="arrow-down"></div>
+                  </div>
+                  <div className="branch">
+                    <div className="box">{boxData.N1_2 || 'N/A'}</div>
+                    <div className="arrow-down"></div>
+                  </div>
+                </div>
+
+                {/* Convergence */}
+                <div className="arrow-converge"></div>
+                <div className="box">{boxData.N2_1 || 'End'}</div>
+              </div>
             </div>
-
-            {/* N1_1 and N1_2 vertically stacked */}
-            <div className="stacked-boxes">
-              {boxData.N1_1 && <div className="box">{boxData.N1_1}</div>}
-              {boxData.N1_2 && <div className="box">{boxData.N1_2}</div>}
-            </div>
-
-            {/* Arrows from N1_1 and N1_2 to N2_1 */}
-            <div className="arrow-to-n2">
-              {boxData.N1_1 && <div className="vertical-arrow">↓</div>}
-              {boxData.N1_2 && <div className="vertical-arrow">↓</div>}
-            </div>
-
-            {/* Arrow to N2_1 */}
-            <div className="arrow-container">
-              <div className="arrow">→</div>
-            </div>
-
-            {/* N2_1 box */}
-            <div className="box">{boxData.N2_1}</div>
           </div>
         )}
-
-        <div>
-          <h3>CSV Data:</h3>
-          {data.length > 0 ? (
-            <table>
-              <thead>
-                <tr>
-                  {Object.keys(data[0]).map((key) => (
-                    <th key={key}>{key}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {data.map((row, index) => (
-                  <tr key={index}>
-                    {Object.values(row).map((value, i) => (
-                      <td key={i}>{value}</td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          ) : (
-            <p>Loading data...</p>
-          )}
-        </div>
       </div>
 
-      {/* Inline CSS styles */}
+      {/* Inline CSS */}
       <style jsx>{`
         .dropdown-container {
           margin-bottom: 20px;
@@ -166,11 +126,33 @@ const Pathfinder = () => {
           margin-right: 10px;
           font-weight: bold;
         }
-        .path-container {
+        .flowchart-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 20px;
+        }
+        .flowchart {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .row {
           display: flex;
           align-items: center;
-          margin-bottom: 20px;
+        }
+        .parallel-branches {
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-start;
+          margin: 0 20px;
           position: relative;
+        }
+        .branch {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
         .box {
           background-color: #4caf50;
@@ -178,45 +160,49 @@ const Pathfinder = () => {
           padding: 10px 20px;
           border-radius: 5px;
           font-weight: bold;
-          min-width: 100px;
+          min-width: 150px;
           text-align: center;
-          margin: 5px;
+          margin: 10px;
+        }
+        .arrow-right {
+          width: 50px;
+          height: 2px;
+          background-color: black;
           position: relative;
+          margin: 0 10px;
         }
-        .arrow-container {
-          display: flex;
-          align-items: center;
-          position: relative;
-        }
-        .arrow {
-          font-size: 24px;
-          margin: 0 5px;
-        }
-        .duration {
+        .arrow-right::after {
+          content: '';
           position: absolute;
-          top: -25px;
-          left: 50%;
-          transform: translateX(-50%);
-          background-color: #2196f3;
-          color: white;
-          padding: 2px 5px;
-          border-radius: 3px;
-          font-size: 12px;
-          white-space: nowrap;
+          top: -5px;
+          right: -10px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: transparent transparent transparent black;
         }
-        .stacked-boxes {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+        .arrow-down {
+          width: 2px;
+          height: 50px;
+          background-color: black;
+          margin: 10px 0;
+          position: relative;
         }
-        .vertical-arrow {
-          font-size: 24px;
-          margin: -5px 0;
+        .arrow-down::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: black transparent transparent transparent;
         }
-        .arrow-to-n2 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+        .arrow-converge {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 20px 30px 0 30px;
+          border-color: black transparent transparent transparent;
+          margin-top: -10px;
         }
       `}</style>
     </div>
