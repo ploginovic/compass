@@ -97,6 +97,14 @@
       "Competition ratio": 3.61
     }
   },
+  "Anaesthetics ST3": {
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 1056,
+      "Posts": 396,
+      "Competition ratio": 2.67
+    }
+  },
   "Anaesthetics ST4": {
     "2024": {
       "Round": "Round 2",
@@ -109,12 +117,6 @@
       "Applications": 640,
       "Posts": 399,
       "Competition ratio": 1.6
-    },
-    "2021": {
-      "Round": "Round 2",
-      "Applications": 1056,
-      "Posts": 396,
-      "Competition ratio": 2.67
     }
   },
   "Audiovestibular Medicine ST3": {
@@ -143,6 +145,14 @@
       "Competition ratio": 3.0
     }
   },
+  "Cardiology ST3": {
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 401,
+      "Posts": 97,
+      "Competition ratio": 4.13
+    }
+  },
   "Cardiology ST4": {
     "2024": {
       "Round": "Round 2",
@@ -161,12 +171,6 @@
       "Applications": 412,
       "Posts": 130,
       "Competition ratio": 3.17
-    },
-    "2021": {
-      "Round": "Round 2",
-      "Applications": 401,
-      "Posts": 97,
-      "Competition ratio": 4.13
     }
   },
   "Cardiothoracic Surgery ST1": {
@@ -529,21 +533,13 @@
       "Competition ratio": 1.0
     }
   },
-  "Emergency Medicine (ACCS) ST3": {
-    "2024": {
-      "Round": "Round 2",
-      "Applications": 217,
-      "Posts": 25,
-      "Competition ratio": 8.68
-    },
+  "Emergency Medicine ST3": {
     "2023": {
       "Round": "Round 2",
       "Applications": 28,
       "Posts": 17,
       "Competition ratio": 1.65
-    }
-  },
-  "Emergency Medicine ST3": {
+    },
     "2022": {
       "Round": "Round 2",
       "Applications": 247,
@@ -622,6 +618,1031 @@
       "Posts": 103,
       "Competition ratio": 3.37
     }
+  },
+  "General and Vascular Surgery ST3": {
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 607,
+      "Posts": 136,
+      "Competition ratio": 4.46
+    }
+  },
+  "General Practice ST1": {
+    "2024": {
+      "Round": "Round 1",
+      "Applications": 15036,
+      "Posts": 4096,
+      "Competition ratio": 3.67
+    },
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 10514,
+      "Posts": 3935,
+      "Competition ratio": 2.67
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 8549,
+      "Posts": 4137,
+      "Competition ratio": 2.07
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 7640,
+      "Posts": 4269,
+      "Competition ratio": 1.79
+    }
+  },
+  "General Surgery ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 681,
+      "Posts": 181,
+      "Competition ratio": 3.76
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 515,
+      "Posts": 162,
+      "Competition ratio": 3.18
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 532,
+      "Posts": 153,
+      "Competition ratio": 3.48
+    }
+  },
+  "Genitourinary Medicine ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 16,
+      "Posts": 21,
+      "Competition ratio": 0.76
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 7,
+      "Posts": 21,
+      "Competition ratio": 0.33
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 17,
+      "Posts": 35,
+      "Competition ratio": 0.49
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 30,
+      "Posts": 38,
+      "Competition ratio": 0.79
+    }
+  },
+  "Geriatric Medicine ST4": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 313,
+      "Posts": 169,
+      "Competition ratio": 1.85
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 269,
+      "Posts": 155,
+      "Competition ratio": 1.73
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 343,
+      "Posts": 160,
+      "Competition ratio": 2.14
+    }
+  },
+  "Haematology ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 265,
+      "Posts": 69,
+      "Competition ratio": 3.84
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 227,
+      "Posts": 66,
+      "Competition ratio": 3.44
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 226,
+      "Posts": 74,
+      "Competition ratio": 3.05
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 231,
+      "Posts": 66,
+      "Competition ratio": 3.5
+    }
+  },
+  "Histopathology ST1": {
+    "2024": {
+      "Round": "Round 1",
+      "Applications": 600,
+      "Posts": 119,
+      "Competition ratio": 5.04
+    },
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 380,
+      "Posts": 109,
+      "Competition ratio": 3.49
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 286,
+      "Posts": 112,
+      "Competition ratio": 2.55
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 272,
+      "Posts": 106,
+      "Competition ratio": 2.57
+    }
+  },
+  "Immunology ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 31,
+      "Posts": 3,
+      "Competition ratio": 10.33
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 20,
+      "Posts": 8,
+      "Competition ratio": 2.5
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 46,
+      "Posts": 1,
+      "Competition ratio": 46.0
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 33,
+      "Posts": 6,
+      "Competition ratio": 5.5
+    }
+  },
+  "Intensive Care Medicine ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 506,
+      "Posts": 281,
+      "Competition ratio": 1.8
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 568,
+      "Posts": 329,
+      "Competition ratio": 1.73
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 493,
+      "Posts": 220,
+      "Competition ratio": 2.24
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 595,
+      "Posts": 203,
+      "Competition ratio": 2.93
+    }
+  },
+  "Internal Medicine Training CT1": {
+    "2024": {
+      "Round": "Round 1",
+      "Applications": 6273,
+      "Posts": 1698,
+      "Competition ratio": 3.69
+    },
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 4406,
+      "Posts": 1670,
+      "Competition ratio": 2.64
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 4008,
+      "Posts": 1639,
+      "Competition ratio": 2.45
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 3590,
+      "Posts": 1567,
+      "Competition ratio": 2.29
+    }
+  },
+  "Medical Oncology ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 265,
+      "Posts": 87,
+      "Competition ratio": 3.05
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 187,
+      "Posts": 92,
+      "Competition ratio": 2.03
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 214,
+      "Posts": 88,
+      "Competition ratio": 2.43
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 212,
+      "Posts": 79,
+      "Competition ratio": 2.68
+    }
+  },
+  "Medical Ophthalmology ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 16,
+      "Posts": 7,
+      "Competition ratio": 2.29
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 15,
+      "Posts": 5,
+      "Competition ratio": 3.0
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 6,
+      "Posts": 6,
+      "Competition ratio": 1.0
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 21,
+      "Posts": 4,
+      "Competition ratio": 5.25
+    }
+  },
+  "Neurology ST3": {
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 168,
+      "Posts": 51,
+      "Competition ratio": 3.29
+    }
+  },
+  "Neurology ST4": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 189,
+      "Posts": 70,
+      "Competition ratio": 2.7
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 147,
+      "Posts": 62,
+      "Competition ratio": 2.37
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 117,
+      "Posts": 71,
+      "Competition ratio": 1.65
+    }
+  },
+  "Neurosurgery ST1": {
+    "2024": {
+      "Round": "Round 1",
+      "Applications": 354,
+      "Posts": 18,
+      "Competition ratio": 19.67
+    },
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 255,
+      "Posts": 20,
+      "Competition ratio": 12.75
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 255,
+      "Posts": 16,
+      "Competition ratio": 15.94
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 242,
+      "Posts": 15,
+      "Competition ratio": 16.13
+    }
+  },
+  "Neurosurgery ST2": {
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 39,
+      "Posts": 2,
+      "Competition ratio": 19.5
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 53,
+      "Posts": 1,
+      "Competition ratio": 53.0
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 59,
+      "Posts": 1,
+      "Competition ratio": 59.0
+    }
+  },
+  "Nuclear Medicine ST3": {
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 17,
+      "Posts": 8,
+      "Competition ratio": 2.13
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 15,
+      "Posts": 2,
+      "Competition ratio": 7.5
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 16,
+      "Posts": 3,
+      "Competition ratio": 5.33
+    }
+  },
+  "Obstetrics and Gynaecology ST1": {
+    "2024": {
+      "Round": "Round 1",
+      "Applications": 2170,
+      "Posts": 310,
+      "Competition ratio": 7.0
+    },
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 1347,
+      "Posts": 312,
+      "Competition ratio": 4.32
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 1042,
+      "Posts": 280,
+      "Competition ratio": 3.72
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 877,
+      "Posts": 260,
+      "Competition ratio": 3.37
+    }
+  },
+  "Obstetrics and Gynaecology ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 377,
+      "Posts": 89,
+      "Competition ratio": 4.24
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 345,
+      "Posts": 88,
+      "Competition ratio": 3.92
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 318,
+      "Posts": 71,
+      "Competition ratio": 4.48
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 312,
+      "Posts": 22,
+      "Competition ratio": 14.18
+    }
+  },
+  "Occupational Medicine ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 84,
+      "Posts": 12,
+      "Competition ratio": 7.0
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 50,
+      "Posts": 7,
+      "Competition ratio": 7.14
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 43,
+      "Posts": 3,
+      "Competition ratio": 14.33
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 25,
+      "Posts": 5,
+      "Competition ratio": 5.0
+    }
+  },
+  "Ophthalmology ST1": {
+    "2024": {
+      "Round": "Round 1",
+      "Applications": 1383,
+      "Posts": 96,
+      "Competition ratio": 14.41
+    },
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 971,
+      "Posts": 98,
+      "Competition ratio": 9.91
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 700,
+      "Posts": 78,
+      "Competition ratio": 8.97
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 605,
+      "Posts": 89,
+      "Competition ratio": 6.8
+    }
+  },
+  "Ophthalmology ST3": {
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 73,
+      "Posts": 21,
+      "Competition ratio": 3.48
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 54,
+      "Posts": 14,
+      "Competition ratio": 3.86
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 82,
+      "Posts": 16,
+      "Competition ratio": 5.13
+    }
+  },
+  "Oral and Maxillo Facial Surgery ST1": {
+    "2024": {
+      "Round": "Round 1",
+      "Applications": 34,
+      "Posts": 18,
+      "Competition ratio": 1.89
+    },
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 38,
+      "Posts": 12,
+      "Competition ratio": 3.17
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 34,
+      "Posts": 14,
+      "Competition ratio": 2.43
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 53,
+      "Posts": 10,
+      "Competition ratio": 5.3
+    }
+  },
+  "Oral and Maxillo Facial Surgery ST3": {
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 22,
+      "Posts": 30,
+      "Competition ratio": 0.73
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 27,
+      "Posts": 25,
+      "Competition ratio": 1.08
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 23,
+      "Posts": 17,
+      "Competition ratio": 1.45
+    }
+  },
+  "Otolaryngology ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 173,
+      "Posts": 59,
+      "Competition ratio": 2.93
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 152,
+      "Posts": 60,
+      "Competition ratio": 2.53
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 169,
+      "Posts": 47,
+      "Competition ratio": 3.6
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 155,
+      "Posts": 35,
+      "Competition ratio": 4.43
+    }
+  },
+  "Paediatric and Perinatal Pathology ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 7,
+      "Posts": 3,
+      "Competition ratio": 2.33
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 6,
+      "Posts": 7,
+      "Competition ratio": 0.86
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 9,
+      "Posts": 6,
+      "Competition ratio": 1.5
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 4,
+      "Posts": 4,
+      "Competition ratio": 1.0
+    }
+  },
+  "Paediatric Cardiology ST4": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 53,
+      "Posts": 12,
+      "Competition ratio": 4.42
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 58,
+      "Posts": 11,
+      "Competition ratio": 5.27
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 51,
+      "Posts": 6,
+      "Competition ratio": 8.5
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 35,
+      "Posts": 6,
+      "Competition ratio": 5.83
+    }
+  },
+  "Paediatric Surgery ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 84,
+      "Posts": 9,
+      "Competition ratio": 9.33
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 74,
+      "Posts": 18,
+      "Competition ratio": 4.11
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 74,
+      "Posts": 11,
+      "Competition ratio": 6.73
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 80,
+      "Posts": 12,
+      "Competition ratio": 6.67
+    }
+  },
+  "Paediatrics ST1": {
+    "2024": {
+      "Round": "Round 1",
+      "Applications": 1583,
+      "Posts": 479,
+      "Competition ratio": 3.3
+    },
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 1231,
+      "Posts": 506,
+      "Competition ratio": 2.43
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 1075,
+      "Posts": 458,
+      "Competition ratio": 2.35
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 886,
+      "Posts": 423,
+      "Competition ratio": 2.09
+    }
+  },
+  "Paediatrics ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 445,
+      "Posts": 63,
+      "Competition ratio": 7.06
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 340,
+      "Posts": 57,
+      "Competition ratio": 5.96
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 301,
+      "Posts": 24,
+      "Competition ratio": 12.54
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 222,
+      "Posts": 23,
+      "Competition ratio": 9.65
+    }
+  },
+  "Paediatrics ST4": {
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 361,
+      "Posts": 71,
+      "Competition ratio": 5.08
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 261,
+      "Posts": 75,
+      "Competition ratio": 3.48
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 175,
+      "Posts": 27,
+      "Competition ratio": 6.48
+    }
+  },
+  "Palliative Medicine ST3": {
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 66,
+      "Posts": 27,
+      "Competition ratio": 2.44
+    }
+  },
+  "Palliative Medicine ST4": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 101,
+      "Posts": 65,
+      "Competition ratio": 1.55
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 69,
+      "Posts": 60,
+      "Competition ratio": 1.15
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 53,
+      "Posts": 51,
+      "Competition ratio": 1.04
+    }
+  },
+  "Plastic Surgery ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 264,
+      "Posts": 61,
+      "Competition ratio": 4.33
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 220,
+      "Posts": 52,
+      "Competition ratio": 4.23
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 205,
+      "Posts": 42,
+      "Competition ratio": 4.88
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 211,
+      "Posts": 75,
+      "Competition ratio": 2.81
+    }
+  },
+  "Psychiatry (all specialties) ST4": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 486,
+      "Posts": 422,
+      "Competition ratio": 1.15
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 478,
+      "Posts": 393,
+      "Competition ratio": 1.22
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 453,
+      "Posts": 410,
+      "Competition ratio": 1.1
+    }
+  },
+  "Public Health Medicine ST1": {
+    "2024": {
+      "Round": "Round 1",
+      "Applications": 1816,
+      "Posts": 104,
+      "Competition ratio": 17.46
+    },
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 1258,
+      "Posts": 124,
+      "Competition ratio": 10.15
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 1085,
+      "Posts": 95,
+      "Competition ratio": 11.42
+    },
+    "2021": {
+      "Round": "Round 1",
+      "Applications": 988,
+      "Posts": 98,
+      "Competition ratio": 10.08
+    }
+  },
+  "Rehabilitation Medicine ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 58,
+      "Posts": 16,
+      "Competition ratio": 3.63
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 41,
+      "Posts": 14,
+      "Competition ratio": 2.93
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 38,
+      "Posts": 12,
+      "Competition ratio": 3.17
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 42,
+      "Posts": 14,
+      "Competition ratio": 3.0
+    }
+  },
+  "Renal Medicine ST4": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 181,
+      "Posts": 56,
+      "Competition ratio": 3.23
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 163,
+      "Posts": 52,
+      "Competition ratio": 3.13
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 216,
+      "Posts": 75,
+      "Competition ratio": 2.88
+    }
+  },
+  "Respiratory Medicine ST4": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 367,
+      "Posts": 109,
+      "Competition ratio": 3.37
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 343,
+      "Posts": 109,
+      "Competition ratio": 3.15
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 480,
+      "Posts": 155,
+      "Competition ratio": 3.17
+    }
+  },
+  "Rheumatology ST4": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 193,
+      "Posts": 38,
+      "Competition ratio": 5.08
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 193,
+      "Posts": 44,
+      "Competition ratio": 4.39
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 201,
+      "Posts": 67,
+      "Competition ratio": 3.0
+    }
+  },
+  "Sport and Exercise Medicine ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 77,
+      "Posts": 9,
+      "Competition ratio": 8.56
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 62,
+      "Posts": 9,
+      "Competition ratio": 6.89
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 45,
+      "Posts": 5,
+      "Competition ratio": 9.0
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 35,
+      "Posts": 6,
+      "Competition ratio": 5.83
+    }
+  },
+  "Trauma and Orthopaedic Surgery ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 522,
+      "Posts": 164,
+      "Competition ratio": 3.18
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 483,
+      "Posts": 160,
+      "Competition ratio": 3.02
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 527,
+      "Posts": 142,
+      "Competition ratio": 3.71
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 604,
+      "Posts": 177,
+      "Competition ratio": 3.41
+    }
+  },
+  "Urology ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 299,
+      "Posts": 70,
+      "Competition ratio": 4.27
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 252,
+      "Posts": 82,
+      "Competition ratio": 3.07
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 235,
+      "Posts": 59,
+      "Competition ratio": 3.98
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 199,
+      "Posts": 51,
+      "Competition ratio": 3.9
+    }
+  },
+  "Vascular Surgery ST3": {
+    "2024": {
+      "Round": "Round 2",
+      "Applications": 173,
+      "Posts": 34,
+      "Competition ratio": 5.09
+    },
+    "2023": {
+      "Round": "Round 2",
+      "Applications": 191,
+      "Posts": 42,
+      "Competition ratio": 4.55
+    },
+    "2022": {
+      "Round": "Round 2",
+      "Applications": 138,
+      "Posts": 26,
+      "Competition ratio": 5.31
+    },
+    "2021": {
+      "Round": "Round 2",
+      "Applications": 607,
+      "Posts": 136,
+      "Competition ratio": 4.46
+    }
+  },
+  "Thoracic Surgery ST4": {
+    "2023": {
+      "Round": "Round 1",
+      "Applications": 28,
+      "Posts": 10,
+      "Competition ratio": 2.8
+    },
+    "2022": {
+      "Round": "Round 1",
+      "Applications": 19,
+      "Posts": 3,
+      "Competition ratio": 6.33
+    }
   }
-  
 }
