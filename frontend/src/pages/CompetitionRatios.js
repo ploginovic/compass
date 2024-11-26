@@ -6,23 +6,21 @@
 import React, { useState } from 'react';
 import Plot from 'react-plotly.js';
 import competitionData from '../data/competitionData.json'; // Adjust the path if necessary
+import { MultiSelect } from 'react-multi-select-component';
 
 const SpecialityCompetitionChart = () => {
-  const [selectedSpecialties, setSelectedSpecialties] = useState([Object.keys(competitionData)[0]]);
+  // Create options for the MultiSelect component
+  const specialtyOptions = Object.keys(competitionData).map((specialty) => ({
+    label: specialty,
+    value: specialty,
+  }));
 
-  const handleSpecialtyChange = (event) => {
-    const options = event.target.options;
-    const selected = [];
-    for (const option of options) {
-      if (option.selected) {
-        selected.push(option.value);
-      }
-    }
-    setSelectedSpecialties(selected);
-  };
+  // Set initial selected specialties
+  const [selectedSpecialties, setSelectedSpecialties] = useState([specialtyOptions[0]]);
 
   // Prepare data for all selected specialties
-  const data = selectedSpecialties.map((specialty) => {
+  const data = selectedSpecialties.map((specialtyOption) => {
+    const specialty = specialtyOption.value;
     const specialtyData = competitionData[specialty];
     const years = Object.keys(specialtyData).sort();
     const applications = years.map((year) => specialtyData[year]['Applications']);
@@ -46,14 +44,15 @@ const SpecialityCompetitionChart = () => {
         `<b>${specialty}</b><br>` +
         'Year: %{x}<br>' +
         'Competition Ratio: %{y}<br>' +
-        'Applications: %{text}<extra></extra>',
+        '%{text}<extra></extra>',
       marker: { size: 8 },
     };
   });
 
   // Find the maximum competition ratio among the selected specialties
   let maxY = 12;
-  selectedSpecialties.forEach((specialty) => {
+  selectedSpecialties.forEach((specialtyOption) => {
+    const specialty = specialtyOption.value;
     const specialtyData = competitionData[specialty];
     const competitionRatios = Object.keys(specialtyData).map(
       (year) => specialtyData[year]['Competition ratio']
@@ -69,19 +68,19 @@ const SpecialityCompetitionChart = () => {
       <div className="chart-container">
         <div className="dropdown-container">
           <label htmlFor="specialty-select">Select Specialties:</label>
-          <select
-            id="specialty-select"
-            multiple
+          <MultiSelect
+            options={specialtyOptions}
             value={selectedSpecialties}
-            onChange={handleSpecialtyChange}
-            size="10" // Adjust the size as needed
-          >
-            {Object.keys(competitionData).map((specialty) => (
-              <option key={specialty} value={specialty}>
-                {specialty}
-              </option>
-            ))}
-          </select>
+            onChange={setSelectedSpecialties}
+            labelledBy="Select"
+            hasSelectAll={false}
+            overrideStrings={{
+              selectSomeItems: "Select Specialties",
+              allItemsAreSelected: "All Specialties Selected",
+              selectAll: "Select All",
+              search: "Search",
+            }}
+          />
         </div>
 
         <Plot
