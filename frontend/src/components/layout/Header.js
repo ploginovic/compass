@@ -3,7 +3,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import menuItems from './menuConfig';
 import './HeaderStyles.css'; // Styles for Header
-import Logo from '../../assets/logo_v2.svg'; // Ensure the path is correct
+import Logo from '../../assets/new_logo.svg'; // Ensure the path is correct
 import useHeaderVisibility from '../../hooks/useHeaderVisibility'; // Custom hook for header visibility
 import { useAuthenticator } from '@aws-amplify/ui-react'; // Correct import
 
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className={`header ${isVisible ? 'visible' : 'hidden'}`}>
       <NavLink to="/" end className="header-logo">
-        <img src={Logo} alt="CompassMed Logo" />
+        <img src={Logo} alt="MedMap Logo" className="logo-image"/>
       </NavLink>
       <nav className="nav-menu">
         {menuItems.map((item) => (

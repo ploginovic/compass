@@ -48,6 +48,7 @@ import Theory from './pages/Theory';
 import Login from './components/features/auth/Login';
 import Results from './components/features/Results/Results';
 import Pathfinder from './pages/Pathfinder';
+import Competition from './pages/CompetitionRatios'
 import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
 import RequireAuth from './components/RequireAuth'; // Import the RequireAuth component
@@ -71,6 +72,7 @@ function App() {
             <Route path="/research" element={<Research />} />
             <Route path="/theory" element={<Theory />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/competition" element={<Competition />} />
             <Route path="/login" element={<Login />} /> {/* Login route */}
             
             <Route
