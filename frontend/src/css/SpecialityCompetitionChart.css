@@ -1,0 +1,121 @@
+/* SpecialityCompetitionChart.css */
+
+/* Color Palette */
+:root {
+    --primary-color: #1f77b4; /* Blue */
+    --secondary-color: #ff7f0e; /* Orange */
+    --background-color: #f9f9f9; /* Light Grey */
+    --text-color: #333333; /* Dark Grey */
+    --accent-color: #2ca02c; /* Green */
+  }
+  
+  /* Global Styles */
+  body {
+    background-color: var(--background-color);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+  }
+  
+  /* Do not modify the .content class as per your request */
+  
+  /* Chart Container */
+  .chart-container {
+    width: 80%;
+    margin: 0 auto; /* Centers the container */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 1200px) {
+    .chart-container {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .chart-container {
+      width: 100%;
+    }
+  }
+  
+  .dropdown-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .dropdown-container label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--text-color);
+  }
+  
+  /* Multiselect Styling */
+  .multiselect-wrapper {
+    width: 40%;
+    min-width: 250px;
+    max-width: 400px;
+  }
+  
+  .multiselect-wrapper .dropdown-container {
+    width: 100%;
+  }
+  
+  .multiselect-wrapper .dropdown-heading {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .multiselect-wrapper .dropdown-heading,
+  .multiselect-wrapper .dropdown-heading-value,
+  .multiselect-wrapper .dropdown-search input {
+    color: var(--text-color);
+  }
+  
+  .multiselect-wrapper .dropdown-search {
+    padding: 8px;
+  }
+  
+  .multiselect-wrapper .dropdown-content {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+  }
+  
+  .multiselect-wrapper .item-renderer {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+  }
+  
+  .multiselect-wrapper .item-renderer:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+  
+  .multiselect-wrapper .checkbox {
+    margin-right: 8px;
+  }
+  
+  /* Customize Scrollbar */
+  .multiselect-wrapper .dropdown-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .multiselect-wrapper .dropdown-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .multiselect-wrapper .dropdown-content::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+  }
+  
+  .multiselect-wrapper .dropdown-content::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
+  

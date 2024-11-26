@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import Plot from 'react-plotly.js';
 import competitionData from '../data/competitionData.json'; // Adjust the path if necessary
 import { MultiSelect } from 'react-multi-select-component';
+import '../css/SpecialityCompetitionChart.css'; // Import the CSS file
 
 const SpecialityCompetitionChart = () => {
   // Create options for the MultiSelect component
@@ -63,24 +64,55 @@ const SpecialityCompetitionChart = () => {
     }
   });
 
+  // Handle the case when no specialties are selected
+  if (selectedSpecialties.length === 0) {
+    return (
+      <div className="content">
+        <div className="chart-container">
+          <div className="dropdown-container">
+            <label htmlFor="specialty-select">Select Specialties:</label>
+            <div className="multiselect-wrapper">
+              <MultiSelect
+                options={specialtyOptions}
+                value={selectedSpecialties}
+                onChange={setSelectedSpecialties}
+                labelledBy="Select"
+                hasSelectAll={false}
+                overrideStrings={{
+                  selectSomeItems: "Select Specialties",
+                  allItemsAreSelected: "All Specialties Selected",
+                  selectAll: "Select All",
+                  search: "Search",
+                }}
+              />
+            </div>
+          </div>
+          <div>Please select at least one specialty to display the chart.</div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="content">
       <div className="chart-container">
         <div className="dropdown-container">
           <label htmlFor="specialty-select">Select Specialties:</label>
-          <MultiSelect
-            options={specialtyOptions}
-            value={selectedSpecialties}
-            onChange={setSelectedSpecialties}
-            labelledBy="Select"
-            hasSelectAll={false}
-            overrideStrings={{
-              selectSomeItems: "Select Specialties",
-              allItemsAreSelected: "All Specialties Selected",
-              selectAll: "Select All",
-              search: "Search",
-            }}
-          />
+          <div className="multiselect-wrapper">
+            <MultiSelect
+              options={specialtyOptions}
+              value={selectedSpecialties}
+              onChange={setSelectedSpecialties}
+              labelledBy="Select"
+              hasSelectAll={false}
+              overrideStrings={{
+                selectSomeItems: "Select Specialties",
+                allItemsAreSelected: "All Specialties Selected",
+                selectAll: "Select All",
+                search: "Search",
+              }}
+            />
+          </div>
         </div>
 
         <Plot
@@ -96,8 +128,15 @@ const SpecialityCompetitionChart = () => {
             legend: { orientation: 'h', x: 0, y: -0.2 },
             margin: { t: 50, b: 100 },
             hovermode: 'closest',
+            plot_bgcolor: 'var(--background-color)',
+            paper_bgcolor: 'var(--background-color)',
+            font: {
+              color: 'var(--text-color)',
+            },
           }}
           style={{ width: '100%', height: '600px' }}
+          useResizeHandler={true}
+          className="responsive-plot"
           config={{ responsive: true }}
         />
       </div>
