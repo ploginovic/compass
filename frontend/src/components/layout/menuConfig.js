@@ -1,6 +1,5 @@
 const menuItems = [
   { title: 'Home', link: '/' },
-  { title: 'About', link: '/about' },
   { title: 'Quiz', link: '/quiz' },
   {
     title: 'Personality Types',
@@ -19,6 +18,7 @@ const menuItems = [
       { title: 'Specialties', link: '/specialties' },
     ],
   },
+  { title: 'About', link: '/about' }
 ];
 
 export default menuItems;

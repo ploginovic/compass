@@ -1,0 +1,193 @@
+/* AboutStyles.css */
+
+/* Container for the about page content */
+.about-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #006989; /* Dark teal for the main text color */
+    font-size: x-large;
+    padding: 5vh;
+    border-radius: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+  }
+  
+  .about-container h1 {
+    font-weight: 700; /* Make headings bold */
+    text-transform: uppercase; /* Make headings uppercase */
+    background: linear-gradient(90deg, #006989, #007090); /* Gradient text effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .about-container h2 {
+    font-weight: 200;
+    text-transform: uppercase;
+    background: linear-gradient(-90deg, #A3BAC3, #EAEBED); /* Gradient text effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Panel styling */
+  .panel {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 105, 137, 0.2);
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 40px;
+  }
+  
+  .panel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 105, 137, 0.3);
+  }
+  
+  /* Panel header */
+  .panel-header {
+    background-color: #007090 !important;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: left;
+    color: #fff;
+  }
+  
+  .panel-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Panel content styling */
+  .panel-content {
+    font-size: 20px;
+    color: #006989;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  /* Arrow control styles */
+  .arrow-control {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #01A7C2;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .arrow-control:hover {
+    color: #007090;
+    transform: scale(1.1);
+  }
+  
+  /* Button container styles */
+  .button-container {
+    margin-top: 40px;
+  }
+  
+  .contact-button {
+    background-color: #01A7C2;
+    color: #fff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #007090;
+    transform: translateY(-3px);
+  }
+  
+  /* Highlight important keywords or phrases */
+  .about-container strong {
+    font-weight: bold;
+    background-color: #007090;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  /* Team Section */
+  .team-section {
+    margin-top: 60px;
+  }
+  
+  .team-section h2 {
+    font-weight: 200;
+    text-transform: uppercase;
+    background: linear-gradient(-90deg, #A3BAC3, #EAEBED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .team-member {
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  /* Placeholder for team photos */
+  .team-photo-placeholder {
+    width: 200px;
+    height: 200px;
+    background-color: #e0e0e0; /* Light gray background for placeholder */
+    border-radius: 50%;
+    border: 5px solid #007090;
+    box-shadow: 0 4px 8px rgba(0, 105, 137, 0.2);
+    margin: 0 auto 20px auto; /* Center the placeholder and add bottom margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Optional: Add text or icon styles here */
+  }
+  
+  .team-photo-placeholder::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url('data:image/svg+xml;charset=UTF8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23BDBDBD" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M12 14c-4.418 0-8 2.239-8 5v3h16v-3c0-2.761-3.582-5-8-5z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .team-member h3 {
+    margin: 10px 0 5px 0;
+    font-size: 24px;
+    color: #006989;
+  }
+  
+  .team-member p {
+    font-size: 18px;
+    color: #006989;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .team-members {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-member {
+      margin-bottom: 40px;
+    }
+  }
