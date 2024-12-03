@@ -74,7 +74,7 @@ const About = () => {
 
         <div className="button-container">
           {/* Updated the button to use a mailto link */}
-          <a href="mailto:admin@northstarapp.co.uk" className="contact-button">
+          <a href="mailto:admin@medmap.uk" className="contact-button">
             Contact Us
           </a>
         </div>
