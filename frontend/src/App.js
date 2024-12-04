@@ -72,7 +72,7 @@ function App() {
             <Route path="/research" element={<Research />} />
             <Route path="/theory" element={<Theory />} />
             <Route path="/quiz" element={<Quiz />} />
-            <Route path="/competition" element={<Competition />} />
+            <Route path="/competition-ratios" element={<Competition />} />
             <Route path="/personality-types" element={<PersonalityTypes />} /> {/* Add this route */}
             <Route path="/login" element={<Login />} /> {/* Login route */}
             

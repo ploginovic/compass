@@ -7,6 +7,11 @@ const menuItems = [
     
   },
   {
+    title: 'Competition Ratios',
+    link: '/competition-ratios',
+    
+  },
+  {
     title: 'Theory and Specialties',
     link: '/premium-suites',
     submenu: [
