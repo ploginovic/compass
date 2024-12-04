@@ -145,3 +145,10 @@ const SpecialityCompetitionChart = () => {
 };
 
 export default SpecialityCompetitionChart;
+
+
+/// Night 
+/// All the other considerations:
+///  - on calls  
+///  - difficulty rating
+//// – Be aware of bias propagation 
