@@ -1,8 +1,5 @@
-// Empty page for now, just an idea
-// Collating all competition ratios across the years is an easy win 
-// And will be a useful resource to have on our website for people to explore
-// Almost like a thing people refer to MedMap for
-// But super easy to do
+// SpecialityCompetitionChart.js
+
 import React, { useState } from 'react';
 import Plot from 'react-plotly.js';
 import competitionData from '../data/competitionData.json'; // Adjust the path if necessary
@@ -23,7 +20,9 @@ const SpecialityCompetitionChart = () => {
   const data = selectedSpecialties.map((specialtyOption) => {
     const specialty = specialtyOption.value;
     const specialtyData = competitionData[specialty];
-    const years = Object.keys(specialtyData).sort();
+
+    const years = Object.keys(specialtyData).sort((a, b) => parseFloat(a) - parseFloat(b));
+
     const applications = years.map((year) => specialtyData[year]['Applications']);
     const posts = years.map((year) => specialtyData[year]['Posts']);
     const competitionRatios = years.map((year) => specialtyData[year]['Competition ratio']);
@@ -34,7 +33,7 @@ const SpecialityCompetitionChart = () => {
     );
 
     return {
-      x: years,
+      x: years.map((year) => parseFloat(year)), // Convert year strings to numbers
       y: competitionRatios,
       type: 'scatter',
       mode: 'lines+markers',
@@ -55,8 +54,9 @@ const SpecialityCompetitionChart = () => {
   selectedSpecialties.forEach((specialtyOption) => {
     const specialty = specialtyOption.value;
     const specialtyData = competitionData[specialty];
-    const competitionRatios = Object.keys(specialtyData).map(
-      (year) => specialtyData[year]['Competition ratio']
+
+    const competitionRatios = Object.values(specialtyData).map(
+      (entry) => entry['Competition ratio']
     );
     const specialtyMax = Math.max(...competitionRatios);
     if (specialtyMax > maxY) {
@@ -79,10 +79,10 @@ const SpecialityCompetitionChart = () => {
                 labelledBy="Select"
                 hasSelectAll={false}
                 overrideStrings={{
-                  selectSomeItems: "Select Specialties",
-                  allItemsAreSelected: "All Specialties Selected",
-                  selectAll: "Select All",
-                  search: "Search",
+                  selectSomeItems: 'Select Specialties',
+                  allItemsAreSelected: 'All Specialties Selected',
+                  selectAll: 'Select All',
+                  search: 'Search',
                 }}
               />
             </div>
@@ -106,10 +106,10 @@ const SpecialityCompetitionChart = () => {
               labelledBy="Select"
               hasSelectAll={false}
               overrideStrings={{
-                selectSomeItems: "Select Specialties",
-                allItemsAreSelected: "All Specialties Selected",
-                selectAll: "Select All",
-                search: "Search",
+                selectSomeItems: 'Select Specialties',
+                allItemsAreSelected: 'All Specialties Selected',
+                selectAll: 'Select All',
+                search: 'Search',
               }}
             />
           </div>
@@ -119,7 +119,17 @@ const SpecialityCompetitionChart = () => {
           data={data}
           layout={{
             title: `Competition Ratios for Selected Specialties`,
-            xaxis: { title: 'Year' },
+            xaxis: {
+              title: 'Year',
+              tickmode: 'linear',
+              dtick: 1,
+              tickformat: 'd',
+              tick0: Math.floor(
+                Math.min(
+                  ...data.flatMap((trace) => trace.x)
+                )
+              ),
+            },
             yaxis: {
               title: 'Competition Ratio',
               range: [1, maxY],
@@ -144,6 +154,7 @@ const SpecialityCompetitionChart = () => {
   );
 };
 
+<<<<<<< HEAD
 export default SpecialityCompetitionChart;
 
 
@@ -152,3 +163,6 @@ export default SpecialityCompetitionChart;
 ///  - on calls  
 ///  - difficulty rating
 //// – Be aware of bias propagation 
+=======
+export default SpecialityCompetitionChart;
+>>>>>>> 50372c5683881d26ed2853ce55748a5a55242800

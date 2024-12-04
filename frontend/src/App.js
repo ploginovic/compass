@@ -40,7 +40,6 @@ import Header from './components/layout/Header';
 import Home from './pages/Home';
 import Quiz from './pages/Quiz';
 import About from './pages/About';
-import Test from './pages/Test';
 import Guides from './pages/Guides';
 import Specialties from './pages/Specialties';
 import Research from './pages/Research';
@@ -52,6 +51,8 @@ import Competition from './pages/CompetitionRatios'
 import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
 import RequireAuth from './components/RequireAuth'; // Import the RequireAuth component
+import PersonalityTypes from './pages/PersonalityTypes'; // Import the new component
+
 
 Amplify.configure(awsconfig);
 
@@ -66,13 +67,13 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/results" element={<Results />} />
-            <Route path="/test" element={<Test />} />
             {/* <Route path="/guides" element={<Guides />} /> */}
             <Route path="/specialties" element={<Specialties />} />
             <Route path="/research" element={<Research />} />
             <Route path="/theory" element={<Theory />} />
             <Route path="/quiz" element={<Quiz />} />
-            <Route path="/competition" element={<Competition />} />
+            <Route path="/competition-ratios" element={<Competition />} />
+            <Route path="/personality-types" element={<PersonalityTypes />} /> {/* Add this route */}
             <Route path="/login" element={<Login />} /> {/* Login route */}
             
             <Route
