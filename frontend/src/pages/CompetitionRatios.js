@@ -154,7 +154,6 @@ const SpecialityCompetitionChart = () => {
   );
 };
 
-<<<<<<< HEAD
 export default SpecialityCompetitionChart;
 
 
@@ -163,6 +162,3 @@ export default SpecialityCompetitionChart;
 ///  - on calls  
 ///  - difficulty rating
 //// – Be aware of bias propagation 
-=======
-export default SpecialityCompetitionChart;
->>>>>>> 50372c5683881d26ed2853ce55748a5a55242800
